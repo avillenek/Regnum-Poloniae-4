@@ -32,4 +32,5 @@ state=
 	provinces={
 		10000
 	}
+	local_supplies=0.0
 }

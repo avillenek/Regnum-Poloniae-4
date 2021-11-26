@@ -15,4 +15,5 @@ state={
 		add_core_of = TIB
 
 	}
+	local_supplies=0.0
 }

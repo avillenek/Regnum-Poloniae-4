@@ -23,4 +23,5 @@ state={
 		}
 		add_core_of = POL
 	}
+	local_supplies=0.0
 }
