@@ -8,6 +8,7 @@ tags={
 picture="thumbnail.jpg"
 name="Regnum Poloniae Dev Edition"
 replace_path="map"
+replace_path="map/strategicregions"
 replace_path="history/states"
 replace_path="history/countries"
 replace_path="history/units"
