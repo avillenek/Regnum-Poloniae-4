@@ -32,4 +32,5 @@ resources={
 	provinces={
 		266 3351 3380 6375 6402 9327 9346 9372 9398 11245 11386 
 	}
+	local_supplies=0.0
 }

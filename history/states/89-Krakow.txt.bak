@@ -1,0 +1,36 @@
+
+state={
+	id=89
+	name="STATE_89"
+        resources={
+		aluminium=6.000
+		oil=15.000
+	}
+
+	history={
+		victory_points = {
+			11411 25 
+		}
+		victory_points = {
+			6431 5 
+		}
+		owner = POL
+		buildings = {
+			infrastructure = 6
+			air_base = 3
+                        arms_factory = 2
+
+		}
+		add_core_of = POL
+		add_core_of = UKR
+		add_core_of = GAL
+
+	}
+
+	provinces={
+		3743 6460 9425 11411 11550 
+	}
+	manpower=2180300
+	buildings_max_level_factor=1.000
+	state_category=city
+}

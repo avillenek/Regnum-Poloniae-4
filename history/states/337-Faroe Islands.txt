@@ -18,4 +18,5 @@ state=
 		add_core_of = DEN
 	}
 	provinces= { 13003 }
+	local_supplies=0.0
 }
