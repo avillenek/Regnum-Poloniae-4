@@ -1,4 +1,4 @@
-version="ni huja nazad"
+version="Ni Huja Nazad"
 tags={
 	"Alternative History"
 	"Gameplay"
@@ -6,7 +6,7 @@ tags={
 	"Graphics"
 }
 picture="thumbnail.jpg"
-name="AvillenDev Regnum Poloniae"
+name="Regnum Poloniae Dev Edition"
 replace_path="map"
 replace_path="history/states"
 replace_path="history/countries"
