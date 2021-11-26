@@ -1,3 +1,3 @@
 Beautiful Expanded States + Regnum Poloniae
 
-Discord: https://discord.gg/urwU99Np
+Discord: https://discord.gg/mxNHuE5jFM
