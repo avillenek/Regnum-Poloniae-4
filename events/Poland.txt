@@ -17533,26 +17533,6 @@ news_event = {
 	}
 }
 
-# thank you
-country_event = {
-	id = poland.5061
-	title = poland.5061.t
-	desc = poland.5061.desc
-	picture = GFX_report_event_thank_you
-	
-	is_triggered_only
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	fire_only_once = yes
-
-	option = {
-		name = poland.5061.a
-	}
-}
-
 #Kult Napoleona 1 (Poland)
 news_event = {
 	id = poland.5062
