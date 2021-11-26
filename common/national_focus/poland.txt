@@ -1,0 +1,312 @@
+focus_tree = {
+	id = polish_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = POL
+			has_dlc = "Poland: United and Ready"
+		}
+	}
+	
+	default = yes
+	
+	continuous_focus_position = { x = 50 y = 2100 }
+
+	############################
+	#### INDUSTRIAL SECTION ####
+	############################
+	
+	focus = {
+		id = POL_The_Kingdom_Of_Poland_Revolt
+		icon = GFX_POL_focus_a_firm_hand
+		prerequisite = { focus = POL_Monarchisci }
+		available = { has_government = neutrality }
+
+		x = 7
+		y = 6
+		cost = 4.4
+
+		ai_will_do = {
+			factor = 11
+			modifier = {
+				factor = 4
+				is_historical_focus_on = no
+			}
+		}
+		
+		available = {
+		    has_completed_focus = POL_Monarchisci_wsparcie_od_partii
+			has_completed_focus = POL_Monarchisci_wsparcie_od_wojska
+		}
+		
+
+		available_if_capitulated = no
+		completion_reward = {
+		    hidden_effect = {
+		        remove_ideas = POL_Sanacja_Government
+			    remove_ideas = POL_Synthetic_Rubber
+			    remove_ideas = POL_jozef_beck
+			    remove_ideas = idea_POL_regency_council_focus2
+				add_ideas = POL_don_brzigollo
+				UKR = {
+				    if = {
+					    limit = { POL = { owns_state = 91 controls_state = 91 } }
+					    transfer_state = 91
+					}
+					if = {
+					    limit = { POL = { owns_state = 89 controls_state = 89 } }
+					    transfer_state = 89
+					}
+					declare_war_on = { target = POL type = annex_everything }
+				}
+				SOV = {
+				    if = {
+					    limit = { POL = { owns_state = 96 controls_state = 96 } }
+					    transfer_state = 96
+					}
+					if = {
+					    limit = { POL = { owns_state = 95 controls_state = 95 } }
+					    transfer_state = 95
+					}
+					if = {
+					    limit = { POL = { owns_state = 94 controls_state = 94 } }
+					    transfer_state = 94
+					}
+					if = {
+					    limit = { POL = { owns_state = 93 controls_state = 93 } }
+					    transfer_state = 93
+					}
+				}
+				LIT = {
+				    if = {
+					    limit = { POL = { owns_state = 784 controls_state = 784 } }
+					    transfer_state = 784
+					}
+				}
+			    
+			}
+			if = {
+			    limit = {
+				    has_country_flag = Czoko_diabolo_gowno
+					has_country_flag = Dika_srika
+				}
+		        POL = {
+					country_event = { id = poland.5221 }
+	            }
+			}
+			if = {
+				limit = {
+					has_country_flag = Czoko_diabolo_bagno
+					has_country_flag = donno_wiuto
+				}
+			    POL = {
+					country_event = { id = poland.5222 }
+	            }
+			}
+			if = {
+				limit = {
+					has_country_flag = Czoko_diabolo_gowno
+					has_country_flag = donno_wiuto
+				}
+			    POL = {
+					country_event = { id = poland.1002 }
+	            }
+			}
+			if = {
+				limit = {
+					has_country_flag = Czoko_diabolo_bagno
+					has_country_flag = Dika_srika
+				}
+			    POL = {
+					country_event = { id = poland.5068 }
+	            }
+			}
+			POL = { diplomatic_relation = { country = FRA relation = guarantee active = no} }
+			POL = { news_event = poland.5063 }	
+			POL = { country_event = poland.1002 }
+            custom_effect_tooltip = POL_informacja_wazna			
+		}
+	}
+	
+	focus = {
+		id = POL_revive_the_Kingdom
+		icon = GFX_focus_generic_polish_united
+		prerequisite = { focus = POL_The_Kingdom_Of_Poland_Revolt }
+		available = {
+			is_puppet = no
+			has_civil_war = yes
+		}
+		x = 7
+		y = 7
+		cost = 0.8
+		ai_will_do = {
+			factor = 3
+		}
+		
+		completion_reward = {
+			POL = { set_cosmetic_tag = POLPM }
+			set_party_name = { ideology = neutrality long_name = POL_MON_party_long name = POL_MON_party }
+			hidden_effect = { load_focus_tree = poland_monarchy_focus }
+			hidden_effect = {
+			    set_rule = { can_send_volunteers = yes }
+			}
+			add_ideas = POL_Perfect_Kingdom1
+		}
+	}
+	
+	focus = {
+		id = POL_The_April_Constitution1
+		icon = GFX_goal_april_constitution
+		
+		x = 7
+		y = 0
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 60
+			hidden_effect = {
+			    POL = { country_event = poland.5201 }	
+			}
+		}
+	}
+	
+	focus = {
+		id = POL_The_Begining
+		icon = GFX_focus_niech_zyje_sikorski
+		prerequisite = { focus = POL_The_April_Constitution1 }
+		x = 7
+		y = 1
+		cost = 0.8
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+			    POL = { news_event = poland.5200 }	
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = POL_The_Ustawy
+		icon = GFX_focus_bogactwo_polski
+		prerequisite = { focus = POL_The_Begining }
+		x = 5
+		y = 2
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = {
+			    idea = POL_before_civil_war
+			    days = 190
+		    }
+			hidden_effect = {
+			    POL = { country_event = poland.5203 }
+			}
+		}
+	}
+	
+	focus = {
+		id = POL_The_legalizacja
+		icon = GFX_focus_rzeczpospolita_gubernia
+		prerequisite = { focus = POL_The_Begining }
+		x = 9
+		y = 2
+		cost = 0.8
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+			hidden_effect = {
+			    POL = { country_event = poland.5204 }	
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = POL_Monarchisci
+		icon = GFX_focus_POL_monarchy_party
+		prerequisite = { focus = POL_The_Begining }
+		x = 7
+		y = 3
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			POL = { country_event = poland.5202 }	
+		}
+	}
+	
+	focus = {
+		id = POL_Monarchisci_wsparcie_od_wojska
+		icon = GFX_pol_focus_polish_army_support
+		prerequisite = { focus = POL_Monarchisci }
+		x = 5
+		y = 4
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+		    has_completed_focus = POL_Monarchisci_wsparcie_od_partii
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			POL = { country_event = poland.5210 }	
+		}
+	}
+	
+	focus = {
+		id = POL_Monarchisci_wsparcie_od_partii
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = POL_Monarchisci }
+		x = 9
+		y = 4
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			POL = { country_event = poland.5205 }	
+		}
+	}
+}

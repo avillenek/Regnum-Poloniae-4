@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_goal_DNZ_coat_of_arms"
+	texturefile = "gfx/interface/goals/goal_DNZ_coat_of_arms.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_generic_radio_goods"
+	texturefile = "gfx/interface/goals/goal_generic_radio_goods.dds"			
+	}
+
+}

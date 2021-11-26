@@ -1,0 +1,467 @@
+SpriteTypes = {
+    
+    #POLish Support Equipment
+        SpriteType = {
+        name = "GFX_POL_tech_support_medium"
+        texturefile = "gfx/interface/technologies/POL_support_equipment_1.dds"
+        }   
+
+    #POLish great war tank#
+        SpriteType = {
+            name = "GFX_POL_gwtank_medium"
+            texturefile = "gfx/interface/technologies/POL_gwtank.dds"
+        }
+
+    #POLish light tank#
+        
+        SpriteType = {
+            name = "GFX_POL_basic_light_tank_medium"
+            texturefile = "gfx/interface/technologies/POL_basic_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_basic_light_td_medium"
+            texturefile = "gfx/interface/technologies/POL_basic_light_tank_td.dds"
+        }
+        
+        SpriteType = {
+            name = "GFX_POL_basic_light_art_medium"
+            texturefile = "gfx/interface/technologies/POL_basic_light_tank_spa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_basic_light_spaa_medium"
+            texturefile = "gfx/interface/technologies/POL_basic_light_tank_aa.dds"
+        }
+
+        ##------------------------------------------------------------------------##
+
+        SpriteType = {
+            name = "GFX_POL_improved_light_tank_medium"
+            texturefile = "gfx/interface/technologies/POL_imp_light_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_improved_light_td_medium"
+            texturefile = "gfx/interface/technologies/POL_imp_light_tank_td.dds"
+        }
+        
+        SpriteType = {
+            name = "GFX_POL_improved_light_art_medium"
+            texturefile = "gfx/interface/technologies/POL_imp_light_tank_spa.dds"
+        }
+        
+        SpriteType = {
+            name = "GFX_POL_improved_light_spaa_medium"
+            texturefile = "gfx/interface/technologies/POL_imp_light_tank_aa.dds"
+        }
+
+        ##------------------------------------------------------------------------##
+
+        SpriteType = {
+            name = "GFX_POL_advanced_light_tank_medium"
+            texturefile = "gfx/interface/technologies/POL_adv_light_tank.dds"
+        }
+        
+        SpriteType = {
+            name = "GFX_POL_advanced_light_td_medium"
+            texturefile = "gfx/interface/technologies/POL_adv_light_tank_td.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_advanced_light_art_medium"
+            texturefile = "gfx/interface/technologies/POL_adv_light_tank_spa.dds"
+        }
+        
+        SpriteType = {
+            name = "GFX_POL_advanced_light_spaa_medium"
+            texturefile = "gfx/interface/technologies/POL_adv_light_tank_aa.dds"
+        }
+    
+    #POLish medium tank#
+
+        SpriteType = {
+            name = "GFX_POL_basic_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/POL_basic_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_basic_medium_td_medium"
+            texturefile = "gfx/interface/technologies/POL_basic_medium_tank_td.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_basic_medium_art_medium"
+            texturefile = "gfx/interface/technologies/POL_basic_medium_tank_spa.dds"
+        }
+
+        ##------------------------------------------------------------------------##
+
+        SpriteType = {
+            name = "GFX_POL_improved_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/POL_imp_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_improved_medium_td_medium"
+            texturefile = "gfx/interface/technologies/POL_imp_medium_tank_td.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_improved_medium_art_medium"
+            texturefile = "gfx/interface/technologies/POL_imp_medium_tank_spa.dds"
+        }
+
+        ##------------------------------------------------------------------------##
+
+        SpriteType = {
+            name = "GFX_POL_advanced_medium_tank_medium"
+            texturefile = "gfx/interface/technologies/POL_adv_medium_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_advanced_medium_td_medium"
+            texturefile = "gfx/interface/technologies/POL_adv_medium_tank_td.dds"
+        }
+
+    #POLish heavy tank#
+        SpriteType = {
+            name = "GFX_POL_basic_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/POL_basic_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_basic_heavy_td_medium"
+            texturefile = "gfx/interface/technologies/POL_basic_heavy_tank_td.dds"
+        }
+
+        ##------------------------------------------------------------------------##
+
+        SpriteType = {
+            name = "GFX_POL_improved_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/POL_imp_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_improved_heavy_td_medium"
+            texturefile = "gfx/interface/technologies/POL_imp_heavy_tank_td.dds"
+        }
+
+        ##------------------------------------------------------------------------##
+
+        SpriteType = {
+            name = "GFX_POL_advanced_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/POL_adv_heavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_advanced_heavy_td_medium"
+            texturefile = "gfx/interface/technologies/POL_adv_heavy_tank_td.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_advanced_heavy_art_medium"
+            texturefile = "gfx/interface/technologies/POL_adv_heavy_tank_spa.dds"
+        }
+
+    #POLish main battle tank#
+
+        SpriteType = {
+            name = "GFX_POL_main_battle_td_medium"
+            texturefile = "gfx/interface/technologies/POL_main_battle_tank_td.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_main_battle_art_medium"
+            texturefile = "gfx/interface/technologies/POL_main_battle_tank_spa.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_main_battle_spaa_medium"
+            texturefile = "gfx/interface/technologies/POL_main_battle_tank_aa.dds"
+        }
+
+    #POLish super heavy tank#
+
+        SpriteType = {
+            name = "GFX_POL_super_heavy_tank_medium"
+            texturefile = "gfx/interface/technologies/POL_superheavy_tank.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_super_heavy_td_medium"
+            texturefile = "gfx/interface/technologies/POL_superheavy_tank_td.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_super_heavy_art_medium"
+            texturefile = "gfx/interface/technologies/POL_superheavy_tank_spa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_super_heavy_spaa_medium"
+            texturefile = "gfx/interface/technologies/POL_superheavy_tank_aa.dds"
+        }
+
+    #POLish Modern tank#
+
+        SpriteType = {
+            name = "GFX_POL_main_battle_tank_medium"
+            texturefile = "gfx/interface/technologies/POL_main_battle_tank.dds"
+        }
+        
+    #Polish amphibious vehicle#
+        SpriteType = {
+            name = "GFX_POL_amphibious_mechanized_infantry_medium"
+            texturefile = "gfx/interface/technologies/POL_amphibious_mech_1.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_amphibious_mechanized_infantry_2_medium"
+            texturefile = "gfx/interface/technologies/POL_amphibious_mech_2.dds"
+        }
+		
+		SpriteType = {
+		    name = "GFX_amphibious_tank_medium"
+		    texturefile = "gfx/interface/technologies/POL_amphibious_tank_1.dds"
+	    }
+	
+	    SpriteType = {
+		    name = "GFX_amphibious_tank_2_medium"
+		    texturefile = "gfx/interface/technologies/POL_amphibious_tank_2.dds"
+	    }
+
+    #POLish jet fighter#
+        SpriteType = {
+            name = "GFX_POL_jet_fighter1_medium"
+            texturefile = "gfx/interface/technologies/POL_jet_fighter1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_jet_fighter2_medium"
+            texturefile = "gfx/interface/technologies/POL_jet_fighter2.dds"
+        }
+        
+    #POLish jet strategic bomber#
+        SpriteType = {
+            name = "GFX_POL_jet_strategic_bomber1_medium"
+            texturefile = "gfx/interface/technologies/POL_jet_strategic_bomber1.dds"
+        }
+
+    #POLish jet tactical bomber#
+        SpriteType = {
+            name = "GFX_POL_jet_tactical_bomber1_medium"
+            texturefile = "gfx/interface/technologies/POL_jet_tactical_bomber1.dds"
+        }
+    
+        SpriteType = {
+            name = "GFX_POL_jet_tactical_bomber2_medium"
+            texturefile = "gfx/interface/technologies/POL_jet_tactical_bomber2.dds"
+        }
+
+    #POLish CAS#
+        SpriteType = {
+            name = "GFX_POL_CAS1_medium"
+            texturefile = "gfx/interface/technologies/POL_CAS1.dds"
+        }   
+
+        SpriteType = {
+            name = "GFX_POL_CAS2_medium"
+            texturefile = "gfx/interface/technologies/POL_CAS2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_CAS3_medium"
+            texturefile = "gfx/interface/technologies/POL_CAS3.dds"
+        }
+
+    #POLish fighter#
+        SpriteType = {
+            name = "GFX_POL_early_fighter_medium"
+            texturefile = "gfx/interface/technologies/POL_early_fighter.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_fighter1_medium"
+            texturefile = "gfx/interface/technologies/POL_fighter1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_fighter2_medium"
+            texturefile = "gfx/interface/technologies/POL_fighter2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_fighter3_medium"
+            texturefile = "gfx/interface/technologies/POL_fighter3.dds"
+        }
+
+    #POLish naval bomber#
+        SpriteType = {
+            name = "GFX_POL_naval_bomber1_medium"
+            texturefile = "gfx/interface/technologies/POL_naval_bomber1.dds"
+        }   
+
+        SpriteType = {
+            name = "GFX_POL_naval_bomber2_medium"
+            texturefile = "gfx/interface/technologies/POL_naval_bomber2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_naval_bomber3_medium"
+            texturefile = "gfx/interface/technologies/POL_naval_bomber3.dds"
+        }
+        
+    #POLish heavy fighter#      
+        SpriteType = {
+            name = "GFX_POL_heavy_fighter1_medium"
+            texturefile = "gfx/interface/technologies/POL_heavy_fighter1.dds"
+        }
+    
+        SpriteType = {
+            name = "GFX_POL_heavy_fighter2_medium"
+            texturefile = "gfx/interface/technologies/POL_heavy_fighter2.dds"
+        }
+    
+        SpriteType = {
+            name = "GFX_POL_heavy_fighter3_medium"
+            texturefile = "gfx/interface/technologies/POL_heavy_fighter3.dds"
+        }
+        
+    #POLish tactical bomber#    
+        SpriteType = {
+            name = "GFX_POL_early_bomber_medium"
+            texturefile = "gfx/interface/technologies/POL_early_bomber.dds"
+        }
+    
+        SpriteType = {
+            name = "GFX_POL_tactical_bomber1_medium"
+            texturefile = "gfx/interface/technologies/POL_tactical_bomber1.dds"
+        }
+    
+        SpriteType = {
+            name = "GFX_POL_tactical_bomber2_medium"
+            texturefile = "gfx/interface/technologies/POL_tactical_bomber2.dds"
+        }
+    
+        SpriteType = {
+            name = "GFX_POL_tactical_bomber3_medium"
+            texturefile = "gfx/interface/technologies/POL_tactical_bomber3.dds"
+        }
+        
+    #POLish strategic bomber#
+        SpriteType = {
+            name = "GFX_POL_strategic_bomber1_medium"
+            texturefile = "gfx/interface/technologies/POL_strategic_bomber1.dds"
+        }
+    
+        SpriteType = {
+            name = "GFX_POL_strategic_bomber2_medium"
+            texturefile = "gfx/interface/technologies/POL_strategic_bomber2.dds"
+        }   
+    
+        SpriteType = {
+            name = "GFX_POL_strategic_bomber3_medium"
+            texturefile = "gfx/interface/technologies/POL_strategic_bomber3.dds"
+        }
+        
+    #POLish transport plane#    
+        SpriteType = {
+            name = "GFX_POL_transport_plane_equipment_medium"
+            texturefile = "gfx/interface/technologies/POL_transport_plane_equipment.dds"
+        }
+
+    #POLish infantry weapon#
+        SpriteType = {
+            name = "GFX_POL_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/POL_infantry_equipment_0.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_infantry_weapons1_medium"
+            texturefile = "gfx/interface/technologies/POL_infantry_equipment_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_improved_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/POL_infantry_equipment_2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_advanced_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/POL_infantry_equipment_3.dds"
+        }
+
+    #POLish mobile infantry vehicle#
+        SpriteType = {
+            name = "GFX_POL_motorised_infantry_medium"
+            texturefile = "gfx/interface/technologies/POL_motorised_equipment_1.dds"
+        }
+        SpriteType = {
+            name = "GFX_POL_motorized_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/POL_motorised_equipment_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_mechanised_infantry_medium"
+            texturefile = "gfx/interface/technologies/POL_mechanized_equipment_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_mechanised_infantry2_medium"
+            texturefile = "gfx/interface/technologies/POL_mechanized_equipment_2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_mechanised_infantry3_medium"
+            texturefile = "gfx/interface/technologies/POL_mechanized_equipment_3.dds"
+        }
+         
+    #POLish howitzer#
+        SpriteType = {
+            name = "GFX_POL_gw_artillery_medium"
+            texturefile = "gfx/interface/technologies/POL_Art_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_artillery1_medium"
+            texturefile = "gfx/interface/technologies/POL_Art_2.dds"
+        }   
+    
+        SpriteType = {
+            name = "GFX_POL_artillery4_medium"
+            texturefile = "gfx/interface/technologies/POL_Art_3.dds"
+        }   
+
+    #POLish AA#
+        SpriteType = {
+            name = "GFX_POL_interwar_antiair_medium"
+            texturefile = "gfx/interface/technologies/POL_AA_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_antiair2_medium"
+            texturefile = "gfx/interface/technologies/POL_AA_2.dds"
+        }
+        
+        SpriteType = {
+            name = "GFX_POL_antiair5_medium"
+            texturefile = "gfx/interface/technologies/POL_AA_3.dds"
+        }   
+
+    #POLish AT#
+        SpriteType = {
+            name = "GFX_POL_interwar_antitank_medium"
+            texturefile = "gfx/interface/technologies/POL_AT_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_antitank2_medium"
+            texturefile = "gfx/interface/technologies/POL_AT_2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_POL_antitank5_medium"
+            texturefile = "gfx/interface/technologies/POL_AT_3.dds"
+        }
+
+}

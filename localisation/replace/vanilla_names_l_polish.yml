@@ -1,0 +1,54 @@
+﻿l_polish:
+ KIEL_CANAL:0 "Kaiser Wilhelm Kanal"
+ GER_greater_german_reich_fascism:0 "Großdeutsches Reich" #This is for English version. otherwise, you can erase this.
+ 
+ TAN_communism_party:0 "TPRP"
+ TAN_communism_party_long:0 "Tuvan People's Revolutionary Party"
+ 
+ POL_neutrality_party:0 "Piłsudski's colonels"
+ 
+ SER_communism_party:0 "SKS"
+ SER_communism_party_long:0 "Savez komunista Srbije" #League of Communists of Serbia
+ 
+ SWE_communism_party:0 "Socialistiska partiet" #Socialist Party
+ SWE_communism_party_long:0 "Socialistiska partiet"
+ 
+ CAN_fascism_party:0 "NSCP"
+ CAN_fascism_party_long:0 "National Social Christian Party"
+ 
+ KOR_neutrality_party:0 "Left-Right Unification Movement"
+ KOR_fascism_party:0 "KIP"
+ KOR_fascism_party_long:0 "Korea Independence Party"
+ 
+ KOR_fascism:0 "Korea"
+ KOR_fascism_DEF:0 "Korea"
+ KOR_democratic:0 "Republic of Korea"
+ KOR_democratic_DEF:0 "the Republic of Korea"
+ KOR_neutrality:0 "People's Republic of Korea"
+ KOR_neutrality_DEF:0 "People's Republic of Korea"
+ 
+ WGR_democratic:0 "Federal Republic of Germany"
+ WGR_democratic_DEF:0 "Federal Republic of Germany"
+ 
+ DDR_communism:0 "German Democratic Republic"
+ DDR_communism_DEF:0 "German Democratic Republic"
+ 
+ ITA_democratic:0 "Republic of Italy"
+ ITA_democratic_DEF:0 "the Republic of Italy"
+ 
+ FRA_democratic_party:0 "Front populaire"
+ 
+ GRE_neutrality_party:0 "Freethinkers' Party"
+ GRE_neutrality_party_long:0 "Freethinkers' Party"
+ 
+ HUN_EMPIRE_democratic:0 "United States of Greater Austria"
+ HUN_EMPIRE_communism:0 "Danubian Socialist Federation"
+ HUN_GREATER_communism:0 "Hungarian Soviet Republic"
+ HUN_EMPIRE_democratic_DEF:0 "the United States of Greater Austria"
+ HUN_EMPIRE_communism_DEF:0 "the Danubian Socialist Federation"
+ HUN_GREATER_communism_DEF:0 "the Hungarian Soviet Republic"
+ 
+ EGY_neutrality_party:0 "Wafd Party"
+ 
+ MON_communism:0 "Mongolian People's Republic"
+ MON_communism_DEF:0 "Mongolian People's Republic"

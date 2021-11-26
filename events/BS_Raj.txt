@@ -1,0 +1,39 @@
+﻿
+add_namespace = bs_raj
+
+# New Viceroy
+country_event = {
+    id = bs_raj.1
+    title = bs_raj.1.t
+    desc = bs_raj.1.d
+    picture = GFX_report_event_generic_funeral
+ 
+    fire_only_once = yes
+ 
+    trigger = {
+		tag = RAJ
+		has_cosmetic_tag = RAJ_UK
+		date > 1936.4.18
+		has_start_date < 1936.01.02
+	}
+	
+	immediate = {
+		hidden_effect = {
+			create_country_leader = {
+				name = "Lord Linlithgow"
+				desc = "POLITICS_LORD_LINLITHGOW_DESC"
+				picture = "gfx/leaders/RAJ/Portrait_British_Raj_Lord_Linlithgow.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					
+				}
+			}
+		}
+	}
+
+    option = {
+        name = bs_raj.1.a
+
+    }
+}

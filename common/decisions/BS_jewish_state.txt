@@ -1,0 +1,227 @@
+BS_jews_country_category = {
+	BS_jews_alaska = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_full_control_of_state = 463
+			has_war = no
+		}
+
+		visible = {
+			has_full_control_of_state = 463
+		}
+		
+		cost = 10
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				limit = {
+					tag = USA
+				}
+				ISR = {
+					add_state_core = 463
+					transfer_state = 463
+				}
+				USA = {
+					puppet = ISR
+				}
+				else = {
+					ISR = {
+						add_state_core = 463
+						transfer_state = 463
+					}
+				}
+			}
+			
+			hidden_effect = {
+			    set_global_flag = jewish_state_established
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	BS_jews_guiana = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_full_control_of_state = 687
+			has_full_control_of_state = 1032
+			has_war = no
+		}
+
+		visible = {
+			has_full_control_of_state = 687
+			has_full_control_of_state = 1032
+		}
+		
+		cost = 10
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				limit = {
+					tag = ENG
+				}
+				ISR = {
+					add_state_core = 687
+					add_state_core = 1032
+					transfer_state = 687
+					transfer_state = 1032
+				}
+				ENG = {
+					puppet = ISR
+				}
+				else = {
+					ISR = {
+						add_state_core = 687
+						add_state_core = 1032
+						transfer_state = 463
+						transfer_state = 1032
+					}
+				}
+			}
+			
+			hidden_effect = {
+			    set_global_flag = jewish_state_established
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	BS_jews_madagascar = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_full_control_of_state = 543
+			has_war = no
+		}
+
+		visible = {
+			tag = GER
+			GER = {
+				has_government = fascism
+			}
+			has_full_control_of_state = 543
+		}
+		
+		cost = 10
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			ISR = {
+				add_state_core = 543
+				transfer_state = 543
+			}
+			GER = {
+				puppet = ISR
+			}
+			
+			hidden_effect = {
+			    set_global_flag = jewish_state_established
+				set_global_flag = jewish_madagaskar
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	BS_jews_palestine = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_full_control_of_state = 454
+			has_full_control_of_state = 1117
+			has_full_control_of_state = 1118
+			has_war = no
+		}
+
+		visible = {
+			has_full_control_of_state = 454
+			has_full_control_of_state = 1117
+			has_full_control_of_state = 1118
+		}
+		
+		cost = 10
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = { hours = 6 id = bs.18 }
+			
+			hidden_effect = {
+			    set_global_flag = jewish_state_established
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 50
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	BS_jews_uganda = {
+
+		icon = generic_political_discourse
+
+		available = {
+			has_full_control_of_state = 548
+			has_war = no
+		}
+
+		visible = {
+			has_full_control_of_state = 548
+		}
+		
+		cost = 10
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				limit = {
+					tag = ENG
+				}
+				ISR = {
+					add_state_core = 548
+					transfer_state = 548
+				}
+				ENG = {
+					puppet = ISR
+				}
+				else = {
+					ISR = {
+						add_state_core = 548
+						transfer_state = 548
+					}
+				}
+			}
+			
+			hidden_effect = {
+			    set_global_flag = jewish_state_established
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

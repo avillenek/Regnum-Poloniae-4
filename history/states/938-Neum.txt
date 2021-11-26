@@ -1,0 +1,25 @@
+state={
+	id=938
+	name="STATE_938"
+
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 9
+
+		}
+                victory_points = {
+			13278 2 
+		}
+		add_core_of = YUG
+		add_core_of = CRO
+
+	}
+
+	provinces={
+		13278 
+	}
+	manpower=3271
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

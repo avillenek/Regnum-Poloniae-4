@@ -1,0 +1,724 @@
+### Treaties
+
+Latvia_Arms_Imports_category = {
+
+	LAT_Purchase_Infantry_Equipment_SOV = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = LAT
+		}
+
+		available = {
+			SOV = { surrender_progress < 0.2 }
+			has_government = communism
+		}
+		
+		target_trigger = {
+			FROM = { TAG = SOV }
+		}
+
+		cost = 60
+		
+		days_remove = 60
+		days_re_enable = 0
+
+		visible = {
+			OR = {
+				is_subject_of = SOV
+				is_in_faction_with = SOV
+			}
+			SOV = { has_government = communism }
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 200
+				producer = SOV
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_factories > 8
+			}
+		}
+	}
+	
+	LAT_Purchase_Artillery_SOV = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = LAT
+		}
+
+		available = {
+			SOV = { surrender_progress < 0.2 }
+			has_government = communism
+		}
+		
+		target_trigger = {
+			FROM = { TAG = SOV }
+		}
+
+		cost = 60
+		
+		days_remove = 120
+		days_re_enable = 0
+
+		visible = {
+			has_completed_focus = LAT_Foreign_Arms_Imports
+			OR = {
+				is_subject_of = SOV
+				is_in_faction_with = SOV
+			}
+			SOV = { has_government = communism }
+		}
+
+		complete_effect = {
+			if = {
+				limit = { SOV = { has_tech = artillery1 } }
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_2
+					amount = 20
+					producer = SOV
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 20
+					producer = SOV
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_factories > 10
+			}
+		}
+	}
+	
+	LAT_Purchase_Medium_Tanks_SOV = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = LAT
+		}
+
+		available = {
+			SOV = { surrender_progress < 0.2 }
+			SOV = { has_tech = improved_medium_tank }
+			has_government = communism
+		}
+		
+		target_trigger = {
+			FROM = { TAG = SOV }
+		}
+
+		cost = 120
+		
+		days_remove = 120
+		days_re_enable = 0
+
+		visible = {
+			has_completed_focus = LAT_Foreign_Arms_Imports
+			OR = {
+				is_subject_of = SOV
+				is_in_faction_with = SOV
+			}
+			SOV = { has_government = communism }
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = medium_tank_equipment_2
+				amount = 12
+				producer = SOV
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_factories > 12
+			}
+		}
+	}
+	
+	LAT_Purchase_Rifles_and_Machine_Guns_UK = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = LAT
+		}
+
+		available = {
+			ENG = { has_war = no }
+			OR = {
+				NOT = { has_completed_focus = LAT_Revanchism }
+				is_in_faction_with = ENG
+			}
+		}
+		
+		target_trigger = {
+			FROM = { TAG = ENG }
+		}
+
+		cost = 40
+		
+		days_remove = 90
+		days_re_enable = 0
+
+		visible = {
+			has_capitulated = no
+			ENG = { has_capitulated = no }
+			OR = {
+				is_subject = no
+				is_subject_of = ENG
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 80
+				producer = ENG
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_factories > 7
+			}
+		}
+	}
+	
+	LAT_Purchase_Antiquated_Rifles_POL = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = LAT
+		}
+
+		available = {
+			POL = { has_war = no }
+			custom_trigger_tooltip = {
+				tooltip = LAT_Support_Lithuania_on_Vilnius_tt
+				NOT = { has_country_flag = LAT_Support_Vilnius }
+			}
+			OR = {
+				NOT = { GER = { has_completed_focus = GER_demand_sudetenland } }
+				is_in_faction_with = POL
+			}
+			OR = {
+				NOT = { SOV = { has_completed_focus = SOV_claims_on_poland } }
+				is_in_faction_with = POL
+			}
+		}
+		
+		target_trigger = {
+			FROM = { TAG = POL }
+		}
+
+		cost = 40
+		
+		days_remove = 90
+		days_re_enable = 0
+
+		visible = {
+			has_completed_focus = LAT_Foreign_Arms_Imports
+			has_capitulated = no
+			POL = { has_capitulated = no }
+			OR = {
+				is_subject = no
+				is_subject_of = POL
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 100
+				producer = POL
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_factories > 5
+			}
+		}
+	}
+	
+	LAT_Purchase_Supplies_Generic = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = LAT
+		}
+
+		available = {
+			threat < 0.6
+		}
+		
+		target_trigger = {
+			FROM = { TAG = USA }
+		}
+
+		cost = 40
+		
+		days_remove = 90
+		days_re_enable = 0
+
+		visible = {
+			has_completed_focus = LAT_Foreign_Arms_Imports
+			has_capitulated = no
+			is_subject = no
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 10
+				producer = USA
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_factories > 7
+			}
+		}
+	}
+	
+	LAT_Purchase_Artillery_GER = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = LAT
+		}
+
+		available = {
+			GER = { has_war = no }
+			custom_trigger_tooltip = {
+				tooltip = LAT_Support_Memel_tt
+				NOT = { has_country_flag = LAT_Support_Memel }
+			}
+		}
+		
+		target_trigger = {
+			FROM = { TAG = GER }
+		}
+
+		cost = 40
+		
+		days_remove = 90
+		days_re_enable = 0
+
+		visible = {
+			has_completed_focus = LAT_Foreign_Arms_Imports
+			has_capitulated = no
+			GER = { has_capitulated = no }
+			OR = {
+				is_subject = no
+				is_subject_of = GER
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 10
+				producer = GER
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_factories > 8
+			}
+		}
+	}
+	
+	LAT_Purchase_Anti_Aircraft_Guns_POL = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = LAT
+		}
+
+		available = {
+			POL = { has_war = no }
+			custom_trigger_tooltip = {
+				tooltip = LAT_Support_Lithuania_on_Vilnius_tt
+				NOT = { has_country_flag = LAT_Support_Vilnius }
+			}
+			OR = {
+				NOT = { GER = { has_completed_focus = GER_demand_sudetenland } }
+				is_in_faction_with = POL
+			}
+			OR = {
+				NOT = { SOV = { has_completed_focus = SOV_claims_on_poland } }
+				is_in_faction_with = POL
+			}
+		}
+		
+		target_trigger = {
+			FROM = { TAG = POL }
+		}
+
+		cost = 40
+		
+		days_remove = 90
+		days_re_enable = 0
+
+		visible = {
+			has_completed_focus = LAT_Foreign_Arms_Imports
+			has_capitulated = no
+			POL = { has_capitulated = no }
+			OR = {
+				is_subject = no
+				is_subject_of = POL
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment_1
+				amount = 10
+				producer = POL
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_factories > 6
+			}
+		}
+	}
+	
+	LAT_Purchase_Tanks_ITA = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = LAT
+		}
+
+		available = {
+			ITA = { has_war = no }
+			date < 1941.1.1
+		}
+		
+		target_trigger = {
+			FROM = { TAG = ITA }
+		}
+
+		cost = 40
+		
+		days_remove = 90
+		days_re_enable = 0
+
+		visible = {
+			has_completed_focus = LAT_Foreign_Arms_Imports
+			has_capitulated = no
+			ITA = { has_capitulated = no }
+			OR = {
+				is_subject = no
+				is_subject_of = ITA
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = gw_tank_equipment
+				amount = 6
+				producer = ITA
+			}
+		}
+
+		ai_will_do = {
+			factor = 12
+			modifier = {
+				factor = 0
+				num_of_factories > 8
+			}
+		}
+	}
+	
+	LAT_Purchase_Tanks_SOV = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = LAT
+		}
+
+		available = {
+			date < 1945.1.1
+			OR = {
+				is_in_faction_with = SOV
+				is_subject_of = SOV
+				AND = {
+					SOV = { has_war = no }
+					NOT = { SOV = { has_completed_focus = SOV_claims_on_baltic } }
+				}
+			}
+		}
+		
+		target_trigger = {
+			FROM = { TAG = SOV }
+		}
+
+		cost = 60
+		
+		days_remove = 180
+		days_re_enable = 0
+
+		visible = {
+			has_completed_focus = LAT_Foreign_Arms_Imports
+			has_capitulated = no
+			SOV = { has_capitulated = no }
+			SOV = { has_government = communism }
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_1
+				amount = 6
+				producer = SOV
+			}
+		}
+
+		ai_will_do = {
+			factor = 7
+			modifier = {
+				factor = 0
+				num_of_factories > 9
+			}
+		}
+	}
+	
+	LAT_Purchase_Interwar_Fighters_UK = {
+
+		icon = generic_air
+
+		allowed = {
+			original_tag = LAT
+		}
+
+		available = {
+			date < 1941.1.1
+			ENG = { has_war = no }
+			OR = {
+				NOT = { has_completed_focus = LAT_Revanchism }
+				is_in_faction_with = ENG
+			}
+		}
+		
+		target_trigger = {
+			FROM = { TAG = ENG }
+		}
+
+		cost = 60
+		
+		days_remove = 90
+		days_re_enable = 0
+
+		visible = {
+			has_completed_focus = LAT_The_Aviation_Fund
+			has_capitulated = no
+			ENG = { has_capitulated = no }
+			OR = {
+				is_subject = no
+				is_subject_of = ENG
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 5
+				producer = ENG
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_factories > 9
+			}
+		}
+	}
+	
+	LAT_Purchase_Modern_Fighters_POL = {
+
+		icon = generic_air
+
+		allowed = {
+			original_tag = LAT
+		}
+
+		available = {
+			date < 1941.1.1
+			POL = { has_war = no }
+			custom_trigger_tooltip = {
+				tooltip = LAT_Support_Lithuania_on_Vilnius_tt
+				NOT = { has_country_flag = LAT_Support_Vilnius }
+			}
+			OR = {
+				NOT = { GER = { has_completed_focus = GER_demand_sudetenland } }
+				is_in_faction_with = POL
+			}
+			OR = {
+				NOT = { SOV = { has_completed_focus = SOV_claims_on_poland } }
+				is_in_faction_with = POL
+			}
+		}
+		
+		target_trigger = {
+			FROM = { TAG = POL }
+		}
+
+		cost = 100
+		
+		days_remove = 90
+		days_re_enable = 0
+
+		visible = {
+			has_completed_focus = LAT_The_Aviation_Fund
+			has_capitulated = no
+			POL = { has_capitulated = no }
+			OR = {
+				is_subject = no
+				is_subject_of = POL
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_1
+				amount = 5
+				producer = POL
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_factories > 9
+			}
+		}
+	}
+
+}
+
+foreign_politics = {
+	
+	LAT_Support_Lithuania_on_Memel = {
+
+		icon = border_war
+
+		allowed = {
+			original_tag = LAT
+		}
+
+		available = {
+			is_subject = no
+			has_capitulated = no
+			is_in_faction_with = LIT
+			188 = { owner = { tag = LIT } }
+			NOT = { GER = { has_completed_focus = GER_demand_memel } }
+		}
+
+		visible = {
+			is_subject = no
+			has_capitulated = no
+			is_in_faction_with = LIT
+			is_faction_leader = yes
+			has_idea = LAT_Baltic_Entente_Member
+			LIT = { has_capitulated = no }
+			NOT = { has_country_flag = LAT_Support_Memel }
+			NOT = { has_war_with = GER }
+			NOT = { LIT = { has_war_with = GER } }
+			188 = { owner = { tag = LIT } }
+			NOT = { GER = { has_completed_focus = GER_demand_memel } }
+		}
+
+		complete_effect = {
+			set_country_flag = LAT_Support_Memel
+			custom_effect_tooltip = Support_Lithuania_tt
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	LAT_Support_Lithuania_on_Vilnius = {
+
+		icon = border_war
+
+		allowed = {
+			original_tag = LAT
+		}
+
+		available = {
+			is_subject = no
+			has_capitulated = no
+			is_in_faction_with = LIT
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			is_subject = no
+			has_capitulated = no
+			is_in_faction_with = LIT
+			is_faction_leader = yes
+			has_idea = LAT_Baltic_Entente_Member
+			LIT = { has_capitulated = no }
+			NOT = { has_country_flag = LAT_Support_Vilnius }
+			NOT = { has_war_with = POL }
+			NOT = { LIT = { has_war_with = POL } }
+		}
+
+		complete_effect = {
+			set_country_flag = LAT_Support_Vilnius
+			custom_effect_tooltip = Support_Lithuania_tt
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

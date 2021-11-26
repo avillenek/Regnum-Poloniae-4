@@ -1,0 +1,892 @@
+spriteTypes = {	
+
+	#MOD POLAND & DANZIG
+	
+	spriteType = {
+		name = "GFX_idea_DOU_Directorate_Drift"
+		texturefile = "gfx/interface/ideas/idea_DOU_Directorate_Drift.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Intelligence_Service0"
+		texturefile = "gfx/interface/ideas/idea_POL_Intelligence_Service0.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_POL_regency_council_focus2"
+		texturefile = "gfx/interface/ideas/POL_regency_council_focus2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_regency_council"
+		texturefile = "gfx/interface/ideas/idea_POL_regency_council.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_regency_council_focus2"
+		texturefile = "gfx/interface/ideas/idea_POL_regency_council_focus2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Intelligence_Service1"
+		texturefile = "gfx/interface/ideas/idea_POL_Intelligence_Service1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Intelligence_Service2"
+		texturefile = "gfx/interface/ideas/idea_POL_Intelligence_Service2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Intelligence_Service3"
+		texturefile = "gfx/interface/ideas/idea_POL_Intelligence_Service3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Sanacja_Government"
+		texturefile = "gfx/interface/ideas/idea_POL_Sanacja_Government.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_The_Great_Depression"
+		texturefile = "gfx/interface/ideas/idea_POL_The_Great_Depression.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_POL_Rural_Unemployment"
+		texturefile = "gfx/interface/ideas/idea_POL_Rural_Unemployment.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Synthetic_Rubber"
+		texturefile = "gfx/interface/ideas/idea_Synthetic_Rubber.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_DWL"
+		texturefile = "gfx/interface/ideas/idea_DWL.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LOT"
+		texturefile = "gfx/interface/ideas/idea_LOT.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Wojciech_Zaleski"
+		texturefile = "gfx/interface/ideas/idea_Wojciech_Zaleski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Kordian_Zamorski"
+		texturefile = "gfx/interface/ideas/idea_Kordian_Zamorski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Ignacy_Paderewski"
+		texturefile = "gfx/interface/ideas/idea_Ignacy_Paderewski.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_idea_Wladyslaw_Sikorski"
+		texturefile = "gfx/interface/ideas/idea_Wladyslaw_Sikorski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Stanislaw_Piasecki"
+		texturefile = "gfx/interface/ideas/idea_Stanislaw_Piasecki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Wojciech_Zaleski"
+		texturefile = "gfx/interface/ideas/idea_Wojciech_Zaleski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Wojciech_Korfanty"
+		texturefile = "gfx/interface/ideas/idea_Wojciech_Korfanty.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Wladyslaw_Raczkiewicz"
+		texturefile = "gfx/interface/ideas/idea_Wladyslaw_Raczkiewicz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Janusz_Radziwill"
+		texturefile = "gfx/interface/ideas/idea_Janusz_Radziwill.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Boleslaw_Wieniawa_Dlugoszowski"
+		texturefile = "gfx/interface/ideas/idea_Boleslaw_Wieniawa_Dlugoszowski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Tadeusz_Schaetzel"
+		texturefile = "gfx/interface/ideas/idea_Tadeusz_Schaetzel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Stanislaw_Kopanski"
+		texturefile = "gfx/interface/ideas/idea_Stanislaw_Kopanski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Mieczyslaw_Boruta_Spiechowicz"
+		texturefile = "gfx/interface/ideas/idea_Mieczyslaw_Boruta_Spiechowicz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Michal_Zymierski"
+		texturefile = "gfx/interface/ideas/idea_Michal_Zymierski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Marian_Januszajtis_Zegota"
+		texturefile = "gfx/interface/ideas/idea_Marian_Januszajtis_Zegota.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Wiktor_Thommee"
+		texturefile = "gfx/interface/ideas/idea_Wiktor_Thommee.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Prometheism"
+		texturefile = "gfx/interface/ideas/idea_POL_Prometheism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_PZInz"
+		texturefile = "gfx/interface/ideas/idea_PZInz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_KSUS"
+		texturefile = "gfx/interface/ideas/idea_KSUS.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_HSW"
+		texturefile = "gfx/interface/ideas/idea_HSW.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Debica_SA"
+		texturefile = "gfx/interface/ideas/idea_Debica_SA.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Boleslaw_Piasecki"
+		texturefile = "gfx/interface/ideas/idea_Boleslaw_Piasecki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Mieczyslaw_Dabkowski"
+		texturefile = "gfx/interface/ideas/idea_Mieczyslaw_Dabkowski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Stanislaw_Glabinski"
+		texturefile = "gfx/interface/ideas/idea_Stanislaw_Glabinski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Starachowice_Works"
+		texturefile = "gfx/interface/ideas/idea_Starachowice_Works.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_H_Cegielski"
+		texturefile = "gfx/interface/ideas/idea_H_Cegielski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_H_Cegielski"
+		texturefile = "gfx/interface/ideas/idea_H_Cegielski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Stanislaw_Ulam"
+		texturefile = "gfx/interface/ideas/idea_Stanislaw_Ulam.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Josef_Kapciuk"
+		texturefile = "gfx/interface/ideas/idea_Josef_Kapciuk.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Waclaw_Stachiewicz"
+		texturefile = "gfx/interface/ideas/idea_Waclaw_Stachiewicz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Mieczyslaw_Dabkowski"
+		texturefile = "gfx/interface/ideas/idea_Mieczyslaw_Dabkowski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Ignacy_Matuszewski"
+		texturefile = "gfx/interface/ideas/idea_Ignacy_Matuszewski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Tadeusz_Malinowski"
+		texturefile = "gfx/interface/ideas/idea_Tadeusz_Malinowski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Franciszek_Skibinski"
+		texturefile = "gfx/interface/ideas/idea_Franciszek_Skibinski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Tadeusz_Kasprzycki"
+		texturefile = "gfx/interface/ideas/idea_Tadeusz_Kasprzycki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Tadeusz_Komorowski"
+		texturefile = "gfx/interface/ideas/idea_Tadeusz_Komorowski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Xawery_Czernicki"
+		texturefile = "gfx/interface/ideas/idea_Xawery_Czernicki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Aleksander_Szychowski"
+		texturefile = "gfx/interface/ideas/idea_Aleksander_Szychowski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Bronislaw_Prugar_Ketling"
+		texturefile = "gfx/interface/ideas/idea_Bronislaw_Prugar_Ketling.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Stanislaw_Pawluc"
+		texturefile = "gfx/interface/ideas/idea_Stanislaw_Pawluc.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Marian_Rejewski"
+		texturefile = "gfx/interface/ideas/idea_Marian_Rejewski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Witold_Pilecki"
+		texturefile = "gfx/interface/ideas/idea_Witold_Pilecki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Jozef_Unrug"
+		texturefile = "gfx/interface/ideas/idea_Jozef_Unrug.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Wilhelm_Orlik_Ruckemann"
+		texturefile = "gfx/interface/ideas/idea_Wilhelm_Orlik_Ruckemann.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Jerzy_Swirski"
+		texturefile = "gfx/interface/ideas/idea_Jerzy_Swirski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Wlodzimierz_Steyer"
+		texturefile = "gfx/interface/ideas/idea_Wlodzimierz_Steyer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Felicjan_Skladkowski"
+		texturefile = "gfx/interface/ideas/idea_Felicjan_Skladkowski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Leon_Kozlowski"
+		texturefile = "gfx/interface/ideas/idea_Leon_Kozlowski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Adam_Koc"
+		texturefile = "gfx/interface/ideas/idea_Adam_Koc.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Aleksander_Prystor"
+		texturefile = "gfx/interface/ideas/idea_Aleksander_Prystor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Henryk_Strasburger"
+		texturefile = "gfx/interface/ideas/idea_Henryk_Strasburger.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Jan_Kwapinski"
+		texturefile = "gfx/interface/ideas/idea_Jan_Kwapinski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Adam_Ciolkosz"
+		texturefile = "gfx/interface/ideas/idea_Adam_Ciolkosz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Jozef_Cyrankiewicz"
+		texturefile = "gfx/interface/ideas/idea_Jozef_Cyrankiewicz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Edward_Osobka_Morawski"
+		texturefile = "gfx/interface/ideas/idea_Edward_Osobka_Morawski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Edward_Gierek"
+		texturefile = "gfx/interface/ideas/idea_Edward_Gierek.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Wojciech_Kwasieborski"
+		texturefile = "gfx/interface/ideas/idea_Wojciech_Kwasieborski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Marian_Zyndram_Koscialkowski"
+		texturefile = "gfx/interface/ideas/idea_Marian_Zyndram_Koscialkowski.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Stefan_Mossor"
+		texturefile = "gfx/interface/ideas/idea_Stefan_Mossor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Mariusz_Zaruski"
+		texturefile = "gfx/interface/ideas/idea_Mariusz_Zaruski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Tadeusz_Bielecki"
+		texturefile = "gfx/interface/ideas/idea_Tadeusz_Bielecki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Zygmunt_Zulawski"
+		texturefile = "gfx/interface/ideas/idea_Zygmunt_Zulawski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Maciej_Rataj"
+		texturefile = "gfx/interface/ideas/idea_Maciej_Rataj.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Zygmunt_Zaremba"
+		texturefile = "gfx/interface/ideas/idea_Zygmunt_Zaremba.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Adam_Doboszynski"
+		texturefile = "gfx/interface/ideas/idea_Adam_Doboszynski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Adam_Ronikier"
+		texturefile = "gfx/interface/ideas/idea_Adam_Ronikier.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Stefan_Banach"
+		texturefile = "gfx/interface/ideas/idea_Stefan_Banach.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Kazimierz_Bartel"
+		texturefile = "gfx/interface/ideas/idea_Kazimierz_Bartel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Wladyslaw_Studnicki"
+		texturefile = "gfx/interface/ideas/idea_Wladyslaw_Studnicki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_cardinal_Adam_Sapieha"
+		texturefile = "gfx/interface/ideas/idea_cardinal_Adam_Sapieha.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Janusz_Jedrzejewicz"
+		texturefile = "gfx/interface/ideas/idea_Janusz_Jedrzejewicz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_August_Zaleski"
+		texturefile = "gfx/interface/ideas/idea_August_Zaleski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Aleksander_Osinski"
+		texturefile = "gfx/interface/ideas/idea_Aleksander_Osinski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Leon_Berbecki"
+		texturefile = "gfx/interface/ideas/idea_Leon_Berbecki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Juliusz_Ulrych"
+		texturefile = "gfx/interface/ideas/idea_Juliusz_Ulrych.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Wanda_Wasilewska"
+		texturefile = "gfx/interface/ideas/idea_Wanda_Wasilewska.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Jan_Pilsudski"
+		texturefile = "gfx/interface/ideas/idea_Jan_Pilsudski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Ursus"
+		texturefile = "gfx/interface/ideas/idea_Ursus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Polish_Aero_Club"
+		texturefile = "gfx/interface/ideas/idea_Polish_Aero_Club.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LWD"
+		texturefile = "gfx/interface/ideas/idea_LWD.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LWS"
+		texturefile = "gfx/interface/ideas/idea_LWS.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Polski_Fiat"
+		texturefile = "gfx/interface/ideas/idea_Polski_Fiat.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_stocznia_gdynia"
+		texturefile = "gfx/interface/ideas/idea_Stocznia_Gdynia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Huta_Zgoda"
+		texturefile = "gfx/interface/ideas/idea_Huta_Zgoda.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_stocznia_gdanska"
+		texturefile = "gfx/interface/ideas/idea_stocznia_gdanska.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Cult_Marshal_Portrait"
+		texturefile = "gfx/interface/ideas/idea_Cult_Marshal_Portrait.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Plan_W"
+		texturefile = "gfx/interface/ideas/idea_Plan_W.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Colonels_Regime"
+		texturefile = "gfx/interface/ideas/idea_Colonels_Regime.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_divided_nation"
+		texturefile = "gfx/interface/ideas/idea_POL_divided_nation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Workers_Brigades"
+		texturefile = "gfx/interface/ideas/idea_POL_Workers_Brigades.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_three_year_plan"
+		texturefile = "gfx/interface/ideas/idea_POL_three_year_plan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Stanislaw_Ujejski"
+		texturefile = "gfx/interface/ideas/idea_Stanislaw_Ujejski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Stanislaw_Ujejski_exiled"
+		texturefile = "gfx/interface/ideas/idea_Stanislaw_Ujejski_exiled.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Zaklady_Azotowe"
+		texturefile = "gfx/interface/ideas/idea_POL_Zaklady_Azotowe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_strict_equipment_regulations"
+		texturefile = "gfx/interface/ideas/idea_POL_strict_equipment_regulations.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SeKOR"
+		texturefile = "gfx/interface/ideas/idea_SeKOR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Rydz_Smigly"
+		texturefile = "gfx/interface/ideas/idea_Rydz_Smigly.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Kazimierz_Puzak"
+		texturefile = "gfx/interface/ideas/idea_Kazimierz_Puzak.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Jedrzej_Moraczewski"
+		texturefile = "gfx/interface/ideas/idea_Jedrzej_Moraczewski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Jan_Kruszewski"
+		texturefile = "gfx/interface/ideas/idea_Jan_Kruszewski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Stanislaw_Haller"
+		texturefile = "gfx/interface/ideas/idea_Stanislaw_Haller.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Kazimierz_Schally"
+		texturefile = "gfx/interface/ideas/idea_Kazimierz_Schally.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Mieczyslaw_Norwid_Neugebauer"
+		texturefile = "gfx/interface/ideas/idea_Mieczyslaw_Norwid_Neugebauer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Stanislaw_Grabski"
+		texturefile = "gfx/interface/ideas/idea_Stanislaw_Grabski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Mieczyslaw_Kulinski"
+		texturefile = "gfx/interface/ideas/idea_Mieczyslaw_Kulinski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Adolf_Nowaczynski"
+		texturefile = "gfx/interface/ideas/idea_Adolf_Nowaczynski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Adam_Poszwinski"
+		texturefile = "gfx/interface/ideas/idea_Adam_Poszwinski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Eustachy_Sapieha"
+		texturefile = "gfx/interface/ideas/idea_Eustachy_Sapieha.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Marian_Spychalski"
+		texturefile = "gfx/interface/ideas/idea_Marian_Spychalski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Roman_Rybarski"
+		texturefile = "gfx/interface/ideas/idea_Roman_Rybarski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Marian_Kukiel"
+		texturefile = "gfx/interface/ideas/idea_Marian_Kukiel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Zygmunt_Modzelewski"
+		texturefile = "gfx/interface/ideas/idea_Zygmunt_Modzelewski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Adam_Mohuczy"
+		texturefile = "gfx/interface/ideas/idea_Adam_Mohuczy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Tadeusz_Klimecki"
+		texturefile = "gfx/interface/ideas/idea_Tadeusz_Klimecki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Rudolf_Gundlach"
+		texturefile = "gfx/interface/ideas/idea_Rudolf_Gundlach.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Wladyslaw_Bortnowski"
+		texturefile = "gfx/interface/ideas/idea_Wladyslaw_Bortnowski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Polbryt"
+		texturefile = "gfx/interface/ideas/idea_Polbryt.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Jerzy_Rutkowski"
+		texturefile = "gfx/interface/ideas/idea_Jerzy_Rutkowski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_recolor_kazimierz_sosnkowski"
+		texturefile = "gfx/interface/ideas/idea_recolor_kazimierz_sosnkowski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SEPEWE"
+		texturefile = "gfx/interface/ideas/idea_SEPEWE.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_British_help"
+		texturefile = "gfx/interface/ideas/idea_POL_British_help.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_british_monarchy"
+		texturefile = "gfx/interface/ideas/idea_POL_british_monarchy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_POL_British_help_economy"
+		texturefile = "gfx/interface/ideas/POL_British_help_economy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Ludwig_Mises"
+		texturefile = "gfx/interface/ideas/idea_Ludwig_Mises.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Adam_Heydel"
+		texturefile = "gfx/interface/ideas/idea_Adam_Heydel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Sanacja_Government5"
+		texturefile = "gfx/interface/ideas/idea_POL_Sanacja_Government5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Walery_Slawek"
+		texturefile = "gfx/interface/ideas/idea_Walery_Slawek.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Sanacja_Government4"
+		texturefile = "gfx/interface/ideas/idea_POL_Sanacja_Government4.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_idea_Tommy_Lascelles"
+		texturefile = "gfx/interface/ideas/idea_Tommy_Lascelles.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_August_Hlond"
+		texturefile = "gfx/interface/ideas/idea_August_Hlond.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Perfect_Kingdom"
+		texturefile = "gfx/interface/ideas/idea_POL_Perfect_Kingdom.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_ustawa_krolika"
+		texturefile = "gfx/interface/ideas/idea_POL_ustawa_krolika.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_panstwowe_przedsiebiorstwa"
+		texturefile = "gfx/interface/ideas/idea_POL_panstwowe_przedsiebiorstwa.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_emeryturki"
+		texturefile = "gfx/interface/ideas/idea_POL_emeryturki.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Wielkie_BUM"
+		texturefile = "gfx/interface/ideas/idea_POL_Wielkie_BUM.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Lithuanian_Problem"
+		texturefile = "gfx/interface/ideas/idea_POL_Lithuanian_Problem.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_Ukrainian_Problem"
+		texturefile = "gfx/interface/ideas/idea_POL_Ukrainian_Problem.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_send_attache"
+		texturefile = "gfx/interface/ideas/idea_send_attache.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_hun_secret_rearmament_result"
+		texturefile = "gfx/interface/ideas/idea_hun_secret_rearmament_result.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_man_five_year_plan_air"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_air.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Austria_Hungary"
+		texturefile = "gfx/interface/ideas/idea_Austria_Hungary.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Victoria_Louise"
+		texturefile = "gfx/interface/ideas/idea_Victoria_Louise.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_german_industry"
+		texturefile = "gfx/interface/ideas/idea_POL_german_industry.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_pol_revive_the_kaiserreich"
+		texturefile = "gfx/interface/ideas/idea_pol_revive_the_kaiserreich.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_advisors_germany1"
+		texturefile = "gfx/interface/ideas/idea_advisors_germany1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_german_ownership"
+		texturefile = "gfx/interface/ideas/idea_german_ownership.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_man_five_year_plan_tank"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_tank.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CZE_general_school"
+		texturefile = "gfx/interface/ideas/CZE_general_school.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_cze_tank"
+		texturefile = "gfx/interface/ideas/idea_cze_tank.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Izabella_Radziwillowna"
+		texturefile = "gfx/interface/ideas/idea_Izabella_Radziwillowna.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_POL_planning_school"
+		texturefile = "gfx/interface/ideas/POL_planning_school.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_pol_napoleon"
+		texturefile = "gfx/interface/ideas/idea_pol_napoleon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_pol_statspolitiet"
+		texturefile = "gfx/interface/ideas/idea_pol_statspolitiet.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_pol_caved_to_the_poland"
+		texturefile = "gfx/interface/ideas/idea_pol_caved_to_the_poland.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_pol_romanow_tanks"
+		texturefile = "gfx/interface/ideas/idea_pol_romanow_tanks.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_orthodox_church"
+		texturefile = "gfx/interface/ideas/idea_orthodox_church.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_pol_katolicyzm"
+		texturefile = "gfx/interface/ideas/idea_pol_katolicyzm.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_romanow_good_idea"
+		texturefile = "gfx/interface/ideas/idea_romanow_good_idea.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Jozef_Haller3"
+		texturefile = "gfx/interface/ideas/idea_Jozef_Haller3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_pol_caved_to_the_poland"
+		texturefile = "gfx/interface/ideas/idea_pol_caved_to_the_poland.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_pol_caved_to_the_poland"
+		texturefile = "gfx/interface/ideas/idea_pol_caved_to_the_poland.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ministers_mackiewicz"
+		texturefile = "gfx/interface/ideas/ministers_mackiewicz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_rozwalony_wschod"
+		texturefile = "gfx/interface/ideas/idea_rozwalony_wschod.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LIT_cultural_split_4"
+		texturefile = "gfx/interface/ideas/LIT_cultural_split_4.dds"
+	}
+}

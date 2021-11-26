@@ -1,0 +1,111 @@
+﻿l_polish:
+
+ #Vanilla Fix
+ form_country_oman_required_states_tt:0 "Controls all §YOmani§! states."
+ form_country_oman_coring_states_tt:0 "Gain cores on all §YOmani§! states.\n"
+ form_country_yemen_required_states_tt:0 "Controls all §YYemeni§! states."
+ form_country_yemen_coring_states_tt:0 "Gain cores on all §YYemeni§! states.\n"
+ 
+ GER_reichskommissariat_moskowien:0 "Reichskommissariat Moskowien"
+ GER_reichskommissariat_kaukasus:0 "Reichskommissariat Kaukasus"
+ GER_reichsprotektorat_bohmen_und_mahren:0 "Reichsprotektorat Böhmen-Mähren"
+ GER_generalgouvernement:0 "Generalgouvernement"
+ 
+ CHI_communist_infiltration_state_1027:0 " [1027.GetName][1027.GetCommaIfMoreInfiltration]"
+
+ #Reichsprotektorat
+ GER_form_the_reichsprotektorat:0 "Form the Reichsprotektorat"
+ GER_form_the_reichsprotektorat_desc:0 "To improve use of local resources, industry, and manpower, we should look into establishing quasi-autonomous subject government in our conquered areas."
+ GER_reichsprotektorat:0 "Reichsprotektorat"
+ GER_reichsprotektorat_desc:0 "Enables creation of certain Reichsprotektorat subjects out of controlled territory."
+ 
+ #Burgenland Question
+ HUN_burgenland_question:0 "Request Burgenland from Germany"
+ HUN_burgenland_question_desc:0 "Burgenland is our rightful territory. We were made to lose this region in 1921 through a dubious general election. But now that Germany controls this region, perhaps they could be persuaded to give it to us..."
+ 
+ #Separate Burma
+ BS_colony_politic_category:0 "Separate Burma"
+ BS_colony_politic_category_desc:0 "We can grant a new constitution calling for a fully elected assembly, with many powers given to the Burmese."
+ ENG_separate_burma:0 "Separate Burma from India"
+
+ #All
+ BS_request_territoy_category:0 "Request territory"
+ 
+ #Operation Achse
+ GER_operation_achse_category:0 "Operation Achse"
+ GER_operation_achse_category_desc:0 "Under support of King Victor Emmanuel III, Italians overthrew and arrested Mussolini. Furthermore, they have left us and have approached the Allies. We need to take action to resolve this situation."
+ GER_operation_achse:0 "Operation Achse"
+ 
+ #New order in France
+ GER_new_order_in_france_category:0 "New order in France"
+ GER_new_order_in_france_category_desc:0 "We have conquered whole of France! As they were a huge threat to us, perhaps balkanizing France will be helpful for controlling them."
+ GER_ss_staat_burgund:0 "Form the SS-Staat Burgund"
+ GER_ss_staat_burgund_desc:0 "Heinrich Himmler, leader of the Schutzstaffel, has proposed forming SS-Staat Burgund. Heinrich Himmler has said 'Burgundy is an ancient economic and cultural center, and would be easier to control separate from France.'"
+ GER_unabhangiger_staat_bretagne:0 "Form the Protektorat Bretagne"
+ GER_unabhangiger_staat_bretagne_desc:0 "Our Führer, Adolf Hitler has proposed an independent Brittan state. He had mentioned this intention on occasion to his general staff, and finalized and implemented these plans."
+ 
+ #New name of cities
+ BS_new_name_of_cities_category:0 "New Names for our Cities"
+ BS_new_name_of_cities_category_desc:0 "Some cities which we have occupied have politically-significant names given by their previous controllers. Now that these cities are in our hands, we can give the cities new, less-contentious names."
+ BS_new_name_of_leningrad:0 "New name for [195.GetName]"
+ BS_new_name_of_stalingrad:0 "New name for [217.GetName]"
+ 
+ #North German Confederation
+ form_north_german_confederation_category:0 "Revive the North German Confederation"
+ form_north_german_confederation_category_desc:0 "Reunite North Germany and revive the North German Confederation."
+ form_north_german_confederation:0 "Revive the North German Confederation"
+ 
+ #Invade Monaco
+ BS_invade_monaco_category:0 "Invade Monaco"
+ BS_invade_monaco_category_desc:0 "As a very tiny country, Monaco is surrounded by our troops. Some people have started saying they have potential to became a base for our enemies. They are very weak so we can defeat them easily and nullify the threat."
+ BS_invade_monaco:0 "Invade Monaco"
+ 
+ #Form Confederate States
+ form_confederate_states_category:0 "Glory of the Confederate States"
+ form_confederate_states_category_desc:0 "Our glorious country, Confederate States of America, will be reborn, and we will never lose again."
+ form_confederate_states:0 "Glory of the Confederate States"
+ 
+ #Transfer territories
+ BS_transfer_territories_category:0 "Transfer territories"
+ BS_transfer_territories_category_desc:0 "We don't have to keep own all occupied territories. rather cede the lands to our allies or puppets could be better."
+ GER_eastern_poland:0 "Eastern Poland to Generalgouvernement"
+ GER_transnistria_romania:0 "Transnistria to Romania"
+ GER_east_karelia_filand:0 "East Karelia to Finland"
+
+ #Jewish State 
+ BS_jews_country_category:0 "Question of Jewish state"
+ BS_jews_country_category_desc:0 "Past thousands years, many countries and historians have trying to establish Jewish state. Jewish will be helpful for developing undeveloped region. Natives might be  opposition to establishing Jewish state in their lands. However after do this, they will finger at each other, not us. which place is suitable?"
+ BS_jews_alaska:0 "Alaska"
+ BS_jews_guiana:0 "Guiana"
+ BS_jews_madagascar:0 "Madagascar" #Germany only
+ BS_jews_palestine:0 "Palestine"
+ BS_jews_uganda:0 "Uganda"
+
+ #Mittelafrika
+ GER_mittelafrika_plan_category:0 "Mittelafrika"
+ GER_mittelafrika_plan_category_desc:0 "Before the Great War, we had imagine the huge African colony which across Kameroon to Tanganyika. Although we had to give up because we lost, though now we control most of Africa. It is time to accomplish our dream."
+ GER_form_the_mittelafrika:0 "Form the Mittelafrika"
+ 
+ #German American Bund
+ GER_german_american_bund_category:0 "German American Bund"
+ GER_german_american_bund_category_desc:0 "German American Bund is pro-Nazi organization established in 1936 to succeed Friends of New Germany. We may could use them as leverage to conquer America."
+ GER_german_american_bund:0 "Support German American Bund"
+ bund_militia_raise:0 "§Y5 Bund Militia will be raise.§!"
+ 
+ #German Empire Nano states; Nordschleswig, Eupen-Malmedy, Hlucin
+ BS_german_empire_territory_cateogry:0 "Reintegrate Old Legacy"
+ BS_integrate_eupen:0 "Reintegrate Eupen-Malmedy"
+ BS_integrate_schleswig:0 "Reintegrate Nordschleswig"
+ BS_integrate_hlucin:0 "Reintegrate Hultschin"
+ 
+ #Demand Old territory of German Empire
+ BS_demand_old_empire_territory_category:0 "Territories of the Empire"
+ BS_demand_eupen:0 "Demand Eupen-Malmedy"
+ BS_demand_schleswig:0 "Demand Nordshleswig"
+ BS_demand_hlucin:0 "Demand Hultschin"
+ 
+ #Golden Gate Bridge
+ BS_golden_gate_bridge_category:0 "Golden Gate Bridge"
+ BS_golden_gate_bridge_category_desc:0 "Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide strait connecting San Francisco Bay and the Pacific Ocean. The structure links the U.S. city of San Francisco, California-the northern tip of the San Francisco Peninsula-to Marin County, carrying both U.S. Route 101 and California State Route 1 across the strait."
+ BS_golden_gate_bridge:0 "Construction of the Bridge"
+ golden_gate_bridge_tt:0 "§GYou'll able to cross the Golden Gate Strait.§!" 

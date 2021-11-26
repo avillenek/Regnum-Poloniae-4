@@ -1,0 +1,137 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_estonian_defense_league"
+		texturefile = "gfx/interface/ideas/idea_estonian_defense_league.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LIT_Riflemans_Union"
+		texturefile = "gfx/interface/ideas/idea_LIT_Riflemans_Union.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LAT_Aizsargi"
+		texturefile = "gfx/interface/ideas/idea_LAT_Aizsargi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_lat_marginalized_baltic_germans"
+		texturefile = "gfx/interface/ideas/idea_lat_marginalized_baltic_germans.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_LAT_Bellaccord_Electro"
+		texturefile = "gfx/interface/ideas/idea_LAT_Bellaccord_Electro.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_RVR_Fenikss"
+		texturefile = "gfx/interface/ideas/idea_RVR_Fenikss.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Sellier_Bellot"
+		texturefile = "gfx/interface/ideas/idea_Sellier_Bellot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_LAT_VEF"
+		texturefile = "gfx/interface/ideas/idea_LAT_VEF.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_LAT_VEF_aviation_division"
+		texturefile = "gfx/interface/ideas/idea_LAT_VEF_aviation_division.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_LAT_RRR"
+		texturefile = "gfx/interface/ideas/idea_LAT_RRR.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LAT_ford_vairogs"
+		texturefile = "gfx/interface/ideas/idea_LAT_ford_vairogs.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LAT_LKOD"
+		texturefile = "gfx/interface/ideas/idea_LAT_LKOD.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_idea_LAT_Vilis_Lacis"
+		texturefile = "gfx/interface/ideas/idea_vilis_lacis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Janis_Kaminskis"
+		texturefile = "gfx/interface/ideas/idea_janis_kaminskis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Vilhelms_Munters"
+		texturefile = "gfx/interface/ideas/idea_vilhelms_munters.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Leonids_Breikss"
+		texturefile = "gfx/interface/ideas/idea_leonids_breikss.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Gustavs_Zemgals"
+		texturefile = "gfx/interface/ideas/idea_gustavs_zemgals.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Janis_Kalnberzins"
+		texturefile = "gfx/interface/ideas/idea_janis_kalnberzins.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Janis_Balodis"
+		texturefile = "gfx/interface/ideas/idea_janis_balodis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Herberts_Cukurs"
+		texturefile = "gfx/interface/ideas/idea_herberts_cukurs.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Janis_Indans"
+		texturefile = "gfx/interface/ideas/idea_janis_indans.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Arhibalds_fon_Keizerlings"
+		texturefile = "gfx/interface/ideas/idea_arhibalds_fon_keizerlings.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Krisjanis_Berkis_1"
+		texturefile = "gfx/interface/ideas/idea_krisjanis_berkis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Krisjanis_Berkis_2"
+		texturefile = "gfx/interface/ideas/idea_krisjanis_berkis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Martins_Hartmanis"
+		texturefile = "gfx/interface/ideas/idea_martins_hartmanis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Fricis_Celmins"
+		texturefile = "gfx/interface/ideas/idea_fricis_celmins.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Rudolfs_Kocins"
+		texturefile = "gfx/interface/ideas/idea_rudolfs_kocins.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Konstantins_Cakste"
+		texturefile = "gfx/interface/ideas/idea_konstantins_cakste.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Teodors_Spade"
+		texturefile = "gfx/interface/ideas/idea_teodors_spade.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_Teodors_Zvejnieks"
+		texturefile = "gfx/interface/ideas/idea_teodors_zvejnieks.dds"
+	}
+}

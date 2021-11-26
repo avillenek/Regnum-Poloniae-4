@@ -1,0 +1,590 @@
+Latvia_Arms_Imports_category = {
+
+	icon = ger_military_buildup
+
+	picture = GFX_decision_cat_latvia_arms_imports
+
+	allowed = {
+		original_tag = LAT
+	}
+}
+
+form_commonwealth_category2 = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_commonwealth
+
+	allowed = {
+		original_tag = POL
+		NOT = { has_dlc = "Waking the Tiger" }
+	}
+}
+
+POL_Promethean_Program_category = {
+
+	icon = sov_great_patriotic_war
+
+	picture = GFX_decision_cat_poland_promethean_program
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		is_puppet = no
+		has_capitulated = no
+		NOT = { is_in_faction_with = SOV }
+		NOT = { is_subject_of = SOV }
+		SOV = { is_puppet = no }
+	}
+	
+}
+
+POL_Praga_Problem_category = {
+
+	icon = decision_category_army_reform
+
+	picture = GFX_decision_poland_austrowegry
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		has_completed_focus = POL_Laczyc
+	}
+	
+}
+
+POL_Slovakian_Problem_category = {
+
+	icon = decision_category_army_reform
+
+	picture = GFX_decision_poland_slovak
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		has_completed_focus = POL_Gdanski_Problem
+	}
+	
+}
+
+POL_Maritime_and_Colonial_League_category = {
+
+	icon = generic_independence
+
+	picture = GFX_decision_cat_poland_maritime_colonial_league
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+	    OR = {
+		    has_completed_focus = POL_Maritime_and_Colonial_League
+		    has_completed_focus = POL_Maritime_and_Colonial_League1
+		}
+	}
+	
+}
+
+POL_Autonomy_category = {
+
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = GFX_decision_poland_autonomia
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+        OR = {
+			12 = { is_controlled_by = POL }
+			13 = { is_controlled_by = POL }
+			202 = { is_controlled_by = POL }
+			206 = { is_controlled_by = POL }
+		}
+	}
+	
+}
+
+POL_Krolewskie_Miasta_category = {
+
+	icon = GFX_decision_category_generic_industry
+
+	picture = GFX_decision_poland_poznan
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+        has_completed_focus = POL_Przemysl_Poznanski1
+	}
+	
+}
+
+POL_Krolewskie_Miasta_Wilno_category = {
+
+	icon = GFX_decision_category_generic_industry
+
+	picture = GFX_decision_poland_wilno
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+        has_completed_focus = POL_Metropolia_Wilno
+	}
+	
+}
+
+POL_Krolewskie_Miasta_Gdansk_category = {
+
+	icon = GFX_decision_category_generic_industry
+
+	picture = GFX_decision_poland_gdansk
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+        85 = { is_controlled_by = POL }
+	}
+	
+}
+
+POL_Krolewskie_Miasta_Warsaw_category = {
+
+	icon = GFX_decision_category_generic_industry
+
+	picture = GFX_decision_poland_warsaw
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+        has_completed_focus = POL_POLSKA_A_B
+	}
+	
+}
+
+POL_Krolewskie_Miasta_Lwow_category = {
+
+	icon = GFX_decision_category_generic_industry
+
+	picture = GFX_decision_poland_lwow
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+        has_completed_focus = POL_POLSKA_A_B
+	}
+	
+}
+
+
+POL_PPS_Economic_Nationalization = {
+
+	icon = GFX_decision_poland_PPS
+
+	picture = GFX_decision_cat_poland_economic_nationalization
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		OR = {
+			has_government = neutrality
+			has_government = democratic
+		}
+		has_completed_focus = POL_The_Polish_Socialist_Party
+		has_country_flag = PPS_Democratic_Path
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_Front_Morges_Diplomatic_Agenda = {
+
+	icon = generic_democracy
+
+	picture = GFX_decision_cat_poland_diplomatic_agenda
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		OR = {
+			has_government = neutrality
+			has_government = democratic
+		}
+		has_completed_focus = POL_The_Front_Morges
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_political_reform_category = {
+
+	icon = GFX_decision_poland_sanation_left
+
+	picture = GFX_decision_cat_poland_political_reform
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		has_government = neutrality
+		has_completed_focus = POL_The_Sanation_Left
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_industrial_projects_category = {
+
+	icon = GFX_decision_decision_poland_the_castle
+
+	picture = GFX_decision_cat_poland_industrial_projects
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		has_government = neutrality
+		has_completed_focus = POL_The_Castle
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_army_reform_category = {
+
+	icon = GFX_decision_poland_sanation_right
+
+	picture = GFX_decision_cat_poland_army_reform
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		has_government = neutrality
+		has_completed_focus = POL_The_Sanation_Right
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_Endecja_Social_Reform = {
+
+	icon = GFX_decision_poland_national_democracy
+
+	picture = GFX_decision_cat_poland_social_policy
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		OR = {
+			has_government = neutrality
+			has_government = democratic
+		}
+		has_completed_focus = POL_The_Endecja_Movement
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_National_Syndicalism_Autarky = {
+
+	icon = GFX_decision_poland_ONR
+
+	picture = GFX_decision_cat_poland_autarky
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		OR = {
+			has_government = neutrality
+			has_government = fascism
+		}
+		has_completed_focus = POL_The_National_Radical_Camp
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+falangism_on_the_rise = {
+	icon = GFX_decision_poland_ONR
+
+	allowed = {
+		always = yes
+		original_tag = POL
+	}
+
+}
+
+nationalism_on_the_rise = {
+	icon = GFX_decision_poland_national_democracy
+
+	allowed = {
+		always = yes
+		original_tag = POL
+	}
+	
+}
+
+liberalism_on_the_rise = {
+	icon = generic_democracy
+
+	allowed = {
+		always = yes
+		original_tag = POL
+	}
+
+}
+
+socialism_on_the_rise77 = {
+	icon = GFX_decision_poland_PPS
+
+	allowed = {
+		always = yes
+		original_tag = POL
+	}
+
+}
+
+stalinism_on_the_rise = {
+	icon = generic_communism
+
+	allowed = {
+		always = yes
+		original_tag = POL
+	}
+	
+	visible = {
+		NOT = { has_country_flag = PPS_Revolutionary_Path }
+	}
+
+}
+
+POL_Interwencja_we_Francji_category = {
+
+	icon = GFX_decision_category_generic_monarchism
+
+	picture = GFX_decision_cat_poland_interwencja_francuska
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		has_completed_focus = POL_Polish_France_Obalenie_Zgromadzenia
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_indie_protektoraty = {
+
+	icon = generic_independence
+
+	picture = GFX_decision_cat_interwencja_indie
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		has_completed_focus = POL_Polish_France_Wojna_z_Indiami
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_zachodnie_protektoraty = {
+
+	icon = generic_independence
+
+	picture = GFX_decision_cat_poland_interwencja_francuska
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		has_completed_focus = POL_Polish_France_Wojna_UK
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_germanskie_protektoraty = {
+
+	icon = generic_independence
+
+	picture = GFX_decision_cat_interwencja_niemcy
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		has_completed_focus = POL_Polish_France_Wojna_prewencyjna
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_protektorat_wojny_napoleona = {
+
+	icon = generic_independence
+
+	picture = GFX_decision_cat_interwencja_narodow
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		has_completed_focus = POL_Polish_France_Wojny
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_protektorat_wojny_zwykle = {
+
+	icon = generic_independence
+
+	picture = GFX_decision_cat_interwencja_narodow
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_protektorat_stany_zjednoczone = {
+
+	icon = usa_congress
+
+	picture = GFX_decision_cat_pax_in_usa
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_uk_under_windsor = {
+
+	icon = generic_independence
+
+	picture = GFX_decision_cat_poland_interwencja_francuska
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		has_completed_focus = POL_English_buckg
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_ita_under_pol = {
+
+	icon = generic_independence
+
+	picture = GFX_decision_cat_poland_interwencja_francuska
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		has_completed_focus = POL_Wlochy_New_King
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}
+
+POL_romanow_under_pol = {
+
+	icon = generic_independence
+
+	picture = GFX_decision_cat_poland_interwencja_francuska
+
+	allowed = {
+		original_tag = POL
+	}
+	
+	visible = {
+		original_tag = POL
+		has_completed_focus = POL_Romanowie_wojna_czechy
+		is_puppet = no
+		has_capitulated = no
+	}
+	
+}

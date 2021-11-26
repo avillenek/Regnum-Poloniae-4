@@ -1,0 +1,26 @@
+state={
+	id=867
+	name="STATE_867"
+
+	history={
+		victory_points = {
+			9598 20 
+		}
+		owner = ITA
+		buildings = {
+			infrastructure = 7
+
+		}
+		add_core_of = ITA
+		add_core_of = VEC
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		656 6631 9598 11598 
+	}
+	manpower=340320
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

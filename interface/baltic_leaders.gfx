@@ -1,0 +1,18 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_Portrait_latvia_alberts_kviesis"
+		texturefile = "gfx/leaders/LAT/Portrait_Alberts_Kviesis.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_latvia_Pauls_Kalnins"
+		texturefile = "gfx/leaders/LAT/Portrait_Pauls_Kalnins.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Gustavs_Celmins"
+		texturefile = "gfx/leaders/LAT/Portrait_Gustavs_Celmins.dds"
+	}
+	
+}

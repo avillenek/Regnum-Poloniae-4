@@ -1,0 +1,25 @@
+state={	#Schleswig
+	id=796
+	name="STATE_796"
+
+	history={
+		owner = GER
+		victory_points = {
+			317 3 
+		}
+		buildings = {
+			infrastructure = 6
+
+		}
+		add_core_of = GER
+		add_core_of = PRE
+
+	}
+
+	provinces={
+		317 3231 11366 
+	}
+	manpower=1104050
+	buildings_max_level_factor=1.000
+	state_category=town
+}

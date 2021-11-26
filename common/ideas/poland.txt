@@ -1,0 +1,8330 @@
+ideas = {
+
+country = {
+
+    idea_POL_regency_council_focus2 = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+
+		picture = POL_regency_council_focus2	
+	
+		modifier = {
+			stability_factor = -0.15
+			political_power_factor = -0.15
+		}
+	}
+	
+	idea_POL_regency_council = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+
+		picture = POL_regency_council	
+	
+		modifier = {
+			neutrality_drift = 0.01
+			stability_factor = 0.05
+			political_power_factor = 0.02
+		}
+	}
+
+	POL_German_Blitzkrieg_of_Poland = {
+		
+		picture = german_advisors
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		available = {
+			has_war_with = GER
+			NOT = { has_idea = POL_Polish_Cipher_Bureau_Focus2 }
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			mobilization_speed = -0.3
+			army_morale_factor = -0.2
+			army_speed_factor = -0.1
+			encryption = -1
+		}
+	}
+	
+	POL_don_brzigollo = {
+		
+		picture = rozwalony_wschod
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+		    consumer_goods_factor = -0.05
+			industrial_capacity_factory = -0.10
+			weekly_manpower = 450
+			army_morale_factor = -0.15
+			stability_factor = -0.15
+			political_power_factor = -0.02
+			army_core_attack_factor = -0.03
+		}
+	}
+	
+	POL_Empire_A_B = {
+	
+	    picture = generic_agrarian_society
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+
+	
+		modifier = {
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.45
+			industrial_capacity_dockyard = -0.50
+		}
+	}
+	
+	POL_German_Polish_Blitzkrieg_of_Soviet = {
+		
+		picture = german_advisors
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		available = {
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			mobilization_speed = 0.3
+			army_morale_factor = 0.2
+			army_speed_factor = 0.25
+			encryption = 1
+		}
+	}
+	
+	POL_German_Blitzkrieg_of_Soviet = {
+		
+		picture = german_advisors
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		available = {
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			mobilization_speed = -0.3
+			army_morale_factor = -0.2
+			army_speed_factor = -0.1
+			encryption = -1
+		}
+	}
+	
+	POL_Sanacja_Government = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			neutrality_drift = 0.02
+			drift_defence_factor = 0.5
+			ai_focus_defense_factor = 0.1
+			communism_acceptance = -50
+		}
+	}
+	
+	POL_Sanacja_Government5 = {
+		
+		picture = POL_Sanacja_Government5
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			neutrality_drift = 0.02
+			drift_defence_factor = -0.5
+			ai_focus_defense_factor = 0.1
+			communism_acceptance = -50
+			stability_factor = -0.03
+			political_power_factor = -0.05
+		}
+	}
+	
+	POL_Sanacja_Government4 = {
+		
+		picture = POL_Sanacja_Government4
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			neutrality_drift = 0.05
+			drift_defence_factor = 0.5
+			ai_focus_defense_factor = 0.1
+			communism_acceptance = -50
+			war_support_factor = 0.03
+			army_core_attack_factor = 0.02
+			army_core_defence_factor = 0.02
+			stability_factor = 0.05
+			political_power_factor = -0.01
+		}
+	}
+	
+	POL_Perfect_Kingdom = {
+		
+		picture = POL_Perfect_Kingdom
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_speed_infrastructure_factor = 0.10
+			army_core_attack_factor = 0.10
+			army_core_defence_factor = 0.10
+			stability_factor = 0.15
+			political_power_factor = 0.10
+		}
+	}
+	
+	POL_Ukrainian_Problem = {
+		
+		picture = POL_Ukrainian_Problem
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+
+
+		modifier = {
+			industrial_capacity_factory = -0.04
+			stability_factor = -0.03
+			political_power_factor = -0.02
+			org_loss_when_moving = 0.05
+			
+		}
+	}
+	
+	POL_polish_queen = {
+		
+		picture = Victoria_Louise
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+
+
+		modifier = {
+			stability_factor = 0.05
+			political_power_factor = 0.02
+			
+		}
+	}
+	
+	POL_special_air_service_idea = {
+
+		picture = eng_special_air_service
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1	
+
+        modifier = {
+			special_forces_cap = 0.05
+			special_forces_training_time_factor = -0.1
+		}
+	}
+	
+	POL_polish_queen_fr = {
+		
+		picture = Izabella_Radziwillowna
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+
+
+		modifier = {
+			stability_factor = 0.15
+			political_power_factor = 0.04
+			
+		}
+	}
+	
+	POL_Lithuanian_sep = {
+		
+		picture = POL_Lithuanian_Problem
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+	
+	
+		modifier = {
+			political_power_factor = -0.02
+			
+		}
+	}
+	
+	POL_Communist_Separatists = {
+		
+		picture = officers_purged
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+	
+	
+		modifier = {
+			political_power_factor = -0.15
+			
+		}
+	}
+	
+	POL_American_Separatists = {
+		
+		picture = FRA_scw_intervention_republicans_focus
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+	
+	
+		modifier = {
+			political_power_factor = -0.15
+			stability_factor = -0.15
+			out_of_supply_factor = 0.10
+			army_morale_factor = -0.10
+			
+		}
+	}
+	
+	idea_POL_ustawa_krolika_2 = {
+		
+		picture = POL_ustawa_krolika
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			line_change_production_efficiency_factor = 0.20
+			production_factory_max_efficiency_factor = 0.20
+			weekly_manpower = 1500
+			stability_factor = 0.10
+		}
+	}
+	
+	POL_Currency_Problem = {
+		
+		picture = generic_goods_red_bonus
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			line_change_production_efficiency_factor = -0.20
+			production_factory_max_efficiency_factor = -0.20
+			stability_factor = -0.25
+		}
+	}
+	
+	POL_Obowiazkowe_Posiadanie_Broni = {
+		
+		picture = HUN_secret_rearmament
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			resistance_damage_to_garrison = 0.10 
+			training_time_army_factor = -0.05
+			army_core_defence_factor = 0.02
+			out_of_supply_factor = -0.03
+			army_morale_factor = 0.01
+			no_supply_grace = 12
+		}
+	}
+	
+	POL_Obowiazkowe_Posiadanie_Bron45i = {
+		
+		picture = HUN_secret_rearmament
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			resistance_damage_to_garrison = 0.05
+			training_time_army_factor = -0.15
+			army_core_defence_factor = 0.05
+			out_of_supply_factor = -0.10
+			army_morale_factor = 0.10
+			no_supply_grace = 8
+		}
+	}
+	
+	POL_Obrona_Orleanu = {
+		
+		picture = HUN_secret_rearmament
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			training_time_army_factor = -0.05
+			out_of_supply_factor = -0.03
+			army_morale_factor = 0.15
+			no_supply_grace = 6
+		}
+	}
+	
+	POL_Zolnierze_Cara = {
+		
+		picture = POL_Colonels_Regime
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			out_of_supply_factor = -0.08
+			army_morale_factor = 0.10
+			no_supply_grace = 10
+		}
+	}
+	
+	POL_gwardia_cesarska = {
+		
+		picture = generic_infantry_bonus
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			army_core_defence_factor = 0.02
+			army_core_attack_factor = 0.02
+			mobilization_speed = 0.1
+			army_morale_factor = 0.1
+			army_speed_factor = 0.1
+		}
+	}
+	
+	POL_Obowiazkowe_Posiadanie_Broni1 = {
+		
+		picture = HUN_secret_rearmament
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			resistance_damage_to_garrison = 0.15 
+			training_time_army_factor = -0.10
+			army_core_defence_factor = 0.04
+			out_of_supply_factor = -0.05
+			army_morale_factor = 0.02
+			no_supply_grace = 16
+		}
+	}
+	
+	POL_P_Hussars = {
+		
+		picture = FRA_army_of_aggression_focus
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			training_time_army_factor = -0.20
+			army_core_defence_factor = 0.10
+			army_core_attack_factor = 0.10
+			out_of_supply_factor = -0.10
+			no_supply_grace = 20
+		}
+	}
+	
+	idea_POL_Olbracht = {
+		
+		picture = HUN_hungarian_monarchy
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_speed_industrial_complex_factor = 0.05
+			production_speed_arms_factory_factor = 0.05
+			production_factory_max_efficiency_factor = 0.15
+			experience_gain_army_factor = 0.05
+			stability_factor = 0.05
+		}
+	}
+	
+	idea_POL_ustawa_krolika = {
+		
+		picture = POL_ustawa_krolika
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_speed_infrastructure_factor = 0.05
+			line_change_production_efficiency_factor = 0.05
+			production_speed_industrial_complex_factor = 0.05
+			production_factory_max_efficiency_factor = 0.02
+			stability_factor = -0.10
+		}
+	}
+	
+	idea_GRE_Bizancjum = {
+		
+		picture = generic_victors_of_ww1
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_speed_arms_factory_factor = 0.15
+			production_speed_buildings_factor = 0.15
+			political_power_factor = 0.15
+			stability_factor = 0.15
+			army_core_defence_factor = 0.10
+		}
+	}
+	
+	idea_TUR_Ottoman = {
+		
+		picture = generic_victors_of_ww1
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_speed_arms_factory_factor = 0.15
+			production_speed_buildings_factor = 0.15
+			political_power_factor = 0.15
+			army_speed_factor = 0.10
+			army_core_defence_factor = 0.10
+		}
+	}
+	
+	idea_POL_Protektorat = {
+		
+		picture = POL_Sanacja_Government4
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+		    communism_acceptance = -100
+			autonomy_gain = -0.15
+			political_power_factor = -0.05
+			neutrality_drift = 0.10
+			drift_defence_factor = 0.5
+			ai_focus_defense_factor = 0.1
+			
+		}
+	}
+	
+	idea_POL_przeszlosc_szlachecka = {
+		
+		picture = FRA_national_mobilization_focus
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_speed_arms_factory_factor = 0.02
+			production_speed_buildings_factor = 0.02
+			political_power_factor = -0.05
+			army_core_defence_factor = 0.10
+			org_loss_when_moving = 0.10
+		}
+	}
+	
+	idea_POL_przeszlosc_szlachecka1 = {
+		
+		picture = FRA_national_mobilization_focus
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_speed_arms_factory_factor = 0.10
+			production_speed_buildings_factor = 0.10
+			political_power_factor = -0.08
+			army_core_defence_factor = -0.05
+			org_loss_when_moving = -0.15
+		}
+	}
+		
+	POL_modular_construction = {
+		
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = generic_navy_bonus
+			
+		removal_cost = -1
+		
+		equipment_bonus = {
+			submarine = {
+				build_cost_ic = -0.1 instant = yes
+			}
+			destroyer = {
+				build_cost_ic = -0.25 instant = yes
+			}
+			battleship = {
+				build_cost_ic = -0.3 instant = yes
+			}
+			light_cruiser = {
+				build_cost_ic = -0.3 instant = yes
+			}
+		}
+	}
+	
+	POL_BRAT = {
+		
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = generic_coastal_defense_ships2
+			
+		removal_cost = -1
+		
+		equipment_bonus = {
+			submarine = {
+				build_cost_ic = 50.0 instant = yes
+			}
+			destroyer = {
+				build_cost_ic = 50.0 instant = yes
+			}
+			light_cruiser = {
+				build_cost_ic = 35.0 instant = yes
+			}
+		}
+		
+		modifier = {
+			industrial_capacity_dockyard = 20.0
+		}
+	}
+	
+	POL_BRAT_1 = {
+		
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = generic_coastal_defense_ships2
+			
+		removal_cost = -1
+		
+		equipment_bonus = {
+			submarine = {
+				build_cost_ic = 50.0 instant = yes
+			}
+			destroyer = {
+				build_cost_ic = 50.0 instant = yes
+			}
+			light_cruiser = {
+				build_cost_ic = 35.0 instant = yes
+			}
+		}
+		
+		modifier = {
+			industrial_capacity_dockyard = 8.5
+		}
+	}
+	
+	POL_BRAT_2 = {
+		
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = generic_coastal_defense_ships2
+			
+		removal_cost = -1
+		
+		equipment_bonus = {
+			submarine = {
+				build_cost_ic = 45.0 instant = yes
+			}
+			destroyer = {
+				build_cost_ic = 45.0 instant = yes
+			}
+			light_cruiser = {
+				build_cost_ic = 25.0 instant = yes
+			}
+		}
+		
+		modifier = {
+			industrial_capacity_dockyard = 10.0
+		}
+	}
+	
+	POL_SUPPORT = {
+		
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = hun_secret_rearmament_result
+			
+		removal_cost = -1
+		
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			support_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			artillery_equipment = {
+				build_cost_ic = -0.1 instant = yes
+			}
+		}
+		
+		modifier = {
+			industrial_capacity_factory = 0.10
+		}
+	}
+	
+	POL_LIT_SUPPORT = {
+		
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = hun_secret_rearmament_result
+			
+		removal_cost = -1
+		
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.15
+				instant = yes
+			}
+			support_equipment = {
+				build_cost_ic = -0.15
+				instant = yes
+			}
+			artillery_equipment = {
+				build_cost_ic = -0.15 instant = yes
+			}
+		}
+		
+		modifier = {
+			industrial_capacity_factory = 0.10
+		}
+	}
+	
+	POL_GER_KNOW_HOW = {
+		
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = POL_german_industry
+			
+		removal_cost = -1
+		
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			support_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			motorized_equipment = {
+				build_cost_ic = -0.05 instant = yes
+			}
+		}
+	}
+	
+	POL_Germany_Know_How1 = {
+		
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = POL_german_industry
+			
+		removal_cost = -1
+		 
+		modifier = {
+			max_planning = 0.20
+			high_command_cost_factor = -0.20
+		}
+		
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+			motorized_equipment = {
+				build_cost_ic = -0.15 instant = yes
+			}
+		}
+	}
+	
+	POL_modular_construction1 = {
+		
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = generic_navy_bonus
+			
+		removal_cost = -1
+		
+		equipment_bonus = {
+			submarine = {
+				build_cost_ic = -0.3 instant = yes
+			}
+			destroyer = {
+				build_cost_ic = -0.3 instant = yes
+			}
+		}
+	}
+	
+	idea_POL_zwiazek_sybiracki = {
+		
+		picture = POL_ustawa_krolika
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			max_planning = 0.02
+			high_command_cost_factor = -0.10
+			send_volunteer_divisions_required = -0.25
+			send_volunteers_tension = -0.35
+			send_volunteer_size = 2
+		}
+	}
+	
+	idea_POL_less_biurokracja = {
+		
+		picture = SOV_scientist_defect
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_speed_buildings_factor = 0.02
+			stability_factor = 0.02
+			political_power_factor = -0.01
+		}
+	}
+	
+	idea_POL_pilsudczycy = {
+		
+		picture = Cult_Marshal_Portrait
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			stability_factor = 0.08
+			political_power_factor = 0.05
+		}
+	}
+	
+	idea_POL_wettyni = {
+		
+		picture = pol_revive_the_kaiserreich
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			stability_factor = 0.05
+			political_power_factor = 0.05
+			drift_defence_factor = 0.5
+			
+		}
+	}
+	
+	idea_POL_napoleon = {
+		
+		picture = pol_napoleon
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			war_support_factor = 0.02
+			weekly_manpower = 250
+			political_power_factor = 0.10
+			
+		}
+	}
+	
+	idea_POL_napoleon_francja = {
+		
+		picture = pol_napoleon
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			war_support_factor = 0.05
+			political_power_factor = 0.05
+			neutrality_drift = 0.30
+			drift_defence_factor = -0.30
+			
+		}
+	}
+	
+	
+	
+	idea_POL_less_taxes = {
+		
+		picture = office_of_strategic_services
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_speed_buildings_factor = 0.01
+			stability_factor = 0.03
+			research_speed_factor = 0.05
+			political_power_factor = -0.01
+		}
+	}
+	
+	idea_POL_kasa_z_niemiec = {
+		
+		picture = german_ownership
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_speed_buildings_factor = 0.15
+			research_speed_factor = 0.05
+			political_power_factor = 0.05
+		}
+	}
+	
+	idea_POL_private_przedsieb = {
+		
+		picture = SOV_scientist_defect
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			consumer_goods_factor = -0.10
+			production_speed_industrial_complex_factor = 0.10
+			production_speed_arms_factory_factor = 0.25
+			stability_factor = -0.05
+			political_power_factor = -0.20
+		}
+	}
+	
+	idea_POL_emeryturki = {
+		
+		picture = POL_emeryturki
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			consumer_goods_factor = 0.03
+			stability_factor = 0.05
+			political_power_factor = -0.05
+		}
+	}
+	
+	idea_POL_Wielkie_BUM = {
+		
+		picture = POL_Wielkie_BUM
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+
+	
+		modifier = {
+			consumer_goods_factor = 0.04	
+			political_power_cost = 0.20
+			stability_factor = -0.15
+			industrial_capacity_factory  = 0.15
+			production_speed_arms_factory_factor = 0.50
+			production_speed_industrial_complex_factor = 0.50
+			production_factory_max_efficiency_factor = 0.50
+		}
+	}
+	
+	idea_POL_Wielkie_BUM1 = {
+		
+		picture = POL_Wielkie_BUM
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+
+	
+		modifier = {
+			consumer_goods_factor = -0.02	
+			political_power_cost = 0.25
+			stability_factor = -0.10
+			industrial_capacity_factory  = 0.10
+			production_speed_arms_factory_factor = 0.05
+			production_speed_industrial_complex_factor = 0.05
+			production_factory_max_efficiency_factor = 0.10
+		}
+	}
+	
+	idea_POL_szkolnictwo = {
+		
+		picture = generic_pp_unity_bonus
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			stability_factor = 0.02
+			political_power_factor = 0.01
+			research_speed_factor = 0.06
+		}
+	}
+	
+	POL_Perfect_Kingdom1 = {
+		
+		picture = POL_Sanacja_Government4
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			communism_acceptance = -30
+			army_core_attack_factor = 0.01
+			army_core_defence_factor = 0.01
+			stability_factor = 0.02
+			war_support_factor = -0.05
+		}
+	}
+	
+	POL_rebuild_the_nation = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = generic_production_bonus
+
+		modifier = {
+			consumer_goods_factor = -0.15
+			production_speed_buildings_factor = 0.10
+		}
+	}
+	
+	POL_krolestwo_bezskazy = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = FRA_army_of_aggression_focus
+
+		modifier = {
+			production_speed_buildings_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.10
+			production_speed_anti_air_building_factor = 0.35
+		}
+	}
+	
+	POL_krolestwo_bezskazy_wikt = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = air_support_focus
+
+		modifier = {
+			production_speed_buildings_factor = 0.20
+			weekly_manpower = 1500
+			stability_factor = 0.25
+		}
+	}
+	
+	POL_krolestwo_bezskazy_nap = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = air_support_focus
+
+		modifier = {
+			production_speed_buildings_factor = 0.10
+			weekly_manpower = 400
+			stability_factor = 0.10
+		}
+	}
+	
+	POL_krolestwo_bezskazy_fry = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = air_support_focus
+
+		modifier = {
+			production_speed_buildings_factor = 0.25
+			weekly_manpower = 1800
+			stability_factor = 0.10
+		}
+	}
+	
+	POL_Know_How = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = FRA_fortification_focus
+
+		modifier = {
+			production_speed_anti_air_building_factor = 0.25
+			production_speed_bunker_factor = 0.25
+			production_speed_coastal_bunker_factor = 0.25
+			production_speed_infrastructure_factor = 0.10
+			production_speed_synthetic_refinery_factor = 0.10
+			production_speed_air_base_factor = 0.35
+		    production_speed_naval_base_factor = 0.35
+		    production_speed_radar_station_factor = 0.25
+		}
+	}
+	
+	POL_between_enemies = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = generic_manpower_bonus
+
+		modifier = {
+			consumer_goods_factor = -0.10
+			production_speed_buildings_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+			army_morale_factor = 0.25
+			army_core_defence_factor = 0.15
+			mobilization_speed = 0.20
+			surrender_limit = 0.25
+		}
+	}
+	
+	POL_french_mobilisation = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = generic_manpower_bonus
+
+		modifier = {
+			consumer_goods_factor = -0.04
+			production_speed_buildings_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.15
+			mobilization_speed = 0.25
+		}
+	}
+	
+	POL_synergia_francusko_polska = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = generic_research_bonus
+
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.15
+		}
+	}
+	
+	POL_Frarr_synergia = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = generic_research_bonus
+
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.20
+			production_speed_buildings_factor = 0.20
+		}
+	}
+	
+	POL_idea_napoleona = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = air_support_focus
+
+		modifier = {
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+			justify_war_goal_time = -0.25
+			generate_wargoal_tension = -0.25
+			war_support_factor = 0.15
+		}
+		
+		equipment_bonus = {
+			artillery_equipment = {
+				build_cost_ic = -0.1 instant = yes
+			}
+		}
+	}
+	
+	POL_idea_napoleona12 = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = air_support_focus
+
+		modifier = {
+			army_core_attack_factor = 0.08
+			army_core_defence_factor = 0.05
+			justify_war_goal_time = -0.25
+			generate_wargoal_tension = -0.25
+			war_support_factor = 0.15
+		}
+		
+		equipment_bonus = {
+			artillery_equipment = {
+				build_cost_ic = -0.15 instant = yes
+			}
+		}
+	}
+	
+	POL_between_enemies1 = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = generic_manpower_bonus
+
+		modifier = {
+			consumer_goods_factor = -0.20
+			production_speed_buildings_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.15
+			army_morale_factor = 0.30
+			army_core_attack_factor = 0.25
+			army_core_defence_factor = 0.10
+			mobilization_speed = 0.35
+			surrender_limit = 0.25
+		}
+	}
+	
+	POL_national_revitalization = {
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = generic_goods_red_bonus
+
+		modifier = {
+			industry_repair_factor = 0.20
+			industry_free_repair_factor = 0.20
+		}
+	}
+	
+	POL_save_the_king = {
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = air_support_focus
+
+		modifier = {
+			army_morale_factor = 0.1
+			mobilization_speed = 0.1
+			army_core_attack_factor = 0.02
+			justify_war_goal_time = -0.15
+			generate_wargoal_tension = -0.15
+		}
+	}
+	
+	POL_save_the_queen = {
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = air_support_focus
+
+		modifier = {
+			mobilization_speed = 0.20
+			army_core_attack_factor = 0.10
+			army_core_defence_factor = 0.10
+			justify_war_goal_time = -0.05
+			generate_wargoal_tension = -0.05
+		}
+	}
+	
+	POL_on_our_own = {
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = pol_caved_to_the_poland
+
+		modifier = {
+		    production_speed_buildings_factor = 0.10
+			army_core_attack_factor = 0.02
+			army_core_defence_factor = 0.02
+		}
+	}
+	
+	POL_Protektorat_Syberyjski = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = FRA_army_of_aggression_focus
+
+		modifier = {
+		    consumer_goods_factor = -0.08
+		    production_speed_buildings_factor = 0.10
+			production_factory_efficiency_gain_factor = 0.10
+			line_change_production_efficiency_factor = 0.25
+			army_morale_factor = 0.35
+			attrition = -0.25
+			army_core_attack_factor = 0.25
+			army_core_defence_factor = 0.25
+			org_loss_when_moving = -0.15
+			mobilization_speed = 0.50
+			surrender_limit = 0.70
+		}
+	}
+	
+	POL_idea_hussar = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = the_long_lance
+
+		modifier = {
+			attrition = -0.10
+			army_speed_factor = 0.10
+			org_loss_when_moving = -0.10
+		}
+	}
+	
+	POL_Naplyw_Ludzi = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		modifier = {
+		    line_change_production_efficiency_factor = 0.20
+			consumer_goods_factor = 0.01
+			production_speed_buildings_factor = 0.10
+			political_power_factor = 0.02
+			weekly_manpower = 10000
+			communism_drift = 0.01
+			fascism_drift = 0.01
+		}
+
+		removal_cost = -1
+
+		picture = generic_disjointed_gov
+
+	}
+	
+	POL_before_civil_war = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		modifier = {
+			consumer_goods_factor = -0.05
+		}
+
+		removal_cost = -1
+
+		picture = generic_disjointed_gov
+
+	}
+	
+	POL_The_Four_Year_Plan5 = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = HUN_treaty_of_triannon
+
+		modifier = {
+			production_speed_infrastructure_factor = 0.20
+		}
+	}
+	
+	POL_The_Four_Year_Plan6 = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = HUN_treaty_of_triannon
+
+		modifier = {
+			production_speed_infrastructure_factor = 0.1
+			line_change_production_efficiency_factor = 0.1
+		}
+	}
+	
+	POL_Lithuanian_Highways = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = HUN_treaty_of_triannon
+
+		modifier = {
+			production_speed_infrastructure_factor = 0.2
+			line_change_production_efficiency_factor = 0.2
+			org_loss_when_moving = -0.05
+		}
+	}
+	
+	POL_British_help = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		picture = POL_British_help
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_factory_max_efficiency_factor = 0.25
+			production_factory_efficiency_gain_factor = 0.2
+			trade_laws_cost_factor = -0.20
+			economy_cost_factor = -0.20
+			political_power_cost = 0.2
+		}
+	}
+	
+	POL_lit_loans = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		picture = POL_emeryturki
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_factory_max_efficiency_factor = 0.25
+			production_factory_efficiency_gain_factor = 0.25
+			consumer_goods_factor = -0.05
+			stability_factor = 0.02
+			
+		}
+	}
+	
+	POL_German_help = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		picture = german_advisors
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_factory_max_efficiency_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.15
+			industrial_capacity_dockyard = 0.15
+			political_power_cost = 0.65
+		}
+	}
+	
+	POL_German_help1 = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		picture = german_advisors
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_factory_max_efficiency_factor = 0.25
+			production_factory_efficiency_gain_factor = 0.25
+			industrial_capacity_dockyard = 0.35
+			political_power_cost = 0.25
+		}
+	}
+	
+	POL_Russian_help1 = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		picture = generic_democratic_drift_bonus
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_factory_max_efficiency_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.28
+			research_speed_factor = 0.12
+			political_power_cost = 0.08
+		}
+	}
+	
+	POL_Uniwerek_Lodzki = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		picture = neutrality_idea
+		
+		removal_cost = -1
+	
+		modifier = {
+			research_speed_factor = 0.06
+			political_power_cost = 0.02
+		}
+	}
+	
+	POL_Tank_Romanov_Pro = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		picture = FRA_factory_strikes
+		
+		removal_cost = -1
+	
+		modifier = {
+			line_change_production_efficiency_factor = 0.10
+		}
+		
+		equipment_bonus = {
+			heavy_tank_equipment = {
+				build_cost_ic = -0.20
+				instant = yes
+			}
+		}
+		equipment_bonus = {
+			medium_tank_equipment = {
+				build_cost_ic = -0.15
+				instant = yes
+			}
+		}
+		equipment_bonus = {
+			light_tank_equipment = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+		}
+	}
+	
+	idea_POL_british_monarchy = {
+	
+	
+	    allowed = {
+		    always = no
+		}
+		 
+		allowed_civil_war = {
+		    always = yes
+		}
+		
+		removal_cost = -1
+		
+		picture = POL_british_monarchy
+		 
+		modifier = {
+		    drift_defence_factor = 0.5
+			democratic_acceptance = 100
+		}
+		 
+		rule = {
+		    can_boost_other_ideologies = yes
+		}
+	}
+	
+	idea_POL_british_monarchy1 = {
+	
+	
+	    allowed = {
+		    always = no
+		}
+		 
+		allowed_civil_war = {
+		    always = yes
+		}
+		
+		removal_cost = -1
+		
+		picture = POL_british_monarchy
+		 
+		modifier = {
+			democratic_acceptance = 100
+			org_loss_when_moving = -0.20
+			army_morale_factor = 0.10
+			war_support_factor = 0.15
+			stability_factor = 0.20
+			
+		}
+		 
+		rule = {
+		    can_boost_other_ideologies = yes
+		}
+	}
+	
+	idea_POL_Italian_Triumph = {
+	
+	
+	    allowed = {
+		    always = no
+		}
+		 
+		allowed_civil_war = {
+		    always = yes
+		}
+		
+		removal_cost = -1
+		
+		picture = generic_intel_bonus
+		 
+		modifier = {
+			army_morale_factor = 0.25
+			war_support_factor = 0.15
+			stability_factor = 0.10
+			
+		}
+	}
+	
+	POL_Rzymska_spuscizna = {
+	
+	
+	    allowed = {
+		    always = no
+		}
+		 
+		allowed_civil_war = {
+		    always = yes
+		}
+		
+		removal_cost = -1
+		
+		picture = FRA_scw_intervention_nationalists_focus
+		 
+		modifier = {
+			army_speed_factor = 0.20
+			production_factory_efficiency_gain_factor = 0.20
+			
+		}
+	}
+	
+	POL_swiete_imperium = {
+	
+	
+	    allowed = {
+		    always = no
+		}
+		 
+		allowed_civil_war = {
+		    always = yes
+		}
+		
+		removal_cost = -1
+		
+		picture = idea_pol_caved_to_the_poland
+		 
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.25
+			production_factory_max_efficiency_factor = 0.15
+			research_speed_factor = 0.02
+			war_support_factor = 0.10
+			stability_factor = 0.10
+			
+		}
+	}
+	
+	POL_Polero_blitzkriego = {
+	
+	
+	    allowed = {
+		    always = no
+		}
+		 
+		allowed_civil_war = {
+		    always = yes
+		}
+		
+		removal_cost = -1
+		
+		picture = FRA_scw_intervention_nationalists_focus
+		 
+		modifier = {
+			army_speed_factor = 0.10		
+		}
+	}
+	
+	POL_One_german_hundred_poles = {
+	
+	
+	    allowed = {
+		    always = no
+		}
+		 
+		allowed_civil_war = {
+		    always = yes
+		}
+		
+		removal_cost = -1
+		
+		picture = HUN_secret_rearmament
+		 
+		modifier = {
+			army_speed_factor = 0.20
+			production_factory_efficiency_gain_factor = 0.20
+			army_morale_factor = 0.20
+			
+		}
+	}
+	
+	POL_Desowietyzacja = {
+	
+	
+	    allowed = {
+		    always = no
+		}
+		 
+		allowed_civil_war = {
+		    always = yes
+		}
+		
+		removal_cost = -1
+		
+		picture = anti_soviet_pact
+		 
+		modifier = {
+			line_change_production_efficiency_factor = -0.10
+			consumer_goods_factor = 0.10
+			political_power_factor = -0.10
+			communism_drift = -0.10
+			
+		}
+	}
+	
+	POL_Krol_Prawoslawny = {
+	
+	
+	    allowed = {
+		    always = no
+		}
+		 
+		allowed_civil_war = {
+		    always = yes
+		}
+		
+		removal_cost = -1
+		
+		picture = air_support_focus
+		 
+		modifier = {
+			stability_factor = -0.02
+			weekly_manpower = 200
+			consumer_goods_factor = -0.05
+			political_power_factor = -0.10
+			
+		}
+	}
+	
+	POL_Krol_Katolicki = {
+	
+	
+	    allowed = {
+		    always = no
+		}
+		 
+		allowed_civil_war = {
+		    always = yes
+		}
+		
+		removal_cost = -1
+		
+		picture = air_support_focus
+		 
+		modifier = {
+			stability_factor = 0.10
+			consumer_goods_factor = -0.03
+			political_power_factor = 0.15
+			
+		}
+	}
+	
+	POL_germane_influences = {
+	
+	
+	    allowed = {
+		    always = no
+		}
+		 
+		allowed_civil_war = {
+		    always = yes
+		}
+		
+		removal_cost = -1
+		
+		picture = HUN_hungarian_monarchy_fascism
+		 
+		modifier = {
+			fascism_drift = 0.05
+			political_power_factor = -0.02
+			
+		}
+	}
+	
+	POL_Sanacja_Government2 = {
+		
+		picture = POL_Sanacja_Government
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			neutrality_drift = 0.02
+			drift_defence_factor = 0.5
+			ai_focus_defense_factor = 0.1
+			communism_acceptance = -50
+			production_factory_efficiency_gain_factor = 0.1
+			political_power_factor = 0.1
+		}
+	}
+	
+	POL_Sanacja_Influence = {
+		
+		picture = POL_Sanacja_Government
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		available = {
+			has_government = neutrality
+			POL = { has_government = neutrality }
+			is_in_faction_with = POL
+		}
+		
+		removal_cost = -1
+	
+		modifier = {
+			neutrality_drift = 0.05
+			communism_acceptance = -25
+		}
+	}
+	
+	POL_Divided_Nation = {
+		allowed = {
+			always = no
+		}
+		
+		available = {
+			NOT = { has_completed_focus = POL_Phase_V_Equalize_Poland_A_and_B }
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = POL_divided_nation
+
+		modifier = {
+			political_power_factor = -0.1
+			stability_factor = -0.05
+		}
+
+	}
+	
+	POL_Romanow_King = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = romanow_good_idea
+
+		modifier = {
+			political_power_factor = -0.05
+			stability_factor = -0.05
+			conscription_factor = 0.05
+		}
+
+	}
+	
+	POL_Romanow_King1 = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = romanow_good_idea
+
+		modifier = {
+			political_power_factor = 0.15
+			stability_factor = 0.10
+			conscription_factor = 0.10
+			army_morale_factor = 0.10
+			war_support_factor = 0.10
+		}
+
+	}
+
+	POL_Segregated_Nation = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = saf_history_of_segregation_2
+
+		modifier = {
+			conscription_factor = -0.15
+		}
+
+	}
+
+    POL_Army_at_Chaos = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = tfv_can_conscription_crisis
+
+		modifier = {
+			conscription_factor = -0.25
+			surrender_limit = -0.1
+			army_core_attack_factor = -0.10
+			org_loss_when_moving = 0.15
+			army_morale_factor = -0.15
+			war_support_factor = -0.15
+		}
+
+	}
+	
+	POL_Romanow_Army_Morale = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = ast_volunteer_defence_corps
+
+		modifier = {
+			conscription_factor = -0.05
+			army_core_attack_factor = -0.05
+			org_loss_when_moving = -0.15
+			army_morale_factor = -0.05
+			army_speed_factor = 0.10
+		    
+		}
+		
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.15 instant = yes
+			}
+			artillery_equipment = {
+				build_cost_ic = -0.25 instant = yes
+			}
+		}
+
+	}
+	
+	POL_Romanian_Bridgehead_Strategy = {
+		
+		allowed = {
+			always = no
+		}
+		
+		available = {
+			NOT = { has_war_with = ROM }
+			is_owner_neighbor_of = ROM
+		}
+		
+		removal_cost = -1
+		
+		picture = ROM_preserve_greater_romania
+		
+		modifier = {
+			surrender_limit = 0.1
+		}
+	}
+	
+	POL_Austro_Wegry_Strategy = {
+		
+		allowed = {
+			always = no
+		}
+		
+		available = {
+		}
+		
+		removal_cost = -1
+		
+		picture = Austria_Hungary
+		
+		modifier = {
+			surrender_limit = 0.15
+			army_morale_factor = 0.15
+			war_support_factor = 0.15
+			army_core_attack_factor = 0.05
+		}
+	}
+	
+	POL_political_commissars = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			OR = {
+				has_government = communism
+				has_government = democratic
+			}
+		}
+			
+		removal_cost = -1
+
+		picture = generic_morale_bonus
+	
+		modifier = {
+			army_morale_factor = 0.1
+			generate_wargoal_tension = -0.1
+		}
+	}
+	
+	POL_political_commissars2 = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			OR = {
+				has_government = communism
+				has_government = democratic
+			}
+		}
+			
+		removal_cost = -1
+
+		picture = generic_morale_bonus
+	
+		modifier = {
+			army_morale_factor = 0.2
+			generate_wargoal_tension = -0.2
+		}
+	}
+	
+	POL_indoctrination_focus = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = fascism
+		}
+			
+		removal_cost = -1
+
+		picture = generic_pp_unity_bonus
+	
+		modifier = {
+			war_support_factor = 0.05
+			army_core_attack_factor = 0.04
+			army_core_defence_factor = 0.04
+		}
+	}
+	
+	POL_Synthetic_Rubber = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = Synthetic_Rubber
+		
+		modifier = {
+		
+		}
+		
+	}
+	
+	POL_Plan_W = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = POL_Plan_W
+
+		modifier = {
+			land_reinforce_rate = 0.01
+			org_loss_when_moving = -0.05
+			mobilization_speed = 0.1
+		}
+	}
+	
+	POL_The_Four_Year_Plan = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = HUN_treaty_of_triannon
+
+		modifier = {
+			production_speed_infrastructure_factor = 0.1
+		}
+	}
+	
+	POL_The_Four_Year_Plan2 = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = HUN_treaty_of_triannon
+
+		modifier = {
+			production_speed_infrastructure_factor = 0.1
+			line_change_production_efficiency_factor = 0.1
+		}
+	}
+	
+	POL_The_Three_Year_Plan = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = POL_three_year_plan
+
+		modifier = {
+			production_speed_buildings_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+		}
+	}
+	
+	POL_National_Syndicalism = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_infantry_bonus
+
+		modifier = {
+			industrial_capacity_factory = 0.05
+			local_resources_factor = 0.1
+		}
+	}
+	
+	POL_Maritime_and_Colonial_League = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_coastal_defense_ships
+
+		modifier = {
+			industrial_capacity_dockyard = 0.25
+		}
+	}
+	
+	POL_Maritime_and_Colonial_League1 = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_coastal_defense_ships
+
+		modifier = {
+			industrial_capacity_dockyard = 0.25
+		}
+	}
+	
+	POL_Neutral_Foreign_Policy = {	
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		cancel = {
+			OR = {
+				has_defensive_war = yes
+				is_in_faction = yes
+			}
+		}
+		
+		picture = neutrality_idea
+			
+		removal_cost = -1
+	
+		modifier = {
+			join_faction_tension = 0.30
+			send_volunteers_tension = 0.20
+			guarantee_tension = 1.0
+			ai_badass_factor = 0.01    # Will receive 1% of the threat from others
+			ai_get_ally_desire_factor = -100
+		}
+	}
+	
+	POL_Active_Foreign_Policy = {	
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = democratic
+		}
+
+		cancel = {
+			NOT = { has_government = democratic }
+		}
+		
+		picture = ROM_balkans_dominance
+			
+		removal_cost = -1
+	
+		modifier = {
+			join_faction_tension = -0.70
+			send_volunteers_tension = -0.15
+			guarantee_tension = -0.05
+			ai_get_ally_desire_factor = 20
+		}
+	}
+	
+	POL_The_Leviathan_Group = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		research_bonus = {
+			industry = 0.15
+		}
+		
+		modifier = {
+			trade_laws_cost_factor = -0.25
+			economy_cost_factor = -0.25
+			naval_manufacturer_cost_factor = -0.5
+		}
+
+		removal_cost = -1
+
+		picture = generic_infantry_bonus
+
+	}
+	
+	POL_Shock_Therapy = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		modifier = {
+			stability_weekly = 0.02
+			consumer_goods_factor = 0.03
+		}
+
+		removal_cost = -1
+
+		picture = generic_infantry_bonus
+
+	}
+	
+	POL_SeKOR = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = SeKOR
+
+		modifier = {
+			conversion_cost_civ_to_mil_factor= -0.2
+		}
+	}
+	
+	POL_Ribbentrop_Beck_Pact = {
+
+		allowed = {
+			always = no
+		}
+		
+		available = {
+			GER = { NOT = { has_war_with = SOV } }
+			is_subject_of = GER
+		}
+
+		allowed_civil_war = {
+			always = no
+		}
+
+		removal_cost = -1
+
+		picture = can_patriation
+			
+		rule = { can_decline_call_to_war = yes }
+		
+		modifier = {
+			ai_join_ally_desire_factor = -30
+		}
+
+	}
+	
+	POL_Democratic_Influence = {
+			
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = democratic
+		}
+
+		removal_cost = -1
+
+		picture = generic_democratic_drift_bonus
+			
+		modifier = {
+			democratic_drift = 0.05
+			democratic_acceptance = 10
+		}
+	}
+	
+	POL_Nationalist_Influence = {
+			
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = democratic
+		}
+
+		removal_cost = -1
+
+		picture = generic_democratic_drift_bonus
+			
+		modifier = {
+			democratic_drift = 0.05
+		}
+	}
+	
+	POL_Socialist_Influence = {
+			
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = democratic
+		}
+
+		removal_cost = -1
+
+		picture = generic_democratic_drift_bonus
+			
+		modifier = {
+			democratic_drift = 0.05
+		}
+	}
+	
+	POL_Communist_Influence = {
+			
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = communism
+		}
+
+		removal_cost = -1
+
+		picture = generic_democratic_drift_bonus
+			
+		modifier = {
+			communism_drift = 0.03
+		}
+	}
+	
+	POL_Falangist_Influence = {
+			
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = fascism
+		}
+
+		removal_cost = -1
+
+		picture = generic_democratic_drift_bonus
+			
+		modifier = {
+			fascism_drift = 0.05
+		}
+	}
+	
+	POL_Soviet_Infiltration = {
+			
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = communism
+		}
+		
+		available = {
+			is_subject_of = SOV
+			OVERLORD = { has_government = communism }
+		}
+
+		removal_cost = -1
+
+		picture = generic_democratic_drift_bonus
+			
+		modifier = {
+			communism_drift = 0.05
+		}
+	}
+	
+	POL_Mandatory_Firearm_Ownership = {
+		
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = generic_infantry_bonus
+			
+		removal_cost = -1
+		
+		modifier = {
+			supply_consumption_factor = -0.075
+			resistance_damage_to_garrison = 0.25 
+		}
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.075 instant = yes
+			}
+		}
+	}
+	
+	POL_Strict_Equipment_Standards = {
+		
+		allowed = {
+			always = no
+		}
+		
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		modifier = {
+
+		}
+		
+		picture = POL_strict_equipment_regulations
+		
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = 0.05
+				instant = yes
+			}
+		}
+		equipment_bonus = {
+			infantry_equipment = {
+				reliability = 0.05
+				instant = yes
+			}
+		}
+	}
+	
+	POL_Heavy_Weapons_Production = {
+		
+		allowed = {
+			always = no
+		}
+		
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		modifier = {
+			industrial_capacity_factory  = 0.15
+		}
+		
+		picture = FRA_factory_strikes
+		
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = 0.3
+				instant = yes
+			}
+			support_equipment = {
+				build_cost_ic = 0.15
+				instant = yes
+			}
+		}
+	}
+	
+	POL_Agriculture_Modernization_and_Education_Effort = {
+		
+		allowed = {
+			always = no
+		}
+		
+		available = {
+			is_puppet = no
+			has_capitulated = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = free_trade
+			
+		removal_cost = -1
+		
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.1
+			line_change_production_efficiency_factor = 0.1
+			political_power_factor = 0.05
+		}
+	}
+	
+	POL_Arms_Deal = {
+		
+		allowed = {
+			always = no
+		}
+		
+		available = {
+			NOT = { has_war_with = CZE }
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = free_trade
+			
+		removal_cost = -1
+		
+		equipment_bonus = {
+			artillery_equipment = {
+				build_cost_ic = -0.1 instant = yes
+			}
+		}
+	}
+	
+	POL_CZE_Arms_Deal = {
+		
+		allowed = {
+			always = no
+		}
+		
+		available = {
+			NOT = { has_war_with = POL }
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = free_trade
+			
+		removal_cost = -1
+		
+		equipment_bonus = {
+			fighter_equipment = {
+				build_cost_ic = -0.05 instant = yes
+			}
+		}
+	}
+	
+	POL_Arms_Deal_Dummy = {
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = free_trade
+			
+		removal_cost = -1
+		
+		equipment_bonus = {
+			artillery_equipment = {
+				build_cost_ic = -0.075 instant = yes
+			}
+		}
+	}
+	
+	POL_Arms_Imports = {
+		
+		allowed = {
+			always = no
+		}
+		
+		available = {
+			NOT = { has_war_with = CZE }
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = export_focus
+			
+		removal_cost = -1
+		
+		equipment_bonus = {
+			artillery_equipment = {
+				build_cost_ic = -0.025 instant = yes
+			}
+		}
+	}
+	
+	POL_Outsourced_Production = {
+		
+		allowed = {
+			always = no
+		}
+		
+		available = {
+			NOT = { has_war_with = FRA }
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = limited_exports
+			
+		removal_cost = -1
+		
+		equipment_bonus = {
+			light_tank_equipment = {
+				build_cost_ic = -0.1 instant = yes
+			}
+			medium_tank_equipment = {
+				build_cost_ic = -0.05 instant = yes
+			}
+			heavy_tank_equipment = {
+				build_cost_ic = -0.025 instant = yes
+			}
+		}
+	}
+	
+	POL_cze_tank = {
+		
+		allowed = {
+			always = no
+		}
+		
+		available = {
+			NOT = { has_war_with = CZE }
+			has_completed_focus = POL_Czeska_Technologia_wojskowa
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = man_five_year_plan_tank
+			
+		removal_cost = -1
+		
+		equipment_bonus = {
+			light_tank_equipment = {
+				build_cost_ic = -0.15 instant = yes
+			}
+			medium_tank_equipment = {
+				build_cost_ic = -0.20 instant = yes
+			}
+			heavy_tank_equipment = {
+				build_cost_ic = -0.25 instant = yes
+			}
+		}
+	}
+	
+	POL_Modern_Aircraft_Production = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_air_research
+
+		equipment_bonus = {
+			fighter_equipment = {
+				build_cost_ic = -0.25
+				instant = yes
+			}
+			cv_fighter_equipment = {
+				build_cost_ic = -0.2
+				instant = yes
+			}
+			CAS_equipment = {
+				build_cost_ic = -0.25
+				instant = yes
+			}
+			cv_CAS_equipment = {
+				build_cost_ic = -0.2
+				instant = yes
+			}
+			cv_nav_bomber_equipment = {
+				build_cost_ic = -0.2
+				instant = yes
+			}
+			nav_bomber_equipment = {
+				build_cost_ic = -0.2
+				instant = yes
+			}
+			tac_bomber_equipment = {
+				build_cost_ic = -0.2
+				instant = yes
+			}
+			heavy_fighter_equipment = {
+				build_cost_ic = -0.2
+				instant = yes
+			}
+			strat_bomber_equipment = {
+				build_cost_ic = -0.2
+				instant = yes
+			}
+			transport_plane_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+		}
+	}
+	
+	POL_Modern_Aircraft_Production1 = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_air_research
+
+		equipment_bonus = {
+			fighter_equipment = {
+				build_cost_ic = -0.04
+				instant = yes
+			}
+			cv_fighter_equipment = {
+				build_cost_ic = -0.04
+				instant = yes
+			}
+			CAS_equipment = {
+				build_cost_ic = -0.04
+				instant = yes
+			}
+			cv_CAS_equipment = {
+				build_cost_ic = -0.04
+				instant = yes
+			}
+		}
+	}
+	
+	POL_Modern_Aircraft_Production12 = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_air_research
+
+		equipment_bonus = {
+			fighter_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			cv_fighter_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			CAS_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			cv_CAS_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+	}
+	
+	POL_bulwark_against_bolshevism = {
+
+		available = {
+			NOT = { is_in_faction_with = SOV }
+			NOT = { has_war_together_with = SOV }
+			NOT = { has_government = communism }
+		}
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = ger_bulwark_against_bolshevism
+
+		modifier = {
+			industrial_capacity_factory = 0.10
+			industrial_capacity_dockyard = 0.10
+        }
+	}
+	
+	POL_the_great_red_menace = {
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = democratic
+		}
+
+		removal_cost = -1
+
+		picture = ger_the_great_red_menace
+
+		modifier = {
+			communism_drift = -0.02
+			neutrality_drift = 0.02
+		}
+	}
+	
+	POL_the_Habsburg_Dynasty = {
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+
+		picture = FRA_national_mobilization_focus
+
+		modifier = {
+			communism_drift = -0.05
+			fascism_drift = -0.05
+			democratic_drift = -0.05
+			neutrality_drift = 0.15
+		}
+	}
+	
+	POL_Motorization_Focus = {
+		
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = FRA_motorized_focus
+			
+		removal_cost = -1
+
+		equipment_bonus = {
+			motorized_equipment = {
+				build_cost_ic = -0.1 instant = yes
+			}
+			mechanized_equipment = {
+				build_cost_ic = -0.1 instant = yes
+			}
+		}
+	}
+	
+	POL_Air_Focus = {
+		
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = generic_air_bonus
+			
+		removal_cost = -1
+
+		equipment_bonus = {
+			fighter_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			cv_fighter_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			CAS_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			cv_CAS_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			cv_nav_bomber_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			nav_bomber_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			tac_bomber_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			heavy_fighter_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			strat_bomber_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+		}
+	}
+	
+	POL_Advanced_Pilot_Training_Program = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = air_war_plans_division_focus
+		
+		modifier = {
+			air_ace_generation_chance_factor = 0.20
+			aircraft_manufacturer_cost_factor = -0.25
+		}
+	}
+	
+	POL_Japanese_Guarantee = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = no
+		}
+			
+		removal_cost = -1
+
+		picture = warrior_traditions_idea
+	
+		modifier = {
+		}
+	}
+	
+	POL_Military_Youth_Focus = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_manpower_bonus
+	
+		modifier = {
+			conscription = 0.02
+			army_core_defence_factor = 0.04
+		}
+	}
+
+	
+	POL_general_staff = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+
+		removal_cost = -1
+		
+		picture = POL_Colonels_Regime
+			
+		modifier = {
+			max_planning = 0.05
+			high_command_cost_factor = -0.20
+		}
+		
+		research_bonus = {
+			land_doctrine = 0.05
+		}
+	}
+	
+	POL_Liberty_Desire = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		available = {
+			is_subject = yes
+		}
+
+		removal_cost = -1
+		
+		picture = generic_local_self_management
+			
+		modifier = {
+			autonomy_gain = 0.1
+			surrender_limit = 0.1
+		}
+	}
+	
+	POL_Family_Subsidies = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		
+		picture = generic_local_self_management
+			
+		modifier = {
+			production_speed_infrastructure_factor = 0.05
+			line_change_production_efficiency_factor = 0.15
+			global_building_slots_factor = 0.20
+		}
+	}
+	
+	POL_Family_Subsidies2 = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		
+		picture = generic_local_self_management
+			
+		modifier = {
+			production_speed_infrastructure_factor = 0.05
+			line_change_production_efficiency_factor = 0.2
+			global_building_slots_factor = 0.20
+			production_factory_max_efficiency_factor = 0.05
+		}
+	}
+	
+	POL_Foreign_Assets_Seized = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		research_bonus = {
+			industry = -0.2
+		}
+
+		removal_cost = -1
+		
+		picture = generic_local_self_management
+			
+		modifier = {
+			production_speed_buildings_factor = 0.03
+			industrial_concern_cost_factor = -0.2
+			materiel_manufacturer_cost_factor = -0.2
+		}
+	}
+	
+	POL_Empty_Universities = {
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		
+		picture = tfv_can_conscription_crisis
+			
+		modifier = {
+		    research_speed_factor = -0.15
+		}
+	}
+	
+	POL_The_Catholic_Student_Movement = {
+		removal_cost = -1
+			
+		allowed = {
+			always = no # Added via focus
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		picture = generic_research_bonus
+			
+		modifier = {
+			research_speed_factor = 0.05
+		}
+	}
+	
+	collective_austerity_idea = {
+			
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_goods_red_bonus
+			
+		modifier = {
+			consumer_goods_factor = -0.05
+			production_factory_efficiency_gain_factor = 0.05
+		}
+	}
+	
+	state_capitalism_idea = {
+			
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_goods_red_bonus
+			
+		modifier = {
+			consumer_goods_factor = -0.05
+			equipment_conversion_speed = 0.20
+			conversion_cost_civ_to_mil_factor= -0.1
+			conversion_cost_mil_to_civ_factor= -0.1
+		}
+	}
+		
+	POL_Budget_Reform_Focus = {
+			
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_foreign_capital
+	
+		modifier = {
+			production_speed_industrial_complex_factor = 0.25
+			production_speed_synthetic_refinery_factor = 0.25
+			production_speed_arms_factory_factor = -0.10
+			production_factory_max_efficiency_factor = -0.10
+		}
+	}
+	
+	POL_Army_grown = {
+			
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_goods_red_bonus
+	
+		modifier = {
+			production_speed_arms_factory_factor = 0.20
+		}
+	}
+	
+	POL_Next_War_Focus = {
+			
+			
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_foreign_capital
+	
+		modifier = {
+			production_speed_arms_factory_factor = 0.25
+			license_production_speed = 0.25
+			production_speed_industrial_complex_factor = -0.10
+		}
+	}
+	
+	POL_Cult_Of_The_Marshal = {
+		
+		
+		allowed = {
+			always = no
+		}
+		
+		available = {
+			has_government = neutrality
+		}
+
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		
+		removal_cost = -1
+
+		picture = Cult_Marshal_Portrait	
+	
+		modifier = {
+			neutrality_drift = 0.03
+			stability_factor = 0.03
+			army_chief_cost_factor = -0.20
+		}
+	}
+	
+	POL_Agrarian_Reform_Focus = {
+		picture = generic_pp_unity_bonus
+		allowed = {
+			always = no # Added via focus
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.15
+			political_power_factor = 0.25
+		}
+	}		
+	
+	POL_Workers_Brigades = {
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = POL_Workers_Brigades
+
+		modifier = {
+			industry_repair_factor = 0.25
+			industry_free_repair_factor = 0.25
+			dig_in_speed_factor = 0.25
+			industry_air_damage_factor = -0.1
+		}
+	}
+		
+	POL_Prometheism = {
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+			
+		picture = POL_Prometheism
+
+		modifier = {
+			send_volunteer_divisions_required = -0.25
+			send_volunteers_tension = -0.35
+			send_volunteer_size = 2
+		}
+	}
+	
+	POL_The_Great_Depression = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+
+	
+		modifier = {
+			consumer_goods_factor = 0.06
+			industrial_capacity_factory = -0.2
+			industrial_capacity_dockyard = -0.2
+		}
+	}
+	
+	POL_The_Great_Depression2 = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		picture = POL_The_Great_Depression
+		
+		removal_cost = -1
+
+	
+		modifier = {
+			consumer_goods_factor = 0.03
+			industrial_capacity_factory = -0.1
+			industrial_capacity_dockyard = -0.1
+		}
+	}
+	
+	POL_The_Great_Depression_Castle = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		picture = POL_The_Great_Depression
+		
+		removal_cost = -1
+
+	
+		modifier = {
+			industrial_capacity_factory = -0.2
+			production_speed_arms_factory_factor = -0.2
+		}
+	}
+	
+	POL_The_Great_Depression_Castle2 = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		picture = POL_The_Great_Depression
+		
+		removal_cost = -1
+
+	
+		modifier = {
+			industrial_capacity_factory = -0.1
+			production_speed_arms_factory_factor = -0.1
+		}
+	}
+	
+	POL_The_Great_Depression_Sanacja_Right = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		picture = POL_The_Great_Depression
+		
+		removal_cost = -1
+	
+		modifier = {
+			consumer_goods_factor = 0.08
+			industrial_capacity_dockyard = -0.2
+		}
+		
+		equipment_bonus = {
+			dummy_tooltip_equipment = { }
+			infantry_equipment = {
+				build_cost_ic = 0.2 instant = yes
+			}
+		}
+	}
+	
+	POL_The_Great_Depression_Sanacja_Right2 = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		picture = POL_The_Great_Depression
+		
+		removal_cost = -1
+
+	
+		modifier = {
+			consumer_goods_factor = 0.04
+			industrial_capacity_dockyard = -0.1
+		}
+		
+		equipment_bonus = {
+			dummy_tooltip_equipment = { }
+			infantry_equipment = {
+				build_cost_ic = 0.1 instant = yes
+			}
+		}
+	}
+	
+	POL_The_Great_Depression_Sanacja_Right_dummy = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+		
+		
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = 0.2 instant = yes
+			}
+		}
+	}
+	
+	POL_The_Great_Depression_Sanacja_Right2_dummy = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+		
+		
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = 0.1 instant = yes
+			}
+		}
+	}
+	
+	POL_Communal_Farms = {
+		
+		picture = generic_pp_unity_bonus
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			has_government = democratic
+		}
+		
+		removal_cost = -1
+
+	
+		modifier = {
+			production_factory_efficiency_gain_factor = -0.05
+			political_power_factor = 0.05
+			stability_factor = 0.03
+		}
+	}
+	
+	POL_Rural_Unemployment = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+
+	
+		modifier = {
+			consumer_goods_factor = 0.06
+			production_factory_efficiency_gain_factor = -0.2
+			political_power_cost = 0.6
+		}
+	}
+	
+	POL_Rural_Unemployment3 = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+
+	
+		modifier = {
+			consumer_goods_factor = 0.02
+			production_factory_efficiency_gain_factor = -0.1
+			political_power_cost = 0.3
+		}
+	}
+	
+	POL_Rural_Unemployment2 = {
+		
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		picture = POL_Rural_Unemployment
+		
+		removal_cost = -1
+
+	
+		modifier = {
+			consumer_goods_factor = 0.03
+			production_factory_efficiency_gain_factor = -0.1
+			political_power_cost = 0.3
+		}
+	}
+	
+	POL_Wartime_Industry_Effort = {
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		picture = generic_production_bonus
+		
+		removal_cost = -1
+	
+		modifier = {
+			production_factory_max_efficiency_factor = 0.1
+		}
+	}
+	
+	POL_Polish_Cipher_Bureau_Focus0	= {
+	
+	
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+		
+		picture = POL_Intelligence_Service0
+		
+		modifier = {
+			decryption = 0.1
+		}
+	}
+	
+	POL_Polish_Cipher_Bureau_Focus1	= {
+	
+	
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+		
+		picture = POL_Intelligence_Service1
+		
+		modifier = {
+			decryption = 0.3
+		}
+	}
+	
+	POL_Polish_Cipher_Bureau_Focus2	= {
+	
+	
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+		
+		picture = POL_Intelligence_Service2
+		
+		modifier = {
+			decryption = 0.4
+		}
+	}
+	
+	POL_Polish_Cipher_Bureau_Focus3	= {
+	
+	
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+		
+		picture = POL_Intelligence_Service3
+		
+		modifier = {
+			decryption = 0.5
+		}
+	}
+	
+	POL_Enlistment_Restrictions	= {
+	
+	
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+		
+		picture = SOV_scientist_defect
+		
+		modifier = {
+			foreign_subversive_activites = -0.2
+			conscription_factor = -0.05
+		}
+	}
+	
+	POL_Polish_Military_Mission	= {
+	
+	
+		allowed = {
+			always = no
+		}
+		
+		available = {
+			is_in_faction_with = POL
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+		
+		picture = POL_Plan_W	
+		
+		research_bonus = {
+			computing_tech = 0.05
+		}
+		
+		modifier = {
+			decryption = 0.1
+		}
+	}
+	
+	POL_militarism_focus = {
+			
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_manpower_bonus
+		
+		modifier = {
+			conscription = 0.025
+			resistance_damage_to_garrison = 0.25 
+		}
+	}	
+
+	POL_authoritarianism_focus = {
+			
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+			
+		removal_cost = -1
+
+		picture = generic_intel_bonus
+		
+		modifier = {
+			democratic_drift = -0.1
+			democratic_acceptance = -100
+		}
+	}
+
+	POL_polish_revanchism_focus = {
+	
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_intel_bonus
+		
+		modifier = {		
+			justify_war_goal_time = -0.3
+			generate_wargoal_tension = -0.3
+		}
+	}
+	
+	POL_Military_Rearmament = {
+	
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_production_bonus
+	
+		modifier = {
+			training_time_army_factor = -0.25
+			production_speed_industrial_complex_factor = -0.25
+		}
+		
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.25 instant = yes
+			}
+		}
+	}
+	
+	POL_Fortification_Effort = {
+			
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = generic_production_bonus
+	
+		modifier = {
+			production_speed_bunker_factor = 0.2
+			production_speed_coastal_bunker_factor = 0.2
+			production_speed_anti_air_building_factor = 0.2
+		}
+	}
+	
+	POL_internationalism_focus = {
+	
+		allowed = {
+			original_tag = POL
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_goods_red_bonus
+		
+		modifier = {		
+			trade_opinion_factor = 0.2
+		}
+	}	
+}
+
+political_advisor = {
+	
+	POL_Leon_Kozlowski = {
+
+		picture = Leon_Kozlowski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			OR = {
+				has_government = neutrality
+				is_subject_of = GER
+			}
+		}
+		
+		visible = {
+			OR = {
+				has_government = neutrality
+				is_subject_of = GER
+			}
+			NOT = { has_completed_focus = POL_The_Endecja_Movement }
+			NOT = { has_completed_focus = POL_The_National_Radical_Camp }
+			NOT = { has_completed_focus = POL_The_Polish_Socialist_Party }
+			NOT = { has_completed_focus = POL_The_Front_Morges }
+		}
+		
+		traits = { prince_of_terror }
+	}
+	
+	POL_Ignacy_Paderewski = {
+
+		picture = Ignacy_Paderewski
+
+		allowed = {
+			original_tag = POL
+		}
+		
+		visible = {
+			OR = {
+				has_government = democratic
+				has_completed_focus = POL_The_Endecja_Movement
+				has_completed_focus = POL_The_Front_Morges
+			}
+			NOT = { has_government = communism }
+			NOT = { has_completed_focus = POL_The_Polish_Socialist_Party }
+		}
+		
+		traits = { popular_figurehead }
+		
+		available = {
+			has_government = democratic
+			date < 1941.06.29
+			OR = {
+				has_completed_focus = POL_The_Front_Morges
+				has_completed_focus = POL_The_Endecja_Movement
+			}
+		}
+	}
+	
+	POL_August_Zaleski = {
+		
+		picture = August_Zaleski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Sanation_Left
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Sanation_Left
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		cost = 150
+			
+		traits = { POL_Foreign_Affairs }
+	}
+	
+	POL_Wladyslaw_Studnicki = {
+		
+		picture = Wladyslaw_Studnicki
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			NOT = { has_war_with = GER }
+			OR = {
+				AND = {
+					has_completed_focus = POL_The_National_Radical_Camp
+					has_government = fascism
+					85 = { OWNER = { original_TAG = GER } }
+				}
+				has_country_flag = POL_German_Backed_Monarchy
+				has_country_flag = POL_Austrian_Backed_Monarchy
+				AND = {
+					is_subject_of = GER
+					GER = { has_government = neutrality }
+				}
+				is_faction_leader = yes
+			}
+		}
+		
+		visible = {
+			OR = {
+				has_completed_focus = POL_The_National_Radical_Camp
+				has_country_flag = POL_German_Backed_Monarchy
+				has_country_flag = POL_Austrian_Backed_Monarchy
+				AND = {
+					is_subject_of = GER
+					GER = { has_government = neutrality }
+				}
+			}
+			NOT = { has_government = communism }
+		}
+		
+		cost = 100
+			
+		traits = { POL_pro_german_realist  }
+	}
+	
+	POL_Wanda_Wasilewska = {
+		
+		picture = Wanda_Wasilewska
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			OR = {
+				has_government = communism
+				is_faction_leader = yes
+			}
+		}
+		
+		visible = {
+			AND = {
+				NOT = { has_country_flag = PPS_Revolutionary_Path }
+				NOT = { has_completed_focus = POL_Draw_Closer_To_The_USSR }
+				NOT = { has_completed_focus = POL_Seek_Autonomy }
+			}
+			OR = {
+				has_government = communism
+				has_completed_focus = POL_The_Polish_Socialist_Party
+			}
+		}
+		
+		cost = 100
+			
+		traits = { POL_internationalist_sympathizer }
+	}
+	
+	POL_jozef_beck = {
+
+		picture = generic_army_europe_5
+
+		allowed = {
+			original_tag = POL
+		}
+		
+		allowed = {
+			original_tag = POL
+			is_puppet = no
+			NOT = { has_government = communism }
+			NOT = { has_completed_focus = POL_New_King }
+			NOT = { has_completed_focus = POL_The_Kingdom_Of_Poland_Revolt }
+		}
+		
+		visible = {
+			NOT = { has_completed_focus = POL_The_Kingdom_Of_Poland_Revolt }
+			NOT = { has_completed_focus = POL_New_King }
+			is_puppet = no
+			NOT = { has_government = communism }
+		}
+		
+		traits = { POL_smooth_talking_charmer }
+		
+		on_add = {
+			custom_effect_tooltip = POL_Event_Bonus
+		}
+	}
+	
+	POL_Zygmunt_Modzelewski = {
+
+		picture = Zygmunt_Modzelewski
+
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_government = communism
+		}
+		
+		visible = {
+			has_government = communism
+		}
+		
+		traits = { POL_smooth_talking_charmer }
+		
+		on_add = {
+			custom_effect_tooltip = POL_Event_Bonus
+		}
+	}
+	
+	POL_Eustachy_Sapieha = {
+
+		picture = Eustachy_Sapieha
+
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_French_King
+			is_puppet = no
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+		
+		visible = {
+			has_completed_focus = POL_French_King
+			is_puppet = no
+			NOT = { has_government = communism }
+		}
+		
+		traits = { POL_trade_and_shipping1 }
+		
+		on_add = {
+			custom_effect_tooltip = POL_Event_Bonus
+		}
+	}
+	
+	POL_Adam_Poszwinski = {
+		
+		picture = Adam_Poszwinski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_National_Radical_Camp
+			is_puppet = no
+			NOT = { is_in_faction_with = GER }
+			NOT = { has_government = communism }
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_National_Radical_Camp
+			is_puppet = no
+			NOT = { has_government = communism }
+		}
+			
+		traits = { POL_Veteran_of_the_Greater_Polish_Uprising }
+	}
+	
+	POL_Kazimierz_Bartel = {
+
+		picture = Kazimierz_Bartel
+
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			OR = {
+				has_government = neutrality
+				AND {
+					has_government = democratic
+					NOT = { has_completed_focus = POL_The_Endecja_Movement }
+				}
+			}
+			is_puppet = no
+		}
+		
+		visible = {
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+			}
+			NOT = { has_completed_focus = POL_The_Endecja_Movement }
+			NOT = { has_completed_focus = POL_The_National_Radical_Camp }
+			NOT = { has_completed_focus = POL_The_Polish_Socialist_Party }
+			is_puppet = no
+		}
+		
+		traits = { quartermaster_general }
+	}
+	
+	POL_Jan_Kwapinski = {
+		
+		picture = Jan_Kwapinski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Polish_Socialist_Party
+			has_country_flag = PPS_Democratic_Path
+			is_subject = no
+			has_government = democratic
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Polish_Socialist_Party
+			NOT = { has_country_flag = PPS_Revolutionary_Path }
+			is_subject = no
+			NOT = { has_government = communism }
+		}
+		
+		equipment_bonus = {
+			convoy = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+			
+		traits = { POL_trade_and_shipping }
+	}
+	
+	POL_jozef_haller = {
+
+		allowed = {
+			original_tag = POL
+		}
+			
+		traits = { blue_general }
+		
+		equipment_bonus = {
+			support_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1.5
+		}
+		
+		picture = Jozef_Haller
+			
+		cost = 180
+			
+		available = {
+			is_puppet = no
+			has_government = neutrality
+		}
+		
+		visible = {
+			is_puppet = no
+			NOT = { has_government = communism }
+		}
+		
+		on_add = {
+			if = {
+				limit = { NOT = { has_country_flag = POL_Haller_Selected } }
+				add_offsite_building = { type = arms_factory level = 1 }
+				set_country_flag = POL_Haller_Selected
+			}
+		}
+	}
+	
+	POL_Henryk_Strasburger = {
+
+		picture = Henryk_Strasburger
+
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_Przemysl_LRL
+			NOT = { has_government = communism }
+		}
+		
+		visible = {
+			has_completed_focus = POL_Przemysl_LRL
+		}
+		
+		traits = { POL_Commercial_Interests }
+	}
+	
+	POL_mieczyslaw_michalowicz = {
+
+		picture = generic_democratic_reformer_eastern_european_2d
+
+		allowed = {
+			original_tag = POL
+		}
+		
+		visible = {
+			OR = {
+				has_completed_focus = POL_The_Front_Morges
+				has_completed_focus = POL_The_Sanation_Left
+			}
+			is_puppet = no
+			NOT = { has_government = communism }
+		}
+		
+		traits = { free_mason }
+
+		ai_will_do = {
+			factor = 3
+		}
+		
+		available = {
+			OR = {
+				has_completed_focus = POL_Civil_Service_Reform
+				has_completed_focus = POL_Invite_The_Political_Opposition
+			}
+			is_puppet = no
+			NOT = { has_government = communism }
+		}
+	}
+	
+	POL_Aleksander_Prystor = {
+
+		picture = Aleksander_Prystor
+
+		allowed = {
+			original_tag = POL
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Sanation_Left
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		traits = { silent_workhorse_old_guard }
+
+		ai_will_do = {
+			factor = 3
+		}
+		
+		cost = 50
+		
+		available = {
+			has_completed_focus = POL_The_Sanation_Left
+			has_government = neutrality
+			is_puppet = no
+		}
+	}
+	
+	POL_Ignacy_Matuszewski = {
+
+		picture = Ignacy_Matuszewski
+
+		allowed = {
+			original_tag = POL
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Sanation_Left
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		traits = { war_industrialist }
+		
+		available = {
+			has_completed_focus = POL_The_Sanation_Left
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+	}
+	
+	POL_Tadeusz_Schaetzel = {
+
+		picture = Tadeusz_Schaetzel
+		
+		allowed = {
+			original_tag = POL
+		}
+			
+		visible = {
+			has_completed_focus = POL_The_Sanation_Left
+			has_government = neutrality
+			is_subject = no
+		}
+			
+		traits = { promethean_program }
+			
+		ai_will_do = {
+			factor = 1.5
+		}
+			
+		available = {
+			has_completed_focus = POL_The_Sanation_Left
+			has_government = neutrality
+			is_subject = no
+		}
+	}
+	
+	POL_Marian_Zyndram_Koscialkowski = {
+	
+		picture = Marian_Zyndram_Koscialkowski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Castle
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Castle
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		cost = 200
+		
+		traits = { POL_Public_Welfare }
+	}
+	
+	POL_Wladyslaw_Raczkiewicz = {
+	
+		picture = Wladyslaw_Raczkiewicz
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Castle
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Castle
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		cost = 100
+		
+		traits = { silent_workhorse }
+	}
+	
+	POL_eugeniusz_kwiatkowiski = {
+	
+		picture = generic_army_europe_4
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			OR = {
+				has_completed_focus = POL_The_Castle
+				has_country_flag = POL_Power_Sharing_Agreement
+				has_completed_focus = POL_New_Przemysl
+			}
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		visible = {
+			OR = {
+				has_completed_focus = POL_The_Castle
+				has_country_flag = POL_Power_Sharing_Agreement
+				has_completed_focus = POL_New_King
+			}
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		traits = { captain_of_industry }
+	}
+	
+	POL_Tommy_Lascelles = {
+
+		picture = Tommy_Lascelles
+
+		allowed = {
+			original_tag = POL
+		}
+		
+		cost = 100
+		
+		traits = { compassionate_gentleman1 }
+		
+		available = {
+			OR = {
+			    has_completed_focus = POL_English_King
+			}
+			NOT = { has_government = communism }
+		}
+		
+		visible = {
+			OR = {
+			    has_completed_focus = POL_English_King
+			}
+			NOT = { has_government = communism }
+		}
+	}
+	
+	POL_Janusz_Radziwill = {
+
+		picture = Janusz_Radziwill
+
+		allowed = {
+			original_tag = POL
+		}
+		
+		research_bonus = {
+			industry = 0.03
+		}
+		
+		cost = 150
+		
+		traits = { well_connected_businessman }
+		
+		available = {
+			OR = {
+				has_completed_focus = POL_Maritime_and_Colonial_League
+				has_completed_focus = POL_The_Castle
+				has_completed_focus = POL_New_King
+				has_country_flag = POL_Power_Sharing_Agreement
+			}
+			NOT = { has_government = communism }
+		}
+		
+		visible = {
+			OR = {
+			    has_completed_focus = POL_secure_the_new_state
+				has_completed_focus = POL_Maritime_and_Colonial_League
+				has_completed_focus = POL_The_Castle
+				has_completed_focus = POL_New_King
+				has_country_flag = POL_Power_Sharing_Agreement
+			}
+			NOT = { has_government = communism }
+		}
+	}
+	
+	POL_cardinal_Adam_Sapieha = {
+		
+		picture = cardinal_Adam_Sapieha
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+		    OR = {
+			    has_completed_focus = POL_The_Endecja_Movement
+				has_completed_focus = POL_New_King
+			}
+			NOT = { has_government = communism }
+		}
+		
+		visible = {
+			OR = {
+			    has_completed_focus = POL_The_Endecja_Movement
+				has_completed_focus = POL_New_King
+			}
+		}
+		
+		cost = 50
+			
+		traits = { archbishop_of_krakow }
+	}
+	
+	POL_Adam_Heydel = {
+		
+		picture = Adam_Heydel
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_Capitalism_Etatyzm
+			NOT = { has_government = communism }
+		}
+		
+		visible = {
+			NOT = { has_government = communism }
+		}
+		
+		cost = 150
+			
+		traits = { POL_polish_capitalist }
+	}
+	
+	POL_Ludwig_von_Mises = {
+		
+		picture = Ludwig_Mises
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_Szkola_Austriacka
+			NOT = { has_government = communism }
+		}
+		
+		visible = {
+			NOT = { has_government = communism }
+		}
+		
+		cost = 150
+			
+		traits = { POL_polish_capitalist2 }
+	}
+	
+	POL_August_Hlond = {
+		
+		picture = August_Hlond
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+		    OR = {
+				has_completed_focus = POL_English_King
+			    has_completed_focus = POL_Polish_King
+			    has_completed_focus = POL_Austrian_King
+			    has_completed_focus = POL_French_King
+				has_completed_focus = POL_German_King
+			}
+			NOT = { has_government = communism }
+		}
+		
+		visible = {
+			OR = {
+				has_completed_focus = POL_English_King
+			    has_completed_focus = POL_Polish_King
+			    has_completed_focus = POL_Austrian_King
+			    has_completed_focus = POL_French_King
+				has_completed_focus = POL_German_King
+			}
+			NOT = { has_government = communism }
+		}
+		
+		cost = 150
+			
+		traits = { archbishop_of_krakow1 }
+	}
+	
+	POL_Adam_Koc = {
+	
+		picture = Adam_Koc
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		visible = {
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		cost = 150
+		
+		traits = { military_treasurer }
+	}
+	
+	POL_Aleksander_Osinski = {
+	
+		picture = Aleksander_Osinski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_Modernising_The_Cavalry1
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		visible = {
+			has_completed_focus = POL_Modernising_The_Cavalry1
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		cost = 150
+		
+		traits = { POL_Polish_Red_Cross }
+		
+		equipment_bonus = {
+			support_equipment = {
+				build_cost_ic = -0.08
+				instant = yes
+			}
+		}
+		
+		research_bonus = {
+			support_tech = 0.03
+		}
+	}
+	
+	POL_Leon_Berbecki = {
+	
+		picture = Leon_Berbecki
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Sanation_Right
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Sanation_Right
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		cost = 150
+		
+		traits = { POL_air_defense_emphasis }
+		
+		equipment_bonus = {
+			anti_air_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+	}
+	
+	POL_Felicjan_Skladkowski = {
+	
+		picture = Felicjan_Skladkowski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Sanation_Right
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Sanation_Right
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		cost = 50
+		
+		traits = { backroom_backstabber }
+	}
+	
+	POL_Kordian_Zamorski = {
+	
+		picture = Kordian_Zamorski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Sanation_Right
+			NOT = { has_country_flag = POL_Power_Sharing_Agreement }
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Sanation_Right
+			has_country_flag = POL_rejected_Power_Sharing_Agreement
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		cost = 150
+		
+		traits = { POL_Head_of_State_Police }
+		
+	}
+	
+	POL_Stanislaw_Glabinski = {
+	
+		picture = Stanislaw_Glabinski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Endecja_Movement
+			is_puppet = no
+			has_government = democratic
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Endecja_Movement
+			is_puppet = no
+			NOT = { has_government = communism }
+		}
+		
+		traits = { POL_Public_Affairs }
+	}
+	
+	POL_Wojciech_Zaleski = {
+		
+		picture = Wojciech_Zaleski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_National_Radical_Camp
+			is_puppet = no
+			has_government = fascism
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_National_Radical_Camp
+			is_puppet = no
+			NOT = { has_government = communism }
+		}
+			
+		traits = { armaments_organizer }
+	}
+	
+	POL_Wojciech_Kwasieborski = {
+		
+		picture = Wojciech_Kwasieborski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_National_Radical_Camp
+			is_puppet = no
+			has_government = fascism
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_National_Radical_Camp
+			is_puppet = no
+			NOT = { has_government = communism }
+		}
+		
+		cost = 200
+			
+		traits = { POL_Education_Indoctrination }
+	}
+	
+	POL_Zygmunt_Zaremba = {
+		
+		picture = Zygmunt_Zaremba
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Polish_Socialist_Party
+			has_country_flag = PPS_Democratic_Path
+			is_subject = no
+			has_government = democratic
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Polish_Socialist_Party
+			has_country_flag = PPS_Democratic_Path
+			is_subject = no
+			NOT = { has_government = communism }
+		}
+		
+		cost = 250
+			
+		traits = { POL_Foreign_Trade_Advocate  }
+	}
+	
+	POL_Adam_Ronikier = {
+		
+		picture = Adam_Ronikier
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			OR = {
+				has_completed_focus = POL_The_Endecja_Movement
+				has_completed_focus = POL_Osaczony_Orzel
+				is_subject_of = GER
+			}
+			NOT = { has_government = communism }
+		}
+		
+		visible = {
+			OR = {
+				has_completed_focus = POL_The_Endecja_Movement
+				has_completed_focus = POL_Osaczony_Orzel
+				is_subject_of = GER
+			}
+			NOT = { has_government = communism }
+		}
+		
+		cost = 100
+			
+		traits = { POL_compassionate_nationalist }
+	}
+	
+	POL_Adam_Doboszynski = {
+		
+		picture = Adam_Doboszynski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			OR = {
+				has_completed_focus = POL_The_National_Radical_Camp
+				has_completed_focus = POL_The_Endecja_Movement
+			}
+			is_puppet = no
+			OR = {
+				has_government = democratic
+				has_government = fascism
+			}
+		}
+		
+		visible = {
+			OR = {
+				has_completed_focus = POL_The_National_Radical_Camp
+				has_completed_focus = POL_The_Endecja_Movement
+			}
+			is_puppet = no
+			NOT = { has_government = communism }
+		}
+		
+		cost = 250
+			
+		traits = { financial_expert  }
+	}
+	
+	POL_Adolf_Nowaczynski = {
+		
+		picture = Adolf_Nowaczynski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_National_Radical_Camp
+			is_puppet = no
+			has_government = fascism
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_National_Radical_Camp
+			is_puppet = no
+			NOT = { has_government = communism }
+		}
+		
+		cost = 100
+			
+		traits = { POL_Flamboyant_Activist }
+	}
+	
+	POL_Stanislaw_Grabski = {
+	
+		picture = Stanislaw_Grabski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Endecja_Movement
+			is_puppet = no
+			has_government = democratic
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Endecja_Movement
+			is_puppet = no
+			NOT = { has_government = communism }
+		}
+		
+		cost = 100
+		
+		traits = { POL_Polonization_Advocate }
+	}
+	
+	POL_Roman_Rybarski = {
+	
+		picture = Roman_Rybarski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_Russian_King
+			is_puppet = no
+		}
+		
+		visible = {
+			has_completed_focus = POL_Russian_King
+			is_puppet = no
+			NOT = { has_government = communism }
+		}
+		
+		research_bonus = {
+			industry = 0.1
+		}
+		
+		cost = 150
+		
+		traits = { POL_Classical_Economist }
+	}
+	
+	POL_Janusz_Jedrzejewicz = {
+		
+		picture = Janusz_Jedrzejewicz
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			OR = {
+				has_completed_focus = POL_The_Sanation_Left
+				has_completed_focus = POL_The_Castle
+			}
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		visible = {
+			OR = {
+				has_completed_focus = POL_The_Sanation_Left
+				has_completed_focus = POL_The_Castle
+			}
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		cost = 150
+			
+		traits = { POL_Education_Reformer }
+	}
+	
+	POL_Juliusz_Ulrych = {
+		
+		picture = Juliusz_Ulrych
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Castle
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Castle
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		cost = 150
+			
+		traits = { POL_infrastructure_emphasis }
+	}
+	
+	POL_Mieczyslaw_Norwid_Neugebauer = {
+		
+		picture = Mieczyslaw_Norwid_Neugebauer
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			OR = {
+				has_completed_focus = POL_The_Sanation_Left
+				has_completed_focus = POL_The_Sanation_Right
+			}
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		visible = {
+			OR = {
+				has_completed_focus = POL_The_Sanation_Left
+				has_completed_focus = POL_The_Sanation_Right
+			}
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		cost = 150
+			
+		traits = { POL_Public_Works_and_Army_Reserve }
+	}
+	
+	POL_Zygmunt_Zulawski = {
+		
+		picture = Zygmunt_Zulawski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Polish_Socialist_Party
+			NOT = { has_completed_focus = POL_Draw_Closer_To_The_USSR }
+			OR = {
+				has_government = democratic
+				has_government = communism
+			}
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Polish_Socialist_Party
+			NOT = { has_completed_focus = POL_Draw_Closer_To_The_USSR }
+		}
+		
+		cost = 100
+			
+		traits = { POL_party_chairman }
+	}
+	
+	POL_Kazimierz_Puzak = {
+		
+		picture = Kazimierz_Puzak
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Polish_Socialist_Party
+			has_country_flag = PPS_Democratic_Path
+			is_subject = no
+			has_government = democratic
+			NOT = { has_cosmetic_tag = POLWRN }
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Polish_Socialist_Party
+			NOT = { has_country_flag = PPS_Revolutionary_Path }
+			is_subject = no
+			NOT = { has_government = communism }
+			NOT = { has_cosmetic_tag = POLWRN }
+		}
+		
+		cost = 100
+			
+		traits = { POL_Secretary_General }
+	}
+	
+	POL_Jan_Pilsudski = {
+		
+		picture = Jan_Pilsudski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Sanation_Left
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Sanation_Left
+			has_government = neutrality
+			is_puppet = no
+		}
+		
+		cost = 200
+			
+		traits = { The_Marshals_Brother POL_Bank_President }
+	}
+	
+	POL_Maciej_Rataj = {
+		
+		picture = Maciej_Rataj
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_completed_focus = POL_The_Front_Morges
+			is_subject = no
+			has_government = democratic
+		}
+		
+		visible = {
+			has_completed_focus = POL_The_Front_Morges
+			is_subject = no
+			NOT = { has_government = communism }
+		}
+		
+		cost = 100
+			
+		traits = { POL_Marshal_of_the_Sejm }
+	}
+	
+	POL_Edward_Osobka_Morawski = {
+		
+		picture = Edward_Osobka_Morawski
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_government = communism
+			OR = {
+				has_completed_focus = POL_Draw_Closer_To_The_USSR
+				has_country_flag = PPS_Revolutionary_Path
+			}
+		}
+		
+		visible = {
+			OR = {
+				AND = {
+					has_completed_focus = POL_Beck_Molotov_Pact
+					has_government = communism
+					NOT = { has_completed_focus = POL_Seek_Autonomy }
+				}
+				has_completed_focus = POL_Draw_Closer_To_The_USSR
+				AND = {
+					is_subject_of = SOV
+					NOT = { has_completed_focus = POL_Seek_Autonomy }
+				}
+				has_country_flag = PPS_Revolutionary_Path
+			}
+		}
+		
+		cost = 100
+			
+		traits = { POL_Agriculture_Reform stalins_puppet }
+	}
+	
+	POL_Jozef_Cyrankiewicz = {
+		
+		picture = Jozef_Cyrankiewicz
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			has_government = communism
+			OR = {
+				has_completed_focus = POL_Draw_Closer_To_The_USSR
+				has_country_flag = PPS_Revolutionary_Path
+			}
+		}
+		
+		visible = {
+			OR = {
+				AND = {
+					has_completed_focus = POL_Beck_Molotov_Pact
+					has_government = communism
+					NOT = { has_completed_focus = POL_Seek_Autonomy }
+				}
+				has_completed_focus = POL_Draw_Closer_To_The_USSR
+				AND = {
+					is_subject_of = SOV
+					NOT = { has_completed_focus = POL_Seek_Autonomy }
+				}
+				has_country_flag = PPS_Revolutionary_Path
+			}
+		}
+		
+		cost = 100
+			
+		traits = { silent_workhorse stalins_puppet }
+	}
+	
+	POL_Edward_Gierek {
+		
+		picture = Edward_Gierek
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		cost = 250
+		
+		available = {
+			OR = {
+				has_completed_focus = POL_Draw_Closer_To_The_USSR
+				has_completed_focus = POL_Seek_Autonomy
+			}
+			has_government = communism
+		}
+		
+		visible = {
+			OR = {
+				AND = {
+					has_completed_focus = POL_Beck_Molotov_Pact
+					has_government = communism
+				}
+				has_completed_focus = POL_Draw_Closer_To_The_USSR
+				has_completed_focus = POL_Seek_Autonomy
+				is_subject_of = SOV
+			}
+		}
+			
+		traits = { POL_Heavy_Industry_Emphasis }
+	}
+	
+}
+
+theorist = {
+
+	POL_marian_rejewski = {
+		
+		available = {
+		    OR = {
+			    has_completed_focus = POL_The_Bombe
+			    has_completed_focus = POL_The_Bombe1
+		    }
+        }
+				
+		allowed = {
+			original_tag = POL
+		}
+		
+		picture = Marian_Rejewski
+		
+		cost = 250
+		
+		traits = { intelligence_analyst }
+		
+		research_bonus = {
+			computing_tech = 0.05
+		}
+	}
+	
+	POL_Tadeusz_Malinowski = {
+				
+				
+		allowed = {
+			original_tag = POL
+		}
+		
+		picture = Tadeusz_Malinowski
+		
+		research_bonus = {
+			land_doctrine = 0.07
+		}
+		
+		traits = { military_theorist }
+	}
+
+	POL_wladyslaw_kalkus = {
+				
+				
+		allowed = {
+			original_tag = POL
+		}
+		
+		picture = Wladyslaw_Kalkus
+		
+		research_bonus = {
+			air_doctrine = 0.07
+		}
+		
+		traits = { air_warfare_theorist }
+	}
+	
+	#POL_Wilhelm_Orlik_Ruckemann = {
+
+			
+	#	allowed = {
+	#		original_tag = POL
+	#	}
+		
+	#	picture = Wilhelm_Orlik_Ruckemann
+			
+	#	cost = 200
+			
+	#	research_bonus = {
+	#		cat_mobile_warfare = 0.10
+	#	}
+			
+
+	#	traits = { mobile_warfare_expert }
+	#}
+	
+	POL_Stefan_Mossor = {
+
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		picture = Stefan_Mossor
+			
+		cost = 200
+			
+		research_bonus = {
+			cat_mobile_warfare = 0.10
+		}
+			
+
+		traits = { mobile_warfare_expert }
+	}
+	
+	POL_Rudolf_Gundlach = {
+	
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+		    OR = {
+			    has_completed_focus = POL_Gundlach_Periscope
+			    has_completed_focus = POL_New_Tanks
+		    }
+		}
+		
+		picture = Rudolf_Gundlach
+		
+		cost = 150
+		
+		traits = { POL_tank_theorist }
+		
+		equipment_bonus = {
+			heavy_tank_equipment = {
+				build_cost_ic = -0.025
+				instant = yes
+			}
+		}
+		equipment_bonus = {
+			medium_tank_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+		equipment_bonus = {
+			light_tank_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	POL_Jerzy_Swirski = {
+			
+			
+		allowed = {
+			original_tag = POL
+		}
+			
+		picture = Jerzy_Swirski
+			
+		research_bonus = {
+			naval_doctrine = 0.07
+		}
+			
+		traits = { naval_theorist }
+	}
+	
+	POL_Stanislaw_Ulam = {
+			
+		allowed = {
+			original_tag = POL
+		}
+		
+		available = {
+			OR = {
+				has_completed_focus = POL_Lwow_School_of_Mathematics1
+				has_completed_focus = POL_Lwow_School_of_Mathematics
+			}
+		}
+		
+		picture = Stanislaw_Ulam
+			
+		research_bonus = {
+			nuclear = 0.10
+		}
+			
+		traits = { nuclear_scientist }
+	}
+	
+	#POL_Stefan_Banach = {
+		
+	#	picture = Stefan_Banach
+			
+	#	allowed = {
+	#		original_tag = POL
+	#	}
+		
+	#	available = {
+			
+	#	}
+		
+	#	cost = 150
+			
+	#	traits = { }
+	#}
+}
+
+	# MILITARY
+	army_chief = {
+		
+		POL_Kazimierz_Sosnkowski = {
+			
+			picture = recolor_kazimierz_sosnkowski
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			
+            available = {
+				OR = {
+					has_completed_focus = POL_Presja_Sikorskiego
+				    has_completed_focus = POL_The_Sanation_Left
+				}
+			}
+
+			traits = { army_chief_organizational_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		POL_Wladyslaw_Sikorski = {
+
+			
+			allowed = {
+				original_tag = POL
+			}
+			available = {
+			}
+			
+			picture = Wladyslaw_Sikorski
+
+					
+			traits = { army_chief_defensive_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		POL_Boleslaw_Wieniawa_Dlugoszowski = {
+			
+			picture = Boleslaw_Wieniawa_Dlugoszowski
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			
+			available = {
+				OR = {
+					has_completed_focus = POL_rehabilitacja
+				}
+			}
+			
+			traits = { army_chief_offensive_prankster }
+			
+			on_add = {
+				custom_effect_tooltip = POL_Event_Bonus
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		POL_Jozef_Haller1 = {
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			
+			available = {
+				OR = {
+					has_completed_focus = POL_Mountinners
+				}
+			}
+			
+			traits = { army_chief_offensive_prankster1 }
+			
+			picture = Jozef_Haller3
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+
+	air_chief = {
+		
+		
+		POL_jozef_zajac = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			equipment_bonus = {
+				CAS_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				nav_bomber_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			
+			cost = 100
+			
+			traits = { Interceptor_Emphasis POL_air_chief_reform }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		POL_ludomil_rayski = {
+			
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			available = {
+				NOT = {
+					has_completed_focus = POL_The_Kingdom_Of_Poland_Revolt
+				}
+			}
+			
+			equipment_bonus = {
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				tactical_bomber = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				strategic_bomber = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			
+			research_bonus = {
+				light_fighter = -1
+			}
+			
+			cost = 100
+			removal_cost = 200
+			
+			traits = { Bomber_Emphasis air_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+	navy_chief = {
+		
+		POL_josef_unrug = {
+			
+			picture = Jozef_Unrug
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			visible = {
+				NOT = { has_government = communism }
+				NOT = { has_completed_focus = POL_Seek_Autonomy }
+				NOT = { has_completed_focus = POL_Draw_Closer_To_The_USSR }
+			}
+			
+			available = {
+				NOT = { has_government = communism }
+			}
+			
+			traits = { coastal_defense }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		POL_Adam_Mohuczy = {
+			
+			picture = Adam_Mohuczy
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			visible = {
+				OR = {
+					has_government = communism
+					has_completed_focus = POL_Seek_Autonomy
+					has_completed_focus = POL_Draw_Closer_To_The_USSR
+				}
+			}
+			
+			available = {
+				OR = {
+					has_government = communism
+					hidden_trigger = { has_completed_focus = POL_Seek_Autonomy }
+					hidden_trigger = { has_completed_focus = POL_Draw_Closer_To_The_USSR }
+				}
+			}
+			
+			traits = { coastal_defense }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		POL_xawery_czernicki = {
+			
+			picture = Xawery_Czernicki
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			available = { 
+
+			}
+			
+			traits = { naval_construction }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		POL_Wlodzimierz_Steyer = {
+			
+			picture = Wlodzimierz_Steyer
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			available = {
+				OR = {
+					has_completed_focus = POL_hel_fortified_area
+				    has_completed_focus = POL_hel_fortified_area1
+				}
+			}
+			
+			traits = { navy_amphibious_assault_1 }
+			
+			research_bonus = {
+				marine_tech = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		POL_Mariusz_Zaruski = {
+			
+			picture = Mariusz_Zaruski
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			available = {
+				OR = {
+					has_completed_focus = POL_Maritime_and_Colonial_League
+				    has_completed_focus = POL_Maritime_and_Colonial_League1
+				}
+			}
+			
+			traits = { naval_military_youth }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	high_command = {
+		#POL_zygmunt_buhusz_szysko = {
+			
+			
+		#	allowed = {
+		#		original_tag = POL
+		#	}
+			
+		#	picture = generic_army_europe_1
+			
+		#	traits = { army_infantry_2 }
+			
+		#	ai_will_do = {
+		#		factor = 1
+		#	}
+		#}
+		
+		POL_Jan_Kruszewski = {
+			
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Jan_Kruszewski
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		POL_Josef_Kapciuk = {
+			
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Josef_Kapciuk
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		POL_Tadeusz_Komorowski = {
+			
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Tadeusz_Komorowski
+			
+			traits = { army_cavalry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		POL_Franciszek_Skibinksi = {
+		
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Franciszek_Skibinski
+			
+			cost = 150
+			
+			traits = { army_mechanization_1 }
+			
+			equipment_bonus = {
+				mechanized_equipment = {
+					build_cost_ic = -0.075
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+			light_tank_equipment = {
+				build_cost_ic = -0.025
+				instant = yes
+			}
+		}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		POL_Waclaw_Stachiewicz = {
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Waclaw_Stachiewicz
+			
+			traits = { POL_chief_staffer }
+			
+			research_bonus = {
+				cat_grand_battle_plan = 0.05
+			}
+			
+			visible = {
+				OR = {
+					has_capitulated = no
+					has_government = fascism
+				}
+				NOT = { has_completed_focus = POL_The_Polish_Socialist_Party }
+				NOT = { has_completed_focus = POL_The_Front_Morges }
+				NOT = { has_completed_focus = POL_The_Castle }
+				NOT = { has_completed_focus = POL_The_Sanation_Left }
+				NOT = { has_completed_focus = POL_The_Endecja_Movement }
+				NOT = { has_government = communism }
+				NOT = { has_country_flag = PPS_Revolutionary_Path }
+			}
+			
+			available = {
+				OR = {
+					has_completed_focus = POL_Armia_Krolewska
+				    has_completed_focus = POL_The_Sanation_Right
+				}
+			}
+
+			cost = 250
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+			
+		}
+		
+		POL_Kazimierz_Schally = {
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Kazimierz_Schally
+			
+			traits = { POL_chief_staffer2 }
+			
+			research_bonus = {
+				cat_superior_firepower = 0.05
+			}
+			
+			visible = {
+				has_capitulated = no
+				has_completed_focus = POL_The_Castle
+				NOT = { has_government = communism }
+			}
+			
+			available = { 
+				has_capitulated = no
+				has_completed_focus = POL_The_Castle 
+				has_government = neutrality
+			}
+			
+			cost = 250
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+			
+		}
+		
+		POL_Stanislaw_Haller = {
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Stanislaw_Haller
+			
+			traits = { POL_chief_staffer3 }
+			
+			visible = {
+				has_capitulated = no
+				has_completed_focus = POL_The_Sanation_Left 
+				NOT = { has_government = communism }
+			}
+			
+			available = { 
+				has_capitulated = no
+				has_completed_focus = POL_The_Sanation_Left 
+				has_government = neutrality
+			}
+			
+			cost = 250
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+			
+		}
+		
+		POL_Mieczyslaw_Kulinski = {
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Mieczyslaw_Kulinski
+			
+			traits = { POL_chief_staffer4 }
+			
+			research_bonus = {
+				cat_superior_firepower = 0.05
+			}
+			
+			visible = {
+				has_capitulated = no
+				has_completed_focus = POL_The_Endecja_Movement
+				NOT = { has_government = communism }
+			}
+			
+			available = { 
+				has_capitulated = no
+				has_completed_focus = POL_The_Endecja_Movement 
+				has_government = democratic
+			}
+			
+			cost = 250
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+			
+		}
+		
+		POL_Marian_Spychalski = {
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Marian_Spychalski
+			
+			traits = { POL_chief_staffer5 }
+			
+			research_bonus = {
+				cat_mass_assault = 0.05
+			}
+			
+			visible = {
+				OR = {
+					has_government = communism
+					AND = {
+						has_country_flag = PPS_Revolutionary_Path
+						has_capitulated = no
+					}
+				}
+			}
+			
+			available = { 
+				has_government = communism
+			}
+			
+			cost = 250
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+			
+		}
+		
+		POL_Marian_Kukiel = {
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Marian_Kukiel
+			
+			traits = { POL_chief_staffer6 }
+			
+			visible = {
+				has_capitulated = no
+				OR = {
+					has_completed_focus = POL_The_Polish_Socialist_Party
+					has_completed_focus = POL_The_Front_Morges
+				}
+				NOT = { has_country_flag = PPS_Revolutionary_Path }
+			}
+			
+			available = {
+				has_capitulated = no
+				has_government = democratic
+				OR = {
+					has_completed_focus = POL_The_Polish_Socialist_Party
+					has_completed_focus = POL_The_Front_Morges
+				}
+			}
+			
+			cost = 250
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+			
+		}
+		
+		POL_Tadeusz_Klimecki = {
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Tadeusz_Klimecki
+			
+			traits = { POL_chief_staffer7 }
+			
+			visible = {
+				has_capitulated = yes
+				NOT = { has_government = communism }
+				NOT = { has_government = fascism }
+			}
+			
+			available = {
+				has_capitulated = yes
+				NOT = { has_government = communism }
+				NOT = { has_government = fascism }
+			}
+			
+			cost = 250
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+			
+		}
+		
+		POL_Aleksander_Szychowski = {
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Aleksander_Szychowski
+			
+			traits = { POL_army_communications }
+			
+			research_bonus = {
+				support_tech = 0.03
+			}
+			
+			cost = 200
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+			
+		}
+		
+		POL_Mieczyslaw_Dabkowski = {
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Mieczyslaw_Dabkowski
+			
+			traits = { army_entrenchment_3 }
+			
+			cost = 100
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+			
+		}
+		
+		POL_Bronislaw_Prugar_Ketling = {
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Bronislaw_Prugar_Ketling
+			
+			traits = { POL_night_assault_tactics }
+			
+			cost = 150
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+			
+		}
+		
+		POL_Stanislaw_Kopanski = {
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Stanislaw_Kopanski
+			
+			traits = { army_commando_1 }
+			
+			cost = 150
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+			
+		}
+		
+		POL_Stanislaw_Ujejski = {
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Stanislaw_Ujejski
+			
+			traits = { air_chief_safety_2 }
+			
+			cost = 150
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+			
+		}
+		
+		#POL_Witold_Pilecki = {
+			
+			
+		#	allowed = {
+		#		original_tag = POL
+		#	}
+			
+		#	available = {
+		#		is_subject = no
+		#	}
+			
+		#	picture = Witold_Pilecki
+			
+		#	traits = { POL_paramilitary }
+			
+		#	ai_will_do = {
+		#		factor = 1
+		#	}
+		#}
+		
+		POL_Tadeusz_Kasprzycki = {
+		
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Tadeusz_Kasprzycki
+			
+			traits = { POL_army_logistics army_chief_old_guard }
+			
+			cost = 100
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+			
+		}
+
+		POL_stanislaw_pawluc = {
+			
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			picture = Stanislaw_Pawluc
+			
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		POL_fb = {
+			
+			allowed = {
+				original_TAG = POL
+			}
+			
+			picture = generic_infantry_equipment_manufacturer_2
+			
+			available = {
+				OR = {
+					has_completed_focus = POL_Expand_the_Lucznik_State_Arms_Factory
+					has_completed_focus = POL_Expand_the_Lucznik_State_Arms_Factory1
+					has_idea = POL_Strict_Equipment_Standards
+				}
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.05
+					instant = yes
+				}
+			}
+			
+			equipment_bonus = {
+			    support_equipment = {
+				    build_cost_ic = -0.05
+				    instant = yes
+		        }
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.05
+					instant = yes
+				}
+			}
+			
+			modifier = {
+			}
+		}
+
+		POL_lrl = {
+			
+			allowed = {
+				original_TAG = POL
+			}
+			
+			picture = generic_motorized_equipment_manufacturer_3
+			
+			research_bonus = {
+				motorized_equipment = 0.25
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+			
+			cost = 65
+		}
+
+		POL_Starachowice_Works = {
+			
+			allowed = {
+				original_TAG = POL
+			}
+			
+			cost = 125
+			
+			
+			available = {
+		        OR = {
+			        has_completed_focus = POL_Modernize_The_Starachowice_Works
+				    has_completed_focus = POL_Modernize_The_Starachowice_Works1
+				}
+		    }
+			
+			picture = Starachowice_Works
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				anti_tank_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				anti_air_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+			
+			traits = { POL_artillery_manufacturer1 }
+			
+			modifier = {
+			}
+		}
+		
+		POL_H_Cegielski = {
+			
+			allowed = {
+				original_TAG = POL
+			}
+			
+			cost = 125
+			
+			available = {
+		        OR = {
+			        has_completed_focus = POL_Cegielski_Artillery_Factory
+				    has_completed_focus = POL_Cegielski_Artillery_Factory1
+				}
+		    }
+			
+			picture = H_Cegielski
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			equipment_bonus = {
+				light_tank_artillery_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				light_tank_destroyer_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				light_tank_aa_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+			
+			traits = { POL_artillery_manufacturer2 }
+			
+			modifier = {
+			}
+		}
+		
+		POL_Ursus_Mechanized = {
+			
+			allowed = {
+				original_tag = POL
+				has_dlc = "Poland: United and Ready"
+			}
+			
+			available = {
+				OR = {
+					has_completed_focus = POL_Mechanization_of_Army
+				}
+			}
+			
+			cost = 150
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				mechanized_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}
+			
+			picture = Ursus
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		POL_Polski_Vauxhall = {
+			
+			allowed = {
+				original_TAG = POL
+			}
+			
+			available = {
+				NOT = { has_war_with = ENG }
+				NOT = { has_completed_focus = POL_English_change_the_route }
+				has_completed_focus = POL_English_soldiers
+			}
+			
+			picture = vauxhall
+			
+			cost = 75
+			
+			research_bonus = {
+				motorized_equipment = 0.12
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+
+			equipment_bonus = {
+				motorized_equipment = {
+					instant = yes
+					build_cost_ic = -0.08
+				}
+			}
+			
+			modifier = {
+			}
+		}
+		
+		POL_SEPEWE = {
+			
+			allowed = {
+				original_TAG = POL
+			}
+			
+			available = {
+				NOT = {
+					any_enemy_country = {
+						ic_ratio = { 
+							tag = ROOT 
+							ratio > 0.5
+						}
+					}
+				}
+			}
+			
+			picture = SEPEWE
+			
+			traits = { POL_arms_export_syndicate }
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+				industrial_capacity_factory = -0.1
+				lend_lease_tension = -0.35
+			}
+			
+			cost = 70
+		}
+		
+		POL_Polski_Fiat = {
+			
+			allowed = {
+				original_TAG = POL
+			}
+			
+			available = {
+				NOT = { has_war_with = ITA }
+				OR = {
+					has_country_flag = POL_Invest_In_Fiat
+					has_completed_focus = POL_Attract_Foreign_Investment
+					has_country_flag = POL_Invited_Foreign_Motor_Companies
+				}
+			}
+			
+			picture = Polski_Fiat
+			
+			cost = 75
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+
+			equipment_bonus = {
+				motorized_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+			
+			modifier = {
+			}
+		}
+		
+		POL_Ford_Polska = {
+			
+			allowed = {
+				original_TAG = POL
+			}
+			
+			available = {
+				NOT = { has_war_with = USA }
+				OR = {
+					has_country_flag = POL_Invest_In_Ford
+					has_completed_focus = POL_Attract_Foreign_Investment
+					has_country_flag = POL_Invited_Foreign_Motor_Companies
+				}
+			}
+			
+			picture = ford_motor_company
+			
+			cost = 75
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+
+			equipment_bonus = {
+				mechanized_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+			
+			modifier = {
+			}
+		}
+	}
+	
+	tank_manufacturer = { 
+		
+		POL_PZInz = {
+			
+			picture = PZInz
+
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			research_bonus = {
+				armor = 0.10
+				motorized_equipment = 0.05
+			}
+			
+			traits = { POL_tank_manufacturer_1 }
+			
+			modifier = {
+				
+			}
+		}
+		
+		POL_BBT_Br_Panc = {
+			
+			picture = generic_tank_manufacturer_3
+
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			research_bonus = {
+				armor = 0.20
+			}
+			
+			traits = { POL_tank_manufacturer_2 }
+			
+			modifier = {
+				
+			}
+		}
+		
+		POL_KSUS = {
+			
+			picture = KSUS
+
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			research_bonus = {
+				armor = 0.10
+				artillery = 0.05
+			}
+			
+			traits = { POL_tank_manufacturer_3 }
+			
+			modifier = {
+				
+			}
+		}
+		
+		POL_Skoda_tank = {
+			
+			picture = cze_tank
+
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			available = {
+			    NOT = { has_war_with = CZE }
+			    has_completed_focus = POL_Czeska_Technologia_wojskowa
+	        }
+			
+			research_bonus = {
+				armor = 0.25
+				motorized_equipment = 0.10
+			}
+			
+			traits = { POL_tank_manufacturer_9 }
+			
+			modifier = {
+				
+			}
+		}
+		
+		idea_porsche_polish = {
+
+		    picture = porsche 
+		
+		    allowed = {
+			    original_tag = POL
+	        }
+		
+		    available = {
+			    OR = {
+			        has_completed_focus = POL_Wspolpraca_Technologiczna
+					has_completed_focus = POL_Wspolpraca_Technologiczna_kaiser
+				}
+	        }
+			
+		    research_bonus = {
+			    armor = 0.20
+			    motorized_equipment = 0.08
+			}
+			
+			traits = { POL_tank_manufacturer_8 }
+			
+			modifier = {
+				
+			}
+		}
+		
+		idea_renault_polish = {
+
+		    picture = renault 
+		
+		    allowed = {
+			    original_tag = POL
+	        }
+		
+		    available = {
+			    has_completed_focus = POL_Polish_Cesarstwo_war1
+	        }
+			
+		    research_bonus = {
+			    armor = 0.20
+			    motorized_equipment = 0.10
+			}
+			
+			traits = { POL_tank_manufacturer_8 }
+			
+			modifier = {
+				
+			}
+		}
+		
+	}
+
+	naval_manufacturer = { 			
+		
+		designer = yes
+		
+		POL_stocznia_gdynia = {
+
+			picture = stocznia_gdynia
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			available = {
+				994 = {
+					controller = {
+						OR = {
+							tag = POL
+							is_subject_of = POL
+						}
+					}
+				}
+			}
+			
+			research_bonus = {
+			}
+			
+			equipment_bonus = {
+			}
+			
+			traits = { POL_Freighter_Manufacturer }
+			
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+			}
+			
+			cost = 110
+		}
+		
+		POL_stocznia_gdansk = {
+
+			
+			picture = stocznia_gdanska
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.35
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			available = {
+				85 = {
+					controller = {
+						tag = POL			
+					}
+				}
+			}
+			
+			traits = { POL_submarine_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		POL_huta_zgoda = {
+
+			picture = Huta_Zgoda
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			available = {
+		        OR = {
+			        has_completed_focus = POL_Develop_Polish_Ship_Building
+				    has_completed_focus = POL_Develop_Polish_Ship_Building1
+				}
+		    }
+			
+			research_bonus = {
+				naval_equipment = 0.05
+			}
+			
+			traits = { POL_Steam_Turbines_and_Steelworks }
+			
+			cost = 125
+			
+			modifier = {
+			}
+		}
+		
+		POL_Polbryt = {
+
+			picture = Polbryt
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			available = {
+				OR = {
+					has_completed_focus = POL_The_Leviathan_Group
+					has_completed_focus = POL_English_King1
+					is_in_faction_with = ENG
+				}
+				is_subject = no
+				NOT = { has_war_with = ENG }
+				has_capitulated = no
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+			
+			cost = 75
+			
+			traits = { POL_polish_british_shipbuilding }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	aircraft_manufacturer = {
+			
+		designer = yes
+	
+	POL_LOT = {
+			
+		picture = LOT
+		
+		
+		allowed = {
+			original_tag = POL
+		}
+			
+		research_bonus = {
+			air_equipment = 0.10
+		}
+		
+		equipment_bonus = {
+			transport_plane_equipment = {
+				instant = yes
+				build_cost_ic = -0.05
+			}
+		}
+			
+		traits = { heavy_aircraft_manufacturer }
+			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	POL_pws = {
+			
+		picture = generic_air_manufacturer_1
+
+			
+		allowed = {
+			original_tag = POL
+			has_dlc = "Poland: United and Ready"
+		}
+			
+		research_bonus = {
+			air_equipment = 0.10
+		}
+			
+		traits = { light_aircraft_manufacturer }
+			
+		equipment_bonus = {
+			# capable of aerobatics, forward shooting machine guns, low number of crashes
+		}
+			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	POL_DWL = {
+			
+		picture = DWL
+		
+		
+		allowed = {
+			original_tag = POL
+		}
+			
+		research_bonus = {
+			air_equipment = 0.10
+		}
+			
+		traits = { naval_aircraft_manufacturer }
+			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	POL_pzl = {
+			
+		picture = generic_air_manufacturer_2
+
+			
+		allowed = {
+			original_tag = POL
+			has_completed_focus = POL_Mielec_Aircraft_Factory1
+			has_dlc = "Poland: United and Ready"
+		}
+			
+		research_bonus = {
+			air_equipment = 0.10
+		}
+			
+		traits = { medium_aircraft_manufacturer }
+			
+		equipment_bonus = {
+			# bomber airplanes
+		}
+			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	POL_Polish_Aero_Club = {
+				
+				
+		allowed = {
+			original_tag = POL
+		}
+		
+		picture = Polish_Aero_Club
+		
+		research_bonus = {
+			air_doctrine = 0.07
+		}
+		
+		traits = { POL_air_warfare_theorist }
+	}
+	
+	POL_Plage_i_Laskiewicz = {
+			
+		picture = LWS
+
+		available = {
+			OR = { 
+				has_completed_focus = POL_Attract_Foreign_Investment
+				has_country_flag = POL_Sell_Stakes_in_State_Aircraft_Companies
+			}
+		}
+		
+		allowed = {
+			original_tag = POL
+			has_dlc = "Poland: United and Ready"
+		}
+			
+		research_bonus = {
+			air_equipment = 0.10
+		}
+			
+		traits = { CAS_manufacturer }
+			
+		equipment_bonus = {
+			# CAS airplanes
+		}
+			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	POL_LWD = {
+			
+		picture = LWD
+		
+		available = {
+			OR = {
+				has_completed_focus = POL_Draw_Closer_To_The_USSR
+				has_completed_focus = POL_Rocket_Development
+				has_completed_focus = POL_Rocket_Development1
+			}
+		}
+		
+		allowed = {
+			original_tag = POL
+		}
+			
+		research_bonus = {
+			air_equipment = 0.10
+		}
+		
+		cost = 250
+			
+		traits = { POL_experimental_aircraft_manufacturer }
+			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	}
+
+	industrial_concern = {
+				
+		POL_Ursus = {
+			
+			allowed = {
+				original_tag = POL
+				has_dlc = "Poland: United and Ready"
+			}
+			
+			available = {
+				OR = {
+					has_completed_focus = POL_Austerity_Measures
+					has_completed_focus = POL_State_Capitalism
+					has_completed_focus = POL_Invest_In_The_Warsaw_Industrial_District
+					has_completed_focus = POL_Rozbudowa_Miast
+				}
+			}
+			
+			cost = 150
+			
+			research_bonus = {
+				industry = 0.03
+			}
+			
+			picture = Ursus
+			
+			traits = { POL_Tractor_Manufacturer }
+			
+			modifier = {
+			}
+			
+			on_add = {
+				if = { limit = { has_country_flag = POL_Has_Debica }
+					hidden_effect = {
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = oil
+							amount = 1
+						}
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = -1
+						}
+					}
+				}
+				clr_country_flag = POL_Has_Debica
+				if = { limit = { has_country_flag = POL_Has_Azotowe }
+					hidden_effect = {
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = 1
+						}
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = oil
+							amount = -1
+						}
+					}
+				}
+				clr_country_flag = POL_Has_Azotowe
+			}
+		}
+		
+		POL_pkp = {
+			
+			allowed = {
+				original_tag = POL
+				has_dlc = "Poland: United and Ready"
+			}
+			
+			picture = generic_industrial_concern_1
+			
+			traits = { POL_State_Owned_Railways }
+			
+			modifier = {
+			}
+			
+			on_add = {
+				if = { limit = { has_country_flag = POL_Has_Debica }
+					hidden_effect = {
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = oil
+							amount = 1
+						}
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = -1
+						}
+					}
+				}
+				clr_country_flag = POL_Has_Debica
+				if = { limit = { has_country_flag = POL_Has_Azotowe }
+					hidden_effect = {
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = 1
+						}
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = oil
+							amount = -1
+						}
+					}
+				}
+				clr_country_flag = POL_Has_Azotowe
+			}
+			cost = 95
+		}
+		
+		POL_ava = {
+			
+			allowed = {
+				original_tag = POL
+				has_dlc = "Poland: United and Ready"
+			}
+			
+			picture = generic_industrial_concern_2
+			
+			research_bonus = {
+				electronics = 0.20
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+			
+			on_add = {
+				if = { limit = { has_country_flag = POL_Has_Debica }
+					hidden_effect = {
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = oil
+							amount = 1
+						}
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = -1
+						}
+					}
+				}
+				clr_country_flag = POL_Has_Debica
+				if = { limit = { has_country_flag = POL_Has_Azotowe }
+					hidden_effect = {
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = 1
+						}
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = oil
+							amount = -1
+						}
+					}
+				}
+				clr_country_flag = POL_Has_Azotowe
+			}
+			cost = 100
+		}
+		
+		POL_HSW = {
+			
+			allowed = {
+				original_tag = POL
+				has_dlc = "Poland: United and Ready"
+			}
+			
+			available = {
+		        OR = {
+			        has_completed_focus = POL_Huta_Stalowa_Wola_Steel_Mill
+				    has_completed_focus = POL_Huta_Stalowa_Wola_Steel_Mill1
+				}
+		    }
+			
+			picture = HSW
+			
+			traits = { POL_steel_and_armaments }
+			
+			modifier = {
+			}
+			
+			on_add = {
+				if = { limit = { has_country_flag = POL_Has_Debica }
+					hidden_effect = {
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = oil
+							amount = 1
+						}
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = -1
+						}
+					}
+				}
+				clr_country_flag = POL_Has_Debica
+				if = { limit = { has_country_flag = POL_Has_Azotowe }
+					hidden_effect = {
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = 1
+						}
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = oil
+							amount = -1
+						}
+					}
+				}
+				clr_country_flag = POL_Has_Azotowe
+			}
+		}
+		
+		POL_Debica_SA = {
+			
+			allowed = {
+				original_tag = POL
+				has_dlc = "Poland: United and Ready"
+			}
+			
+			available = {
+			    OR = {
+				    has_completed_focus = POL_Stomil_Debica_Rubber_Plant
+				    has_completed_focus = POL_Stomil_Debica_Rubber_Plant1
+			    }
+			}
+			
+			research_bonus = {
+				synth_resources = 0.15
+			}
+			
+			picture = Debica_SA
+			
+			traits = { POL_Synthetic_Rubber_Tires }
+			
+			modifier = {
+
+			}
+			
+			on_add = {
+				if = { limit = { has_country_flag = POL_Has_Azotowe }
+					hidden_effect = {
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = 3
+						}
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = oil
+							amount = -1
+						}
+					}
+				}
+				clr_country_flag = POL_Has_Azotowe
+				
+				effect_tooltip = {
+					modify_building_resources = {
+						building = synthetic_refinery
+						resource = rubber
+						amount = 3
+					}
+					modify_building_resources = {
+						building = synthetic_refinery
+						resource = oil
+						amount = -1
+					}
+				}
+				if = { 
+					limit = { NOT = { has_country_flag = POL_Has_Debica } }
+					hidden_effect = {
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = 3
+						}
+					}
+					hidden_effect = {
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = oil
+							amount = -1
+						}
+					}
+				}
+				set_country_flag = POL_Has_Debica
+			}
+		}
+		
+		POL_Zaklady_Azotowe = {
+			
+			allowed = {
+				original_tag = POL
+				has_dlc = "Poland: United and Ready"
+			}
+			
+			available = {
+		        OR = {
+			        has_completed_focus = POL_Promote_The_Chemical_Industry
+				    has_completed_focus = POL_Promote_The_Chemical_Industry1
+				}
+		    }
+			
+			research_bonus = {
+				synth_resources = 0.15
+			}
+			
+			picture = POL_Zaklady_Azotowe
+			
+			traits = { POL_Chemical_Conglomerate }
+			
+			modifier = {
+
+			}
+			
+			on_add = {
+				if = { limit = { has_country_flag = POL_Has_Debica }
+					hidden_effect = {
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = oil
+							amount = 3
+						}
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = -1
+						}
+					}
+				}
+				clr_country_flag = POL_Has_Debica
+				
+				effect_tooltip = {
+					modify_building_resources = {
+						building = synthetic_refinery
+						resource = oil
+						amount = 3
+					}
+					modify_building_resources = {
+						building = synthetic_refinery
+						resource = rubber
+						amount = -1
+					}
+				}
+				if = { 
+					limit = { NOT = { has_country_flag = POL_Has_Azotowe } }
+					hidden_effect = {
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = oil
+							amount = 3
+						}
+					}
+					hidden_effect = {
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = -1
+						}
+					}
+				}
+				set_country_flag = POL_Has_Azotowe
+			}
+		}
+		
+	}
+	
+}

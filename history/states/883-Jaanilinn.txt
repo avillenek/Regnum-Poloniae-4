@@ -1,0 +1,24 @@
+state={
+	id=883
+	name="STATE_883"
+
+	history={
+		owner = EST
+		buildings = {
+			infrastructure = 9
+
+		}
+                victory_points = {
+			126 2 
+		}
+		add_core_of = EST
+
+	}
+
+	provinces={
+		126 
+	}
+	manpower=11000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+}

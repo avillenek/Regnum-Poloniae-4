@@ -1,0 +1,35 @@
+category = {
+ name = "Effects"
+ soundeffects = {
+ 	command_power_ability_trains
+	}
+}
+
+#########################################################
+#														#
+#					     ASSETS			    			#
+#														#
+#########################################################
+
+sound = {
+	name = "command_power_ability_trains_01"
+	file = "POL_audio_assets/command_power_ability_trains_01.wav"
+}
+
+
+
+#########################################################
+#														#
+#					  SOUNDEFFECTS		    			#
+#														#
+#########################################################
+
+soundeffect = {
+	name = "command_power_ability_trains"
+	volume = 0.95
+	sounds = {
+		sound = "command_power_ability_trains_01"
+	}
+}
+
+

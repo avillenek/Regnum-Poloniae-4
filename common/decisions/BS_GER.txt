@@ -1,0 +1,1006 @@
+GER_operation_achse_category = {
+
+	GER_operation_achse = {
+
+		icon = generic_operation
+
+		available = {
+			has_war = yes
+			controls_state = 158
+			controls_state = 159
+			controls_state = 867
+			controls_state = 160
+			controls_state = 866
+			controls_state = 161
+			controls_state = 162
+			controls_state = 2
+			controls_state = 157
+			controls_state = 987
+			controls_state = 988
+			controls_state = 989
+			controls_state = 990
+		}
+
+		cost = 0
+		fire_only_once = yes
+
+		visible = {
+		    has_country_flag = GER_operation_achse_flag
+			has_government = fascism
+		}
+		
+		target_trigger = {
+			FROM = {
+				tag = ITA
+			}
+		}
+
+		complete_effect = {
+
+				GER = {
+					if = {
+						limit = { 39 = { owner = { original_tag = ITA } } }
+						set_state_controller = 39
+					}
+					if = {
+						limit = { 110 = { owner = { original_tag = ITA } } }
+						set_state_controller = 110
+					}
+					if = {
+						limit = { 736 = { owner = { original_tag = ITA } } }
+						set_state_controller = 736
+					}
+					if = {
+						limit = { 866 = { owner = { original_tag = ITA } } }
+						set_state_controller = 866
+					}
+					if = {
+						limit = { 867 = { owner = { original_tag = ITA } } }
+						set_state_controller = 867
+					}
+					if = {
+						limit = { 986 = { owner = { original_tag = ITA } } }
+						set_state_controller = 986
+					}
+					if = {
+						limit = { 993 = { owner = { original_tag = ITA } } }
+						set_state_controller = 993
+					}
+				}
+				ITA = {
+					start_civil_war = {
+						ideology = fascism
+						size = 0.3
+						states = { 158 2 159 867 160 66 161 162 157 987 988 989 990 }
+					}
+					hidden_effect = {
+						load_oob = "ITA_Italian_Civil_War"
+						remove_ideas = victor_emmanuel
+						remove_ideas = vittoria_mutilata
+						remove_ideas = ITA_german_millitary_cooperation_focus
+					}
+					
+					random_other_country = {
+						limit = {
+							original_tag = ITA
+							has_government = fascism
+						}
+						set_cosmetic_tag = ITA_RSI
+						set_capital = 159
+						set_party_name = { ideology = fascism long_name = ITA_fascism_party_civil_war_long name = ITA_fascism_party_civil_war }
+						set_stability = 0.3
+						set_war_support = 0.6
+						
+						set_state_controller = 159
+						set_state_controller = 988
+						set_state_controller = 989
+						set_state_controller = 987
+						set_state_controller = 158
+						set_state_controller = 160
+						set_state_controller = 2
+						set_state_controller = 161
+						set_state_controller = 162
+						set_state_controller = 990
+						set_state_controller = 157
+						GER = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						
+						hidden_effect = {
+							add_ideas = victor_emmanuel
+							create_country_leader = {
+								name = "Benito Mussolini"
+								desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+								picture = "Portrait_Benito_Mussolini_1944.dds"
+								expire = "1965.1.1"
+								ideology = fascism_ideology
+								traits = {
+									
+								}
+							}
+						}
+					}
+				}
+			ITA = { country_event = { id = bs.4 days = 3 } }
+		}
+
+		ai_will_do = {
+			factor = 70
+		}
+	}
+}
+
+GER_new_order_in_france_category = {
+
+	GER_unabhangiger_staat_bretagne = {
+	
+		icon = generic_independence
+
+		available = {
+			has_war = no
+			NOT = { country_exists = FRA }
+			has_government = fascism
+			controls_state = 14
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		visible = {
+
+		}
+
+		complete_effect = {
+			release = BRI
+			BRI = {
+				transfer_state = 14
+				
+				hidden_effect = {
+					set_cosmetic_tag = BRT_GER
+				}
+				create_country_leader = {
+	                name = "Heinrich Himmler"
+	                desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+	                picture = "gfx/leaders/GER/Portrait_Germany_Heinrich_Himmler.dds"
+ 	                expire = "1965.1.1"
+	                ideology = nazism
+	                traits = {
+	                }
+                }
+			}
+			set_autonomy = { target = BRT autonomy_state = autonomy_reichsprotectorate }
+		}
+	}
+	
+	GER_ss_staat_burgund = {
+	
+		icon = ger_reichskommissariats
+
+		available = {
+			has_war = no
+		    NOT = { country_exists = FRA }
+			has_government = fascism
+			controls_state = 815
+			controls_state = 817
+			controls_state = 18
+			controls_state = 27
+			controls_state = 20
+			controls_state = 32
+			controls_state = 21
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		visible = {
+
+		}
+
+		complete_effect = {
+			release = BGN
+			BGN = {
+				transfer_state = 815
+				transfer_state = 817
+				transfer_state = 18
+				transfer_state = 27
+				transfer_state = 20
+				transfer_state = 32
+				transfer_state = 21
+				
+				hidden_effect = {
+					27 = { add_core_of = PREV }
+				}
+				create_country_leader = {
+	                name = "Heinrich Himmler"
+	                desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+	                picture = "gfx/leaders/GER/Portrait_Germany_Heinrich_Himmler.dds"
+ 	                expire = "1965.1.1"
+	                ideology = nazism
+	                traits = {
+	                }
+                }
+			}
+			set_autonomy = { target = BGN autonomy_state = autonomy_reichsprotectorate }
+		}
+	}
+}
+
+GER_reichsprotektorat = {
+	GER_reichsprotektorat_bohmen_und_mahren = {
+	
+		icon = ger_reichskommissariats
+
+		available = {
+			controls_state = 9
+			controls_state = 72
+			controls_state = 75
+			controls_state = 885
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			controls_state = 9
+			controls_state = 72
+			controls_state = 75
+			controls_state = 885
+		}
+		
+		complete_effect = {
+		    9 = { add_core_of = PBM }
+			release = PBM
+			PBM = {
+				transfer_state = 9
+				transfer_state = 72
+				transfer_state = 75
+				transfer_state = 885
+				GER = {
+					puppet = PBM
+					set_autonomy = { target = PBM autonomy_state = autonomy_reichsprotectorate }
+				}
+			}
+		}
+	}
+
+	GER_generalgouvernement = {
+	
+		icon = ger_reichskommissariats
+
+		available = {
+			controls_state = 864
+			controls_state = 10
+			controls_state = 92
+			controls_state = 90
+			controls_state = 88
+			#controls_state = 996
+			#controls_state = 91
+			#controls_state = 89
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			controls_state = 864
+			controls_state = 10
+			controls_state = 92
+			controls_state = 90
+			controls_state = 88
+			#controls_state = 996
+			#controls_state = 91
+			#controls_state = 89
+		}
+
+		complete_effect = {
+		    88 = { add_core_of = GGO }
+			release = GGO
+			GGO = {
+				transfer_state = 864
+				transfer_state = 10
+				transfer_state = 92
+				transfer_state = 90
+				transfer_state = 88
+				#transfer_state = 91
+				#transfer_state = 89
+				#transfer_state = 996
+				GER = {
+					puppet = GGO
+					set_autonomy = { target = PBM autonomy_state = autonomy_reichsprotectorate }
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 91
+					controls_state = 89
+					controls_state = 996
+				}
+				GGO = {
+					transfer_state = 91
+					transfer_state = 89
+					transfer_state = 996
+				}
+				set_global_flag = GGO_completed
+			}
+			
+		}
+	}
+}
+
+BS_transfer_territories_category = {
+	GER_eastern_poland = {
+
+		highlight_state_targets = {
+			state = 91
+			state = 89
+			state = 996
+		}
+		available = {
+			controls_state = 91
+			controls_state = 89
+			controls_state = 996
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			NOT = { has_global_flag = GGO_completed }
+			GGO = {
+				exists = yes
+			}
+			controls_state = 91
+			controls_state = 89
+			controls_state = 996
+		}
+
+		complete_effect = {
+			release = GGO
+			GGO = {
+				transfer_state = 91
+				transfer_state = 89
+				transfer_state = 996
+			}
+			hidden_effect = {
+				set_global_flag = GGO_completed
+			}
+		}
+	}
+	
+	GER_transnistria_romania = {
+		highlight_state_targets = {
+			state = 192
+			state = 192
+			state = 1100
+			state = 829
+		}
+
+		available = {
+			has_full_control_of_state = 198
+			has_full_control_of_state = 192
+			has_full_control_of_state = 1100
+			has_full_control_of_state = 829
+			
+			ROM = {
+				has_full_control_of_state = 78
+				has_full_control_of_state = 766
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+				factor = 50
+				is_historical_focus_on = yes
+			}
+
+			modifier = {
+				factor = 0
+				ROM = {
+					has_government = communism
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_transfer_transistria }
+			ROM = {
+				exists = yes
+			}
+			controls_state = 198
+			controls_state = 192
+			controls_state = 1100
+			controls_state = 829
+		}
+
+		complete_effect = {
+			ROM = { country_event = { id = bs_ger.1 days = 3 } }
+			set_global_flag = GER_transfer_transistria
+			
+			effect_tooltip = {
+				ROM = {
+					transfer_state = 198
+					transfer_state = 192
+					transfer_state = 1100
+					transfer_state = 829
+				}
+				ROM = { add_opinion_modifier = { target = GER modifier = ROM_transfer_transnistria }}
+			}
+		}
+	}
+	
+	GER_east_karelia_filand = {
+
+		highlight_state_targets = {
+			state = 929
+			state = 928
+			state = 213
+			state = 89
+		}
+
+		available = {
+			has_full_control_of_state = 929
+			has_full_control_of_state = 928
+			has_full_control_of_state = 213
+			has_full_control_of_state = 89
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			NOT = { has_global_flag = east_karelia_transfered }
+			FIN = {
+				exists = yes
+				OR = {
+					is_puppet = no
+					is_puppet_of = GER
+				}
+			}
+			controls_state = 929
+			controls_state = 928
+			controls_state = 213
+			controls_state = 89
+		}
+
+		complete_effect = {
+			FIN = { country_event = { id = bs_ger.2 days = 3 } }
+			set_global_flag = east_karelia_transfered
+			
+			effect_tooltip = {
+				FIN = {
+					transfer_state = 929
+					transfer_state = 928
+					transfer_state = 213
+					transfer_state = 89
+				}
+				FIN = { add_opinion_modifier = { target = GER modifier = FIN_transfer_east_karelia }}
+			}
+		}
+	}
+}
+
+
+GER_mittelafrika_plan_category = {
+
+	GER_form_the_mittelafrika = {
+	
+		icon = generic_form_nation
+
+		available = {
+			controls_state = 272
+			controls_state = 701
+			controls_state = 296
+			controls_state = 780
+			controls_state = 700
+			controls_state = 779
+			controls_state = 778
+			controls_state = 274
+			controls_state = 1049
+			controls_state = 777
+			controls_state = 776
+			controls_state = 558
+			controls_state = 901
+			controls_state = 900
+			controls_state = 773
+			controls_state = 898
+			controls_state = 899
+			controls_state = 660
+			controls_state = 897
+			controls_state = 896
+			controls_state = 895
+			controls_state = 539
+			controls_state = 772
+			controls_state = 538
+			controls_state = 718
+			controls_state = 295
+			controls_state = 768
+			controls_state = 769
+			controls_state = 548
+			controls_state = 547
+			controls_state = 546
+			controls_state = 770
+			controls_state = 771
+			controls_state = 1036
+			controls_state = 540
+			controls_state = 541
+			controls_state = 1056
+			controls_state = 297
+			controls_state = 705
+			controls_state = 1057
+			controls_state = 708
+			controls_state = 268
+			controls_state = 1128
+			controls_state = 1135
+			controls_state = 1136
+			controls_state = 1137
+		}
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_state = {
+				is_owned_by = GER
+				is_on_continent = africa
+			}
+		}
+
+		complete_effect = {
+		    773 = { add_core_of = MTA }
+			release = MTA
+			MTA = {
+				transfer_state = 272
+				transfer_state = 701
+				transfer_state = 296
+				transfer_state = 780
+				transfer_state = 700
+				transfer_state = 779
+				transfer_state = 778
+				transfer_state = 274
+				transfer_state = 1049
+				transfer_state = 777
+				transfer_state = 776
+				transfer_state = 558
+				transfer_state = 901
+				transfer_state = 900
+				transfer_state = 773
+				transfer_state = 898
+				transfer_state = 899
+				transfer_state = 660
+				transfer_state = 897
+				transfer_state = 896
+				transfer_state = 895
+				transfer_state = 539
+				transfer_state = 772
+				transfer_state = 538
+				transfer_state = 718
+				transfer_state = 295
+				transfer_state = 768
+				transfer_state = 769
+				transfer_state = 548
+				transfer_state = 547
+				transfer_state = 546
+				transfer_state = 770
+				transfer_state = 771
+				transfer_state = 1036
+				transfer_state = 540
+				transfer_state = 541
+				transfer_state = 1056
+				transfer_state = 297
+				transfer_state = 705
+				transfer_state = 1057
+				transfer_state = 708
+				transfer_state = 268
+				transfer_state = 1128
+				transfer_state = 1135
+				transfer_state = 1136
+				transfer_state = 1137
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_global_flag = jewish_madagaskar }
+						controls_state = 543
+					}
+					MTA = {
+						transfer_state = 543
+					}
+				}
+			}
+			GER = {
+				puppet = MTA
+				#set_autonomy = { target = PBM autonomy_state = autonomy_reichsprotectorate }
+
+				if = {
+					limit = {
+						has_government = fascism
+					}
+					MTA = {
+						set_politics = {
+							ruling_party = fascism
+							last_election = "1936.1.1"
+							election_frequency = 48
+							elections_allowed = no
+						}
+						set_popularities = {
+							democratic = 0
+							fascism = 100
+							communism = 0
+							neutrality = 0
+						}
+						create_country_leader = {
+							name = "Hermann Göring"
+							desc = "POLITICS_HERMANN_GORING_DESC"
+							picture = "gfx/leaders/GER/Portrait_Germany_Hermann_Goring.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+				
+				if = {
+					limit = {
+						has_government = neutrality
+					}
+					MTA = {
+						set_politics = {
+							ruling_party = neutrality
+							last_election = "1936.1.1"
+							election_frequency = 48
+							elections_allowed = no
+						}
+						set_popularities = {
+							democratic = 0
+							fascism = 0
+							communism = 0
+							neutrality = 100
+						}
+						create_country_leader = {
+							name = "Paul von Lettow-Vorbeck"
+							desc = "POLITICS_PAUL_VON_LETTOW_VORBECK_DESC"
+							picture = "gfx/leaders/GER/portrait_ger_von_lettow_vorbeck.dds"
+							expire = "1965.1.1"
+							ideology = despotism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+GER_german_american_bund_category = {
+
+	GER_german_american_bund = {
+
+		icon = ger_reichskommissariats
+
+		visible = {
+			has_war_with = USA
+			any_state = {
+				is_controlled_by = GER
+				is_core_of = USA
+				is_on_continent = north_america
+			}
+		}
+
+		available = {
+			controls_state = 357
+			controls_state = 358
+			controls_state = 359
+			controls_state = 360
+			controls_state = 835
+			controls_state = 836
+			controls_state = 837
+			controls_state = 838
+			controls_state = 839
+			controls_state = 840
+		}
+
+		cost = 70
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			release = ADV
+			ADV = {
+				add_state_core = 358
+				add_state_core = 357
+				add_state_core = 359
+				add_state_core = 360
+				add_state_core = 835
+				add_state_core = 836
+				add_state_core = 837
+				add_state_core = 838
+				add_state_core = 839
+				add_state_core = 840
+				
+				add_state_core = 389
+				add_state_core = 390
+				add_state_core = 384
+				add_state_core = 383
+				add_state_core = 848
+				add_state_core = 391
+				add_state_core = 392
+				add_state_core = 373
+				add_state_core = 857
+				add_state_core = 394
+				add_state_core = 856
+				add_state_core = 395
+				add_state_core = 393
+				add_state_core = 396
+				add_state_core = 261
+				
+				transfer_state = 358
+				transfer_state = 357
+				transfer_state = 359
+				transfer_state = 360
+				transfer_state = 835
+				transfer_state = 836
+				transfer_state = 837
+				transfer_state = 838
+				transfer_state = 839
+				transfer_state = 840
+				
+				set_capital = 358
+
+				create_country_leader = {
+	                name = "Fritz Julius Kuhn"
+	                desc = "POLITICS_FRITZ_JULIUS_KUHN_DESC"
+	                picture = "gfx/leaders/USA/portrait_usa_fritz_kuhn.dds"
+ 	                expire = "1965.1.1"
+	                ideology = nazism
+	                traits = {
+	                }
+                }
+				
+				hidden_effect = {
+					set_stability = 0.5
+					set_war_support = 0.9
+					
+					load_oob = "ADV_Militia"
+
+					create_corps_commander = {
+						name = "Fritz Julius Kuhn"
+						GFX = GFX_portrait_ger_fritz_kuhn
+						skill = 2
+						attack_skill = 3
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 1
+						traits = { politically_connected }
+					}
+				}
+			}
+			set_autonomy = { target = ADV autonomy_state = autonomy_reichsprotectorate }
+			
+			hidden_effect = {
+				news_event = { hours = 6 id = bs.19 }
+			}
+		}
+	}
+}
+
+BS_german_empire_territory_cateogry = {
+	
+	BS_integrate_eupen = {
+	
+		icon = generic_operation
+
+		highlight_state_targets = {
+			state = 812
+		}
+
+		visible = {
+			controls_state = 812
+			NOT = {
+				has_country_flag = reint_eupen
+			}
+		}
+
+		cost = 25
+		
+		complete_effect = {
+			812 = { add_core_of = GER }
+			set_country_flag = reint_eupen
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	BS_integrate_schleswig = {
+	
+		icon = generic_operation
+		
+		highlight_state_targets = {
+			state = 804
+		}
+
+		visible = {
+			controls_state = 804
+			NOT = {
+				has_country_flag = reint_schleswig
+			}
+		}
+
+		cost = 25
+		
+		complete_effect = {
+			804 = { add_core_of = GER }
+			set_country_flag = reint_schleswig
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	BS_integrate_hlucin = {
+	
+		icon = generic_operation
+		
+		highlight_state_targets = {
+			state = 884
+		}
+
+		visible = {
+			controls_state = 884
+			NOT = {
+				has_country_flag = reint_hlucin
+			}
+		}
+
+		cost = 25
+		
+		complete_effect = {
+			884 = { add_core_of = GER }
+			set_country_flag = reint_hlucin
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+BS_demand_old_empire_territory_category = {
+	
+	BS_demand_eupen = {
+	
+		icon = generic_operation
+
+		highlight_state_targets = {
+			state = 812
+		}
+
+		visible = {
+			NOT = {
+				controls_state = 812
+				has_country_flag = forced_eupen
+			}
+			any_allied_country = {
+				controls_state = 812
+			}
+		}
+
+		cost = 10
+		
+		complete_effect = {
+			random_country = {
+				limit = {
+					controls_state = 812
+					is_in_faction_with = GER
+				}
+				country_event = { id = bs_ger.4 days = 3 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	BS_demand_schleswig = {
+	
+		icon = generic_operation
+		
+		highlight_state_targets = {
+			state = 804
+		}
+
+		visible = {
+			NOT = {
+				controls_state = 804
+				has_country_flag = forced_schleswig
+			}
+			any_allied_country = {
+				controls_state = 804
+			}
+		}
+
+		cost = 25
+		
+		complete_effect = {
+			random_country = {
+				limit = {
+					controls_state = 804
+					is_in_faction_with = GER
+				}
+				country_event = { id = bs_ger.5 days = 3 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	BS_demand_hlucin = {
+	
+		icon = generic_operation
+		
+		highlight_state_targets = {
+			state = 884
+		}
+
+		visible = {
+			NOT = {
+				controls_state = 884
+				has_country_flag = forced_hlucin
+			}
+			any_allied_country = {
+				controls_state = 884
+			}
+		}
+
+		cost = 25
+		
+		complete_effect = {
+			random_country = {
+				limit = {
+					controls_state = 884
+					is_in_faction_with = GER
+				}
+				country_event = { id = bs_ger.6 days = 3 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

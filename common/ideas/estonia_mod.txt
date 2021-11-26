@@ -1,0 +1,24 @@
+ideas = {
+
+country = {
+	
+	EST_estonian_defense_league = {
+			
+		allowed = {
+			original_tag = EST
+			always = no
+		}
+		
+		allowed_civil_war = {
+			always = yes
+		}
+				
+		removal_cost = -1
+		
+		picture = estonian_defense_league
+		
+		modifier = {
+			conscription = 0.02
+		}
+	}
+}

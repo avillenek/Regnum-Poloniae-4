@@ -1,0 +1,26 @@
+state={
+	id=762
+	name="STATE_762"
+	provinces={
+		506 6464
+	}
+	manpower=1000000
+	resources={
+		steel=31 # was: 60
+		aluminium=12 # was: 20
+                oil=3
+	}
+	state_category = large_city
+	history={
+		victory_points = {
+			6464 40
+		}
+		owner = POL
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 3
+                        synthetic_refinery = 1
+		}
+		add_core_of = POL
+	}
+}

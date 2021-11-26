@@ -1,0 +1,397 @@
+on_actions = {
+	on_capitulation = {
+	    effect = {
+		    
+			if = {
+				limit = {
+					ROOT = {
+						tag = DNZ
+					}
+				}
+				85 = { remove_core_of = DNZ }
+				FROM = { annex_country = { target = DNZ } }
+			}
+			
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = GER
+						has_government = fascism
+						has_civil_war = no
+					}
+				}
+				GER = {
+					country_event = { id = bs.12 }
+				}
+			}
+		
+		}
+	}
+	
+	on_uncapitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = GER
+					has_government = fascism
+					is_puppet = no
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = GER
+					}
+					FROM = {
+						tag = DNZ
+					}
+				}
+				DNZ = {
+					country_event = { hours = 0 id = bshistory.10 }
+				}
+			}
+		}
+	}
+	
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+				    FROM.FROM = { state = 889 }
+					NOT = { has_global_flag = occupied_schutzzone }
+					ROOT = {
+						tag = SLO
+						is_puppet_of = GER
+						has_government = fascism
+					}
+				}
+			    set_global_flag = schutzzone_treaty
+			}
+			if = {
+				limit = {
+					HUN = { has_cosmetic_tag = HUN_EMPIRE }
+					country_exists = AUS
+				}
+				HUN = {
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					AUS = { has_cosmetic_tag = HUN_EMPIRE }
+					country_exists = HUN
+				}
+				AUS = {
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					CZE = { has_cosmetic_tag = HUN_EMPIRE }
+					OR = {
+						country_exists = AUS
+						country_exists = HUN
+					}
+				}
+				CZE = {
+					drop_cosmetic_tag = yes
+				}
+			}
+		}
+	}
+	
+	on_startup = {
+			effect = {
+				VEN = {
+					#give_resource_rights = { receiver = ENG state = 476 }
+					#give_resource_rights = { receiver = USA state = 480 }
+				}
+				# Game Rules - nano countries
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = nano_nation
+							option = BS_BLOCKED
+						}
+					}
+					SPR = {
+						annex_country = {
+							target = ADR
+							transfer_troops = no
+						}
+					}
+					FRA = {
+						annex_country = {
+							target = MCO
+							transfer_troops = no
+						}
+					}
+					ITA = {
+						annex_country = {
+							target = SMR
+							transfer_troops = no
+						}
+						annex_country = {
+							target = VCT
+							transfer_troops = no
+						}
+					}
+					POL = {
+						annex_country = {
+							target = DNZ
+							transfer_troops = no
+						}
+					}
+					SWI = {
+						annex_country = {
+							target = LIE
+							transfer_troops = no
+						}
+					}
+					ENG = {
+						annex_country = {
+							target = HKG
+							transfer_troops = yes
+						}
+					}
+				}
+				# Game Rules - Germany fragmentation
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = ger_fragmentation_status
+							option = GER_FRAGMENTED
+						}
+					}
+					GER = {
+						release = PRS
+						release = BAV
+						release = WUR
+						release = MEK
+						release = SAX
+						release = SAR
+						release = BDN
+					}
+				}
+				# Game Rules - Italy fragmentation
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = ita_fragmentation_status
+							option = ITA_FRAGMENTED
+						}
+					}
+					ITA = {
+						release = KTS
+						release = VEC
+					}
+				}
+				# Game Rules - Czechoslovakia fragmentation - CZE-SLO
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = cze_fragmentation_status
+							option = CZE_SLO_FRAGMENTED
+						}
+					}
+					CZE = {
+						release = SLO
+						set_cosmetic_tag = CZE_ONLY
+					}
+				}
+				# Game Rules - Czechoslovakia fragmentation - Fully
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = cze_fragmentation_status
+							option = CZE_FRAGMENTED
+						}
+					}
+					CZE = {
+						release = SLO
+						release = MRV
+						set_cosmetic_tag = BOHEMIA
+					}
+				}
+				# Game Rules - Soviet fragmentation - Fully
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = sov_fragmentation_status
+							option = SOV_FULLY_FRAGMENTED
+						}
+					}
+					SOV = {
+						release = MOL
+						release = YAK
+						release = KAR
+						release = SOT
+						release = ABH
+						release = CHE
+						release = CRE
+						release = UKR
+						release = BLR
+						release = GEO
+						release = AZR
+						release = ARM
+						release = UZB
+						release = TAJ
+						release = KYR
+						release = TMS
+						release = KAZ
+						retire_country_leader = yes
+						set_cosmetic_tag = SOV_russia
+						set_global_flag = SOV_became_russia
+					}
+				}
+			}
+	}
+	
+	on_puppet = {
+		effect = {
+			#if = {
+			#	limit = {
+			#		tag = HKG
+			#		NOT = {
+			#			FROM = {
+			#				tag = ENG
+			#			}
+			#		}
+			#	}
+			#	HKG = {
+			#		drop_cosmetic_tag = yes
+			#		retire_country_leader = yes
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		tag = INS
+			#		NOT = {
+			#			FROM = {
+			#				tag = HOL
+			#			}
+			#		}
+			#	}
+			#	INS = {
+			#		drop_cosmetic_tag = yes
+			#		retire_country_leader = yes
+			#	}
+			#}
+			if = {
+				limit = {
+					AND = {
+						TAG = GRE
+						is_subject_of = GER
+						GER = { has_government = fascism }
+					}
+				}
+				set_cosmetic_tag = GRE_GER
+				
+				create_country_leader = {
+					name = "Konstantinos Logothetopoulos"
+					desc = "POLITICS_KONSTANTINOS_LOGOTHETOPOULOS_DESC"
+					picture = "Portrait_Greece_Konstantinos_Logothetopoulos.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						great_war_hero
+					}
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = HUN
+						is_subject_of = GER
+						GER = { has_government = fascism }
+					}
+				}
+				set_cosmetic_tag = HUN_GER
+				set_party_name = { ideology = fascism long_name = HUN_Arrow_Cross_party_long name = HUN_Arrow_Cross_party }
+				create_country_leader = {
+					name = "Ferenc Szálasi"
+					desc = "POLITICS_FERENC_SZALASI_DESC"
+					picture = "portrait_hun_ferenc_szalasi.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+					}
+				}
+			}
+		
+		}
+	}
+	
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						TAG = GRE
+						is_subject_of = GER
+						GER = { has_government = fascism }
+					}
+				}
+				set_cosmetic_tag = GRE_GER
+				
+				create_country_leader = {
+					name = "Konstantinos Logothetopoulos"
+					desc = "POLITICS_KONSTANTINOS_LOGOTHETOPOULOS_DESC"
+					picture = "Portrait_Greece_Konstantinos_Logothetopoulos.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						great_war_hero
+					}
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = HUN
+						is_subject_of = GER
+						GER = { has_government = fascism }
+					}
+				}
+				set_cosmetic_tag = HUN_GER
+				set_party_name = { ideology = fascism long_name = HUN_Arrow_Cross_party_long name = HUN_Arrow_Cross_party }
+				create_country_leader = {
+					name = "Ferenc Szálasi"
+					desc = "POLITICS_FERENC_SZALASI_DESC"
+					picture = "portrait_hun_ferenc_szalasi.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+					}
+				}
+			}
+		}
+	}
+	
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Death or Dishonor"
+					has_cosmetic_tag = HUN_EMPIRE
+					has_government = fascism
+				}
+				country_event = { id = AUH.1 }
+			}
+			if = {
+				limit = {
+					has_dlc = "Death or Dishonor"
+					has_cosmetic_tag = HUN_EMPIRE
+					has_government = communism
+				}
+				country_event = { id = AUH.2 }
+			}
+		}
+	}
+}

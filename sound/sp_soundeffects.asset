@@ -1,0 +1,20 @@
+#################
+#Polish Speeches# 
+#################
+
+soundeffect = {
+	name = "sp_pol_wargermany"
+	sounds = {
+		sound = 
+			sp_pol_wargermany
+	}
+	volume = 2.0
+}
+soundeffect = {
+	name = "sp_pol_warsoviet"
+	sounds = {
+		sound = 
+			sp_pol_warsoviet
+	}
+	volume = 2.0
+}

@@ -1,0 +1,152 @@
+﻿
+add_namespace = AUH
+
+#Fascist Leader
+country_event = {
+	id = AUH.1
+	title = AUH.1.t
+	desc = AUH.1.d
+	picture = GFX_report_event_hungary_parliament
+	
+	is_triggered_only = yes
+	
+	option = {	#Hapsburg will lead fascist country
+		name = AUH.1.a
+		
+		ai_chance = {
+			factor = 10
+		}
+
+		create_country_leader = {
+			name = "Otto von Habsburg"
+			desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
+			picture = GFX_Portrait_hungary_otto_von_hapsburg
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+
+			}
+		}
+	}
+	option = {	#Friedrich Franz
+		name = AUH.1.b
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 30
+				is_puppet_of = GER
+			}
+		}
+
+		create_country_leader = {
+			name = "Friedrich Franz of Mecklenburg-Schwerin"
+			desc = "POLITICS_FRIEDRICH_FRANZ_OF_MECKLENBURG-SCHWERIN_DESC"
+			picture = GFX_Portrait_hungary_friedrich_franz
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+			}
+			id = 502 #Nazi Franz
+		}
+	}
+
+	option = {	#Emil Hacha
+		name = AUH.1.c
+		
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 10
+				tag = CZE
+			}
+		}
+
+		create_country_leader = {
+			name = "Emil Hacha"
+			desc = "POLITICS_EMIL_HACHA"
+			picture = "gfx/leaders/CZE/Portrait_CZE_Emil_Hacha.dds"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+			}
+		}
+	}
+}
+
+#Communist Leader
+country_event = {
+	id = AUH.2
+	title = AUH.2.t
+	desc = AUH.2.d
+	picture = GFX_report_event_hungary_parliament
+	
+	is_triggered_only = yes
+	
+	option = {	#Bela kun
+		name = AUH.2.a
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 30
+				tag = HUN
+			}
+		}
+
+		create_country_leader = {
+			name = "Bela Kun"
+			desc = "POLITICS_BELA_KUN_DESC"
+			picture = GFX_Portrait_hungary_bela_kun
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+			}
+		}
+	}
+	option = {	#Klement Gottwald
+		name = AUH.2.b
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 30
+				tag = CZE
+			}
+		}
+
+		create_country_leader = {
+			name = "Klement Gottwald"
+			desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+			picture = "Portrait_Czech_Klement_Gottwald.dds"
+			expire = "1965.1.1"
+			ideology = stalinism
+			traits = {
+				#
+			}
+		}
+	}
+
+	option = {	#Alfred Klahr
+		name = AUH.2.c
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 30
+				tag = AUS
+			}
+		}
+
+		create_country_leader = {
+			name = "Alfred Klahr"
+			desc = "POLITICS_ALFRED_KLAHR_DESC"
+			picture = "Portrait_Austria_Klahr_Alfred.dds"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				#
+			}
+		}
+	}
+}

@@ -1,0 +1,2401 @@
+### Praga
+
+POL_Praga_Problem_category = {
+    
+	POL_Praga_Problem = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Laczyc
+		}
+		
+		cost = 80
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Laczyc
+		}
+		
+
+		complete_effect = {
+		        HUN = {
+				    random_owned_controlled_state = {
+				    prioritize = { 9 }
+				    limit = {
+					    free_building_slots = {
+						    building = arms_factory
+						    size > 0
+						    include_locked = yes
+					    }
+				    }
+				    add_building_construction = {
+					    type = anti_air_building
+					    level = 2
+					    instant_build = yes
+				    }
+				    add_building_construction = {
+					    type = radar_station
+					    level = 1
+					    instant_build = yes
+				    }
+				    add_building_construction = {
+					    type = bunker
+					    province = 6592
+					    level = 9
+					    instant_build = yes
+				    }
+				    add_building_construction = {
+					    type = bunker
+					    province = 6418
+					    level = 9
+					    instant_build = yes
+				    }
+				    add_building_construction = {
+					    type = bunker
+					    province = 6440
+					    level = 9
+					    instant_build = yes
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Hradec_Problem = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Laczyc
+		}
+		
+		cost = 20
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Laczyc
+		}
+		
+
+		complete_effect = {
+		        HUN = {
+				    random_owned_controlled_state = {
+				    prioritize = { 885 }
+				    limit = {
+					    free_building_slots = {
+						    building = arms_factory
+						    size > 0
+						    include_locked = yes
+					    }
+				    }
+				    add_building_construction = {
+					    type = anti_air_building
+					    level = 1
+					    instant_build = yes
+				    }
+				    add_building_construction = {
+					    type = bunker
+					    province = 9414
+					    level = 9
+					    instant_build = yes
+				    }
+				    add_building_construction = {
+					    type = bunker
+					    province = 3462
+					    level = 9
+					    instant_build = yes
+				    }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+
+### Autonomia Slowakoow
+
+POL_Slovakian_Problem_category = {
+
+    POL_Slovakian_Problem1 = {
+
+		icon = decision_generic_army_support
+
+		allowed = { original_tag = POL }
+		
+		available = {
+			70 = {
+				OR = {
+				owner = { tag = ROOT }
+			    owner = { is_subject_of = ROOT }
+				owner = { is_in_faction_with = ROOT }
+			    owner = { original_tag = SLO }
+				owner = { is_subject_of = SLO }
+		        }
+			}
+		}
+        
+		cost = 120
+		
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Gdanski_Problem
+		}
+
+		complete_effect = {
+			GER = {
+				country_event = poland.2010
+			}
+		}
+	}
+}
+
+### Autonomia Królewska
+
+POL_Autonomy_category = {
+
+    POL_Latvian_Main_Railway_Station = {
+
+		icon = generic_construction
+
+		allowed = { original_tag = POL }
+		
+		available = {
+			12 = { infrastructure > 9 }
+		}
+
+		fire_only_once = yes
+		
+		days_mission_timeout = 900
+
+		is_good = no
+
+		activation = {
+			12 = {
+				owner = { tag = ROOT }
+				controller = { tag = ROOT }
+			}
+		}
+
+		complete_effect = {
+			12 = { add_extra_state_shared_building_slots = 2 }
+			add_political_power = 100
+		}
+
+		timeout_effect = {
+			add_political_power = -500
+			add_stability = -0.10
+			add_war_support = -0.10
+		}
+	}
+
+    POL_Estonian_Main_Railway_Station = {
+
+		icon = generic_construction
+
+		allowed = { original_tag = POL }
+		
+		available = {
+			13 = { infrastructure > 9 }
+		}
+
+		fire_only_once = yes
+		
+		days_mission_timeout = 900
+
+		is_good = no
+
+		activation = {
+			13 = {
+				owner = { tag = ROOT }
+				controller = { tag = ROOT }
+			}
+		}
+
+		complete_effect = {
+			13 = { add_extra_state_shared_building_slots = 2 }
+			add_political_power = 150
+		}
+
+		timeout_effect = {
+			add_political_power = -250
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+	}
+
+    POL_Minsk_Main_Railway_Station = {
+
+		icon = generic_construction
+
+		allowed = { original_tag = POL }
+		
+		available = {
+			206 = { infrastructure > 9 }
+		}
+
+		fire_only_once = yes
+		
+		days_mission_timeout = 1000
+
+		is_good = no
+
+		activation = {
+			206 = {
+				owner = { tag = ROOT }
+				controller = { tag = ROOT }
+			}
+		}
+
+		complete_effect = {
+			206 = { add_extra_state_shared_building_slots = 2 }
+			add_political_power = 250
+		}
+
+		timeout_effect = {
+			add_political_power = -700
+			add_stability = -0.20
+			add_war_support = -0.20
+		}
+	}
+
+    POL_Kiov_Main_Railway_Station = {
+
+		icon = generic_construction
+
+		allowed = { original_tag = POL }
+		
+		available = {
+			202 = { infrastructure > 9 }
+		}
+
+		fire_only_once = yes
+		
+		days_mission_timeout = 1000
+
+		is_good = no
+
+		activation = {
+			202 = {
+				owner = { tag = ROOT }
+				controller = { tag = ROOT }
+			}
+		}
+
+		complete_effect = {
+			202 = { add_extra_state_shared_building_slots = 2 }
+			add_political_power = 300
+		}
+
+		timeout_effect = {
+			add_political_power = -800
+			add_stability = -0.25
+			add_war_support = -0.25
+		}
+	}
+}
+
+
+### Krolewskie Miasta Poznan
+
+POL_Krolewskie_Miasta_category = {
+
+	POL_Miasto_Poznan_infrastructure = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Przemysl_Poznanski1
+		}
+		
+		cost = 35
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Przemysl_Poznanski1
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 86 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Miasto_Poznan_infrastructure1 = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Przemysl_Poznanski1
+		}
+		
+		cost = 35
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Przemysl_Poznanski1
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 86 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Miasto_Poznan_infrastructure2 = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Przemysl_Poznanski1
+		}
+		
+		cost = 35
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Przemysl_Poznanski1
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 86 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+            }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Miasto_Poznan_infrastructure3 = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Przemysl_Poznanski1
+		}
+		
+		cost = 70
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Przemysl_Poznanski1
+		}
+		
+
+		complete_effect = {
+				random_owned_controlled_state = {
+				prioritize = { 86 }
+				limit = {
+					free_building_slots = {
+						building = anti_air_building
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 6558
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+    
+	POL_Miasto_Poznan_arms = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Przemysl_Poznanski1
+		}
+		
+		cost = 120
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Przemysl_Poznanski1
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 86 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+    
+	POL_Miasto_Poznan_civ = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Przemysl_Poznanski1
+		}
+		
+		cost = 120
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Przemysl_Poznanski1
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 86 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+### Krolewskie Miasta Wilno
+
+POL_Krolewskie_Miasta_Wilno_category = {
+    
+	POL_Miasto_Wilno_Spor = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Metropolia_Wilno
+		}
+		
+		cost = 100
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Metropolia_Wilno
+		}
+
+		complete_effect = {
+            remove_ideas = POL_Lithuanian_sep
+			add_stability = 0.07
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	POL_Miasto_Wilno_infrastructure = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Metropolia_Wilno
+		}
+		
+		cost = 15
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Metropolia_Wilno
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 784 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Miasto_Wilno_infrastructure1 = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Metropolia_Wilno
+		}
+		
+		cost = 15
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Metropolia_Wilno
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 784 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Miasto_Wilno_infrastructure2 = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Metropolia_Wilno
+		}
+		
+		cost = 15
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Metropolia_Wilno
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 784 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+            }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Miasto_Wilno_infrastructure3 = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Metropolia_Wilno
+		}
+		
+		cost = 55
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Metropolia_Wilno
+		}
+		
+
+		complete_effect = {
+				random_owned_controlled_state = {
+				prioritize = { 784 }
+				limit = {
+					free_building_slots = {
+						building = anti_air_building
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 3320
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+    
+	POL_Miasto_Wilno_arms = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Metropolia_Wilno
+		}
+		
+		cost = 135
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Metropolia_Wilno
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 784 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+    
+	POL_Miasto_Wilno_civ = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Metropolia_Wilno
+		}
+		
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Metropolia_Wilno
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 784 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+### Krolewskie Miasta Gdansk
+
+POL_Krolewskie_Miasta_Gdansk_category = {
+
+	POL_Miasto_Gdansk_infrastructure = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			85 = { is_controlled_by = POL }
+		}
+		
+		cost = 10
+
+		fire_only_once = yes
+
+		visible = {
+			85 = { is_controlled_by = POL }
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 85 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Miasto_Gdansk_infrastructure1 = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			85 = { is_controlled_by = POL }
+		}
+		
+		cost = 10
+
+		fire_only_once = yes
+
+		visible = {
+			85 = { is_controlled_by = POL }
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 85 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Miasto_Gdansk_infrastructure2 = {
+
+		icon = GFX_decision_generic_naval
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			85 = { is_controlled_by = POL }
+		}
+		
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			85 = { is_controlled_by = POL }
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 85 }
+				limit = {
+					free_building_slots = {
+						building = anti_air_building
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+            }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Miasto_Gdansk_infrastructure3 = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			85 = { is_controlled_by = POL }
+		}
+		
+		cost = 75
+
+		fire_only_once = yes
+
+		visible = {
+			85 = { is_controlled_by = POL }
+		}
+		
+
+		complete_effect = {
+				random_owned_controlled_state = {
+				prioritize = { 85 }
+				limit = {
+					free_building_slots = {
+						building = radar_station
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 362
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Miasto_Gdansk_infrastructure4 = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			85 = { is_controlled_by = POL }
+		}
+		
+		cost = 35
+
+		fire_only_once = yes
+
+		visible = {
+			85 = { is_controlled_by = POL }
+		}
+		
+
+		complete_effect = {
+				random_owned_controlled_state = {
+				prioritize = { 85 }
+				limit = {
+					free_building_slots = {
+						building = coastal_bunker
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 362
+					level = 7
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+    
+	POL_Miasto_Gdansk_arms = {
+
+		icon = GFX_decision_generic_naval
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			85 = { is_controlled_by = POL }
+		}
+		
+		cost = 90
+
+		fire_only_once = yes
+
+		visible = {
+			85 = { is_controlled_by = POL }
+		}
+
+		complete_effect = {
+		    add_political_power = -20
+			add_stability = -0.02
+			random_owned_controlled_state = {
+				prioritize = { 85 }
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Miasto_Gdansk_arms1 = {
+
+		icon = GFX_decision_generic_naval
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			85 = { is_controlled_by = POL }
+		}
+		
+		cost = 25
+
+		fire_only_once = yes
+
+		visible = {
+			85 = { is_controlled_by = POL }
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 85 }
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+    
+	POL_Miasto_Gdansk_civ = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			85 = { is_controlled_by = POL }
+		}
+		
+		cost = 45
+
+		fire_only_once = yes
+
+		visible = {
+			85 = { is_controlled_by = POL }
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 85 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+### Krolewskie Miasta Warsaw
+
+POL_Krolewskie_Miasta_Warsaw_category = {
+	
+	POL_Miasto_Warsaw_infrastructure = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_POLSKA_A_B
+		}
+		
+		cost = 60
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_POLSKA_A_B
+		}
+		
+
+		complete_effect = {
+				random_owned_controlled_state = {
+				prioritize = { 10 }
+				limit = {
+					free_building_slots = {
+						building = anti_air_building
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 12562
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+    
+	POL_Miasto_Warsaw_arms = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_POLSKA_A_B
+		}
+		
+		cost = 180
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_POLSKA_A_B
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 10 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+    
+	POL_Miasto_Warsaw_civ = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_POLSKA_A_B
+		}
+		
+		cost = 250
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_POLSKA_A_B
+		}
+
+		complete_effect = {
+		    add_stability = 0.05
+			random_owned_controlled_state = {
+				prioritize = { 10 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+### Krolewskie Miasta Lwow
+
+POL_Krolewskie_Miasta_Lwow_category = {
+
+    POL_Miasto_Lwow_civ = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_POLSKA_A_B
+		}
+		
+		cost = 300
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_POLSKA_A_B
+		}
+
+		complete_effect = {
+		    add_stability = 0.05
+			random_owned_controlled_state = {
+				prioritize = { 91 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Miasto_Lwow_civ1 = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_POLSKA_A_B
+		}
+		
+		cost = 300
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_POLSKA_A_B
+		}
+
+		complete_effect = {
+		    add_stability = 0.05
+			random_owned_controlled_state = {
+				prioritize = { 91 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+### Invasion
+
+operations = {
+
+	POL_German_Blitzkrieg_of_Poland = {
+
+		icon = generic_ignite_civil_war
+
+		allowed = { 
+			original_tag = POL
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = yes
+		
+		days_mission_timeout = 1
+
+		is_good = no
+
+		activation = {
+			POL = { 
+				NOT = { has_idea = POL_Enlistment_Restrictions }
+				has_defensive_war_with = GER
+			}
+		}
+
+		complete_effect = {
+			
+		}
+
+		timeout_effect = {
+			add_timed_idea = { idea = POL_German_Blitzkrieg_of_Poland days = 15 }
+		}
+	}
+
+}
+
+### Prometheism
+
+POL_Promethean_Program_category = {
+	
+	POL_Authorize_Sabotage_Mission = {
+	
+		icon = generic_operation
+		
+		allowed = { 
+			original_tag = POL
+		}
+		
+		available = {
+			SOV = {
+				any_owned_state = {
+					industrial_complex > 0
+				}
+			}
+			NOT = { has_non_aggression_pact_with = SOV }
+		}
+
+		cost = 60
+			
+		days_remove = 90
+		days_re_enable = 0
+
+		visible = {
+			has_government = neutrality
+			is_puppet = no
+			has_capitulated = no
+			10 = { is_owned_by = POL }
+			10 = { is_controlled_by = POL }
+			NOT = { is_in_faction_with = SOV }
+			NOT = { is_subject_of = SOV }
+			SOV = { is_puppet = no }
+		}
+
+		complete_effect = {
+			if = {
+				limit = { has_idea_with_trait = promethean_program }
+				add_political_power = 18
+			}
+			SOV = {
+				random_owned_state = {
+					limit = {
+						industrial_complex > 0
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 0.6
+					}
+					damage_building = {
+						type = infrastructure
+						damage = 0.3
+					}
+				}
+				random_owned_state = {
+					limit = {
+						arms_factory > 0
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.6
+					}
+					damage_building = {
+						type = infrastructure
+						damage = 0.3
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 125
+		}
+	
+	}
+	
+	POL_Japanese_Military_Intelligence_Cooperation = {
+
+		icon = jap_pacific_guardian
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			JAP = {
+				is_subject = no
+				NOT = { has_government = communism }
+				NOT = { is_in_faction_with = SOV }
+				NOT = { has_war_with = POL }
+			}
+			NOT = { has_non_aggression_pact_with = SOV }
+		}
+
+		cost = 60
+
+		fire_only_once = yes
+
+		visible = {
+			has_government = neutrality
+			is_subject = no
+			has_capitulated = no
+			10 = { is_owned_by = POL }
+			10 = { is_controlled_by = POL }
+			NOT = { is_in_faction_with = SOV }
+			SOV = { is_puppet = no }
+			JAP = {
+				is_subject = no
+				NOT = { has_government = communism }
+				NOT = { is_in_faction_with = SOV }
+				NOT = { has_war_with = POL }
+			}
+		}
+
+		complete_effect = {
+			JAP = { add_ideas = POL_Polish_Military_Mission }
+			custom_effect_tooltip = POL_Japanese_Military_Intelligence_Cooperation_tt
+			hidden_effect = {
+				country_event = poland.169
+			}
+		}
+
+		ai_will_do = {
+			factor = 130
+		}
+	}
+
+}
+
+### Economy
+
+prestigious_projects = {
+	
+	POL_palace_of_culture_and_science = {
+		
+		icon = generic_research
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			is_subject_of = SOV
+			has_government = communism
+		}
+
+		visible = {
+			has_completed_focus = POL_Socialist_Realism
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+		days_remove = 500
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+		remove_effect = { 
+			add_political_power = 120
+			add_stability = 0.03
+			add_autonomy_ratio = {
+				value = -0.3
+			}
+			SOV = {
+				add_political_power = 60
+			}
+		}
+	}
+	
+	POL_Warsaw_Main_Railway_Station = {
+
+		icon = generic_construction
+
+		allowed = { original_tag = POL }
+		
+		available = {
+			10 = { infrastructure > 9 }
+		}
+
+		fire_only_once = yes
+		
+		days_mission_timeout = 1400
+
+		is_good = no
+
+		activation = {
+			10 = {
+				owner = { tag = ROOT }
+				controller = { tag = ROOT }
+			}
+		}
+
+		complete_effect = {
+			10 = { add_extra_state_shared_building_slots = 2 }
+			add_political_power = 100
+		}
+
+		timeout_effect = {
+			add_political_power = -50
+		}
+	}
+	
+	POL_Southern_Access_Route = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = POL_Southern_Access_Route_trigger
+				OR = {
+					AND = {
+						89 = {
+							owner = { tag = ROOT }
+						}
+						73 = {
+							OR = {
+								owner = { tag = ROOT }
+								owner = { is_subject_of = ROOT }
+								owner = { is_in_faction_with = ROOT }
+								owner = { original_tag = HUN }
+								owner = { is_subject_of = HUN }
+							}
+						}
+					}
+					AND = {
+						88 = {
+							owner = { tag = ROOT }
+						}
+						664 = {
+							OR = {
+								owner = { tag = ROOT }
+								owner = { is_subject_of = ROOT }
+								owner = { is_in_faction_with = ROOT }
+								owner = { original_tag = HUN }
+								owner = { is_subject_of = HUN }
+							}
+						}
+						OR = {
+							70 = {
+								OR = {
+									owner = { tag = ROOT }
+									owner = { is_subject_of = ROOT }
+									owner = { is_in_faction_with = ROOT }
+									owner = { original_tag = HUN }
+									owner = { is_subject_of = HUN }
+								}
+							}
+							71 = {
+								OR = {
+									owner = { tag = ROOT }
+									owner = { is_subject_of = ROOT }
+									owner = { is_in_faction_with = ROOT }
+									owner = { original_tag = HUN }
+									owner = { is_subject_of = HUN }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			is_subject = no
+			HUN = { 
+				is_subject = no
+				NOT = { has_war_with = POL }
+			}
+			country_exists = HUN
+		}
+
+		complete_effect = {
+		    POL = { country_event = poland.2002 }
+			random_owned_controlled_state = {
+				prioritize = { 89 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 89 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			HUN = {
+				random_owned_controlled_state = {
+					prioritize = { 43 }
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 43 }
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}
+	}
+	
+	POL_Invest_In_Fiat = {
+
+		icon = rubber
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			OR = {
+				date > 1939.01.01
+				is_in_faction_with = ITA
+			}
+			NOT = { has_idea = POL_Motorization_Focus }
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			ITA = { 
+				exists = yes
+				is_subject = no
+	 			NOT = { has_war_with = POL }
+			}
+			is_subject = no
+		}
+
+		complete_effect = {
+			set_country_flag = POL_Invest_In_Fiat
+			add_political_power = 50
+			add_timed_idea = {
+				idea = POL_Motorization_Focus
+				days = 365
+			}
+			ITA = {
+				set_technology = { butadiene_processing = 1 }
+				add_ideas = POL_Synthetic_Rubber
+				random_owned_controlled_state = {
+				prioritize = { 158 }
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			custom_effect_tooltip = POL_New_Line
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = POL_Polski_Fiat
+		}
+
+		ai_will_do = {
+			factor = 300
+			modifier = {
+				factor = 0
+				NOT = { is_in_faction_with = ITA }
+			}
+		}
+	}
+	
+	POL_Invest_In_Ford = {
+
+		icon = rubber
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			OR = {
+				date > 1941.01.01
+				is_in_faction_with = USA
+			}
+			NOT = { has_idea = POL_Motorization_Focus }
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			USA = { 
+				exists = yes
+				is_subject = no
+	 			NOT = { has_war_with = POL }
+			}
+			is_subject = no
+		}
+
+		complete_effect = {
+			set_country_flag = POL_Invest_In_Ford
+			add_political_power = 50
+			add_timed_idea = {
+				idea = POL_Motorization_Focus
+				days = 365
+			}
+			USA = {
+				set_technology = { butadiene_processing = 1 }
+				add_ideas = POL_Synthetic_Rubber
+				random_owned_controlled_state = {
+				prioritize = { 360 }
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			custom_effect_tooltip = POL_New_Line
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = POL_Ford_Polska
+		}
+
+		ai_will_do = {
+			factor = 300
+			modifier = {
+				factor = 0
+				NOT = { is_in_faction_with = USA }
+			}
+		}
+	}
+
+}
+
+
+### Commonwealth
+
+form_commonwealth_category = {
+
+	POL_Lithuanian_Constitutional_Crisis = {
+
+		icon = generic_break_treaty
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_war_support > 0.5
+			OR = {
+				has_army_manpower = { size > 624999 }
+				has_completed_focus = POL_Polish_Revanchism
+				has_government = fascism
+			}
+			NOT = { has_completed_focus = POL_The_Front_Morges }
+			NOT = { has_idea = POL_Neutral_Foreign_Policy }
+		}
+
+		cost = 400
+
+		fire_only_once = yes
+
+		visible = {
+			is_owner_neighbor_of = LIT
+			is_subject = no
+			LIT = {
+	 			controls_state = 11
+				exists = yes
+	 			is_subject = no
+	 			NOT = { has_war_with = POL }
+	 		}
+			is_puppet = no
+			has_capitulated = no
+			NOT = { has_global_flag = POL_lithuanian_crisis_done }
+			has_dlc = "Waking the Tiger"
+		}
+
+		complete_effect = {
+			effect_tooltip = {
+				LIT = { country_event = poland.129 }
+			}
+			hidden_effect = {
+				POL = { country_event = poland.129 }
+				set_global_flag = POL_lithuanian_crisis_done
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}
+	}
+}
+
+###Non-WtT
+form_commonwealth_category2 = {
+
+	POL_Lithuanian_Constitutional_Crisis2 = {
+
+		icon = generic_break_treaty
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_war_support > 0.5
+			OR = {
+				has_army_manpower = { size > 549999 }
+				has_completed_focus = POL_Polish_Revanchism
+				has_government = fascism
+			}
+			NOT = { has_completed_focus = POL_The_Front_Morges }
+			NOT = { has_idea = POL_Neutral_Foreign_Policy }
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		visible = {
+			is_owner_neighbor_of = LIT
+			is_subject = no
+			LIT = {
+	 			controls_state = 11
+				exists = yes
+	 			is_subject = no
+	 			NOT = { has_war_with = POL }
+	 		}
+			is_puppet = no
+			has_capitulated = no
+			NOT = { has_global_flag = POL_lithuanian_crisis_done }
+			NOT = { has_dlc = "Waking the Tiger" }
+		}
+
+		complete_effect = {
+			effect_tooltip = {
+				LIT = { country_event = poland.129 }
+			}
+			hidden_effect = {
+				POL = { country_event = poland.129 }
+				set_global_flag = POL_lithuanian_crisis_done
+			}
+		}
+
+		ai_will_do = {
+			factor = 300
+		}
+	}
+}
+
+### Colonial and Maritime League
+
+POL_Maritime_and_Colonial_League_category = {
+
+	POL_Offer_Liberia_Protection = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+		    OR = {
+			    has_completed_focus = POL_Maritime_and_Colonial_League
+			    has_completed_focus = POL_Maritime_and_Colonial_League1
+			}
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			is_subject = no
+			LIB = {
+				exists = yes
+				is_subject = no
+				is_in_faction = no
+				num_of_factories < 15
+				NOT = { has_war_with = POL }
+				OR = {
+					is_in_faction = no
+					is_in_faction_with = POL
+				}
+			}
+		}
+
+		complete_effect = {
+			LIB = { country_event = poland.156 }
+			custom_effect_tooltip = POL_Accept_Tooltip
+			effect_tooltip = {
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					POL = {
+						set_autonomy = {
+							target = LIB
+							autonomous_state = autonomy_colony
+							freedom_level = 0.8
+						}
+					}
+					else = {
+						POL = { puppet = LIB }
+					}
+				}
+				if = {
+					limit = {
+						298 = { is_controlled_by = LIB is_owned_by = LIB }
+					}
+					298 = {
+						add_resource = {
+							type = rubber
+							amount = 5
+							state = 298
+						}
+					}
+				}
+				LIB = {
+					random_owned_controlled_state = {
+						prioritize = { 298 }
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+						set_state_flag = POL_Offer_Liberia_Protection_1
+					}
+				}
+				USA = { add_opinion_modifier = { target = POL modifier = POL_Liberia_Acquired } }
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Demand_Former_German_Colonies = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_war = no
+			is_in_faction_with = ENG
+			546 = { is_controlled_by = ENG is_owned_by = ENG }
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			is_subject = no
+		}
+
+		complete_effect = {
+			ENG = { country_event = poland.154 }
+			custom_effect_tooltip = POL_Accept_Tooltip
+			effect_tooltip = {
+				random_country = {
+					limit = { 
+						tag = POL 
+					}
+					add_political_power = -200
+					transfer_state = 546
+				}
+				546 = { 
+					add_resource = {
+						type = chromium
+						amount = 5
+						state = 546
+					}
+					add_resource = {
+						type = tungsten
+						amount = 7
+						state = 546
+					}
+				}
+				ENG = { add_political_power = 200 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	POL_Solicit_Donations_for_the_Navy = {
+
+    	icon = generic_naval
+		
+		allowed = {
+			original_tag = POL
+		}
+		
+		visible = {
+			is_puppet = no
+		}
+
+		available = {
+			any_owned_state = {
+				OR = {
+					is_coastal = yes
+					is_island_state = yes
+				}
+			}
+			dockyard > 0
+        }
+		
+		modifier = {
+			industrial_capacity_dockyard = 0.1
+		}
+	
+		days_remove = 180
+		cost = 50
+
+		complete_effect = {
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				dockyard < 7
+			}
+		}
+    }
+}
+
+### Interwencja we Francji
+
+POL_Interwencja_we_Francji_category = {
+	
+	POL_Przygotowania = {
+
+		icon = GFX_decision_poland_Virtuti_Militari
+
+		allowed = {
+			original_tag = POL
+		}
+
+		available = {
+			has_completed_focus = POL_Polish_France_Obalenie_Zgromadzenia
+		}
+		
+		cost = 10
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = POL_Polish_France_Obalenie_Zgromadzenia
+		}
+
+		complete_effect = {
+			FRA = {
+			    give_military_access = POL
+		    }
+			POL = {
+			    give_military_access = FRA
+		    }
+			FRA = { diplomatic_relation = { country = POL relation = guarantee active = yes} }
+			FRA = { add_opinion_modifier = { target = ROOT modifier = POL_French_Occupation } }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

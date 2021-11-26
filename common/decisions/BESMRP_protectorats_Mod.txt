@@ -1,0 +1,1537 @@
+### British Protectorat
+
+POL_zachodnie_protektoraty = {
+    POL_protektorat_british = {
+
+		icon = decision_infiltrate_state
+
+		available = {
+			has_completed_focus = POL_Polish_France_Wojna_UK
+			has_government = neutrality
+			controls_state = 126
+			controls_state = 127
+			controls_state = 123
+			controls_state = 338
+			controls_state = 125
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = POL_Polish_France_Wojna_UK
+			has_government = neutrality
+			NOT = { has_global_flag = form_british_napoleon_flag }
+		}
+
+		complete_effect = {
+			if = {
+				hidden_effect = {
+					ENR = {
+						set_state_controller = 126
+						set_state_controller = 127
+						set_state_controller = 123
+						set_state_controller = 338
+						set_state_controller = 125
+					}
+				}
+				ENR = {
+					transfer_state = 126
+					transfer_state = 127
+					transfer_state = 123
+					transfer_state = 338
+					transfer_state = 125
+				}
+				POL = {
+					puppet = ENR
+					set_autonomy = { target = ENR autonomy_state = autonomy_integrated_puppet }
+				}
+				ENR = {
+					create_country_leader = {
+						name = "Elizabeth II"
+						desc = "POLITICS_ELIZABETH_II_DESC"
+						picture = "gfx/leaders/ENG/Portrait_eng_elizabeth.dds"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+						}
+					}
+                }						
+			    hidden_effect = {
+					126 = { add_core_of = ENR }
+					127 = { add_core_of = ENR }
+					123 = { add_core_of = ENR }
+					338 = { add_core_of = ENR }
+					125 = { add_core_of = ENR }
+					122 = { add_core_of = ENR }
+					128 = { add_core_of = ENR }
+					129 = { add_core_of = ENR }
+					132 = { add_core_of = ENR }
+					130 = { add_core_of = ENR }
+					131 = { add_core_of = ENR }
+					121 = { add_core_of = ENR }
+					133 = { add_core_of = ENR }
+					136 = { add_core_of = ENR }
+					120 = { add_core_of = ENR }
+					861 = { add_core_of = ENR }
+					119 = { add_core_of = ENR }				
+				}
+			}
+			hidden_effect = {
+				set_global_flag = form_british_napoleon_flag
+		    }
+		}
+	}
+}
+
+POL_germanskie_protektoraty = {
+    POL_protektorat_prus = {
+
+		icon = decision_infiltrate_state
+
+		available = {
+			has_completed_focus = POL_Polish_France_Wojna_prewencyjna
+			has_government = neutrality
+			controls_state = 64
+			controls_state = 794
+			controls_state = 65
+			controls_state = 795
+			controls_state = 60
+			controls_state = 793
+			controls_state = 61
+			controls_state = 62
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				GER = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = POL_Polish_France_Wojna_prewencyjna
+			has_government = neutrality
+			NOT = { has_global_flag = form_prussia_napoleon_flag }
+		}
+
+		complete_effect = {
+			if = {
+				hidden_effect = {
+					PRA = {
+						set_state_controller = 1105
+						set_state_controller = 64
+						set_state_controller = 794
+						set_state_controller = 65
+						set_state_controller = 795
+						set_state_controller = 60
+						set_state_controller = 793
+						set_state_controller = 61
+						set_state_controller = 62
+					}
+				}
+				PRA = {
+					transfer_state = 1105
+					transfer_state = 64
+					transfer_state = 794
+					transfer_state = 65
+					transfer_state = 795
+					transfer_state = 60
+					transfer_state = 793
+					transfer_state = 61
+					transfer_state = 62
+					set_cosmetic_tag = PRA_polishprotectorate
+				}
+				POL = {
+					puppet = PRA
+					set_autonomy = { target = PRA autonomy_state = autonomy_integrated_puppet }
+				}
+                hidden_effect = {
+					1105 = { add_core_of = PRA }
+					64 = { add_core_of = PRA }
+					794 = { add_core_of = PRA }
+					65 = { add_core_of = PRA }
+					795 = { add_core_of = PRA }
+					60 = { add_core_of = PRA }
+					793 = { add_core_of = PRA }
+					61 = { add_core_of = PRA }
+					62 = { add_core_of = PRA }
+				}				
+			}
+			hidden_effect = {
+				set_global_flag = form_prussia_napoleon_flag
+			}
+		}
+	}
+	POL_protektorat_ren = {
+
+		icon = decision_infiltrate_state
+
+		available = {
+			has_completed_focus = POL_Polish_France_Wojna_prewencyjna
+			has_government = neutrality
+			controls_state = 788
+			controls_state = 790
+			controls_state = 55
+			controls_state = 57
+			controls_state = 56
+			controls_state = 59
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				GER = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = POL_Polish_France_Wojna_prewencyjna
+			has_government = neutrality
+			NOT = { has_global_flag = form_ren_napoleon_flag }
+		}
+
+		complete_effect = {
+			if = {
+				hidden_effect = {
+					ZWR = {
+						set_state_controller = 788
+						set_state_controller = 790
+						set_state_controller = 55
+						set_state_controller = 57
+						set_state_controller = 56
+						set_state_controller = 59
+					}
+				}
+				ZWR = {
+					transfer_state = 788
+					transfer_state = 790
+					transfer_state = 55
+					transfer_state = 57
+					transfer_state = 56
+					transfer_state = 59
+					set_cosmetic_tag = ZWR_polishprotectorate
+					
+				}
+				POL = {
+					puppet = ZWR
+					set_autonomy = { target = ZWR autonomy_state = autonomy_integrated_puppet }
+				}
+                hidden_effect = {
+					796 = { add_core_of = ZWR }
+					979 = { add_core_of = ZWR }
+					56 = { add_core_of = ZWR }
+					788 = { add_core_of = ZWR }
+					790 = { add_core_of = ZWR }
+					55 = { add_core_of = ZWR }
+					57 = { add_core_of = ZWR }
+					59 = { add_core_of = ZWR }
+				}					
+			}
+			hidden_effect = {
+				set_global_flag = form_ren_napoleon_flag
+		    }
+		}
+	}
+	POL_protektorat_bavaria = {
+
+		icon = decision_infiltrate_state
+
+		available = {
+			has_completed_focus = POL_Polish_France_Wojna_prewencyjna
+			has_government = neutrality
+			controls_state = 52
+			controls_state = 798
+			controls_state = 800
+			controls_state = 53
+			controls_state = 54
+			controls_state = 50
+			controls_state = 799
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				GER = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = POL_Polish_France_Wojna_prewencyjna
+			has_government = neutrality
+			NOT = { has_global_flag = form_bavaria_napoleon_flag }
+		}
+
+		complete_effect = {
+			if = {
+				hidden_effect = {
+					BIV = {
+						set_state_controller = 52
+						set_state_controller = 798
+						set_state_controller = 800
+						set_state_controller = 53
+						set_state_controller = 54
+						set_state_controller = 50
+						set_state_controller = 799
+					}
+				}
+				BIV = {
+					transfer_state = 52
+					transfer_state = 798
+					transfer_state = 800
+					transfer_state = 53
+					transfer_state = 54
+					transfer_state = 50
+					transfer_state = 799
+					set_cosmetic_tag = BIV_polishprotectorate
+				}
+				POL = {
+					puppet = BIV
+					set_autonomy = { target = BIV autonomy_state = autonomy_integrated_puppet }
+				}
+                hidden_effect = {
+					52 = { add_core_of = BIV }
+					798 = { add_core_of = BIV }
+					800 = { add_core_of = BIV }
+					53 = { add_core_of = BIV }
+					54 = { add_core_of = BIV }
+					50 = { add_core_of = BIV }
+					799 = { add_core_of = BIV }
+				}					
+			}
+			hidden_effect = {
+				set_global_flag = form_bavaria_napoleon_flag
+		    }
+		}
+	}
+}
+
+POL_indie_protektoraty = {
+    POL_protektorat_indie = {
+
+		icon = decision_infiltrate_state
+
+		available = {
+			has_completed_focus = POL_Polish_France_Wojna_z_Indiami
+			has_government = neutrality
+			controls_state = 429
+			controls_state = 427
+			controls_state = 428
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = POL_Polish_France_Wojna_z_Indiami
+			has_government = neutrality
+			NOT = { has_global_flag = form_indie_napoleon_flag }
+		}
+
+		complete_effect = {
+			if = {
+				hidden_effect = {
+					IDN = {
+						set_state_controller = 429
+						set_state_controller = 427
+						set_state_controller = 428
+						set_state_controller = 425
+						set_state_controller = 423
+						set_state_controller = 424
+					}
+				}
+				IDN = {
+					transfer_state = 429
+					transfer_state = 427
+					transfer_state = 428
+					transfer_state = 425
+					transfer_state = 423
+					transfer_state = 424
+				}
+				POL = {
+					puppet = IDN
+					set_autonomy = { target = IDN autonomy_state = autonomy_integrated_puppet }
+				}				
+			}
+			hidden_effect = {
+				set_global_flag = form_indie_napoleon_flag
+		    }
+		}
+	}
+}
+
+POL_protektorat_wojny_napoleona = {
+    POL_protektorat_spain = {
+
+		icon = decision_infiltrate_state
+
+		available = {
+			has_completed_focus = POL_Polish_France_Wojny
+			has_government = neutrality
+			controls_state = 172
+			controls_state = 166
+			controls_state = 176
+			controls_state = 1054
+			controls_state = 1052
+			controls_state = 171
+			controls_state = 174
+			controls_state = 1053
+			controls_state = 1050
+			controls_state = 41
+			controls_state = 1055
+			controls_state = 1133
+			controls_state = 165
+			controls_state = 167
+			controls_state = 168
+			controls_state = 173
+			controls_state = 1051
+			controls_state = 169
+			controls_state = 170
+			controls_state = 175
+			controls_state = 177
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				SPR = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = POL_Polish_France_Wojny
+			has_government = neutrality
+			NOT = { has_global_flag = form_spain_napoleon_flag }
+		}
+
+		complete_effect = {
+			if = {
+				hidden_effect = {
+					SPM = {
+						set_state_controller = 172
+						set_state_controller = 166
+						set_state_controller = 176
+						set_state_controller = 1054
+						set_state_controller = 1052
+						set_state_controller = 171
+						set_state_controller = 174
+						set_state_controller = 1053
+						set_state_controller = 1050
+						set_state_controller = 41
+						set_state_controller = 1055
+						set_state_controller = 1133
+						set_state_controller = 165
+						set_state_controller = 167
+						set_state_controller = 168
+						set_state_controller = 173
+						set_state_controller = 1051
+						set_state_controller = 169
+						set_state_controller = 170
+						set_state_controller = 175
+						set_state_controller = 177
+					}
+				}
+				SPM = {
+					transfer_state = 172
+					transfer_state = 166
+					transfer_state = 176
+					transfer_state = 1054
+					transfer_state = 1052
+					transfer_state = 171
+					transfer_state = 174
+					transfer_state = 1053
+					transfer_state = 1050
+					transfer_state = 41
+					transfer_state = 1055
+					transfer_state = 1133
+					transfer_state = 165
+					transfer_state = 167
+					transfer_state = 168
+					transfer_state = 173
+					transfer_state = 1051
+					transfer_state = 169
+					transfer_state = 170
+					transfer_state = 175
+					transfer_state = 177
+				}
+				POL = {
+					puppet = SPM
+					set_autonomy = { target = SPM autonomy_state = autonomy_integrated_puppet }
+				}			
+			    hidden_effect = {
+					172 = { add_core_of = SPM }
+					166 = { add_core_of = SPM }
+					176 = { add_core_of = SPM }
+					1054 = { add_core_of = SPM }
+					1052 = { add_core_of = SPM }
+					171 = { add_core_of = SPM }
+					174 = { add_core_of = SPM }
+					1053 = { add_core_of = SPM }
+					1050 = { add_core_of = SPM }
+					41 = { add_core_of = SPM }
+					1055 = { add_core_of = SPM }
+					1133 = { add_core_of = SPM }
+					165 = { add_core_of = SPM }
+					167 = { add_core_of = SPM }
+					168 = { add_core_of = SPM }
+					173 = { add_core_of = SPM }
+					1051 = { add_core_of = SPM }
+					169 = { add_core_of = SPM }
+					170 = { add_core_of = SPM }
+					175 = { add_core_of = SPM }
+					177 = { add_core_of = SPM }
+				}
+			}
+			hidden_effect = {
+				set_global_flag = form_spain_napoleon_flag
+		    }
+		}
+	}
+}
+
+POL_protektorat_stany_zjednoczone = {
+    POL_protektorat_providence = {
+
+		icon = eng_support_imperialist_coup
+
+		available = {
+			has_government = neutrality
+			controls_state = 840
+			controls_state = 839
+			has_completed_focus = POL_Sikorski_Koncept
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				USA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_government = neutrality
+			NOT = { has_global_flag = form_providence_usa_flag }
+		}
+
+		complete_effect = {
+			if = {
+				hidden_effect = {
+					PRO = {
+						set_state_controller = 840
+						set_state_controller = 839
+					}
+				}
+				PRO = {
+					transfer_state = 840
+					transfer_state = 839
+				}
+				POL = {
+					puppet = PRO
+					set_autonomy = { target = PRO autonomy_state = autonomy_integrated_puppet }
+				}
+				PRO = {
+					create_country_leader = {
+						name = "Wacław Stachiewicz"
+						desc = "POLITICS_STACHIEWICZ_DESC"
+						picture = "gfx/leaders/POL/Portrait_Poland_Waclaw_Stachiewicz.dds"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+						}
+					}
+					add_ideas = POL_general_staff
+                }	
+			    hidden_effect = {
+					840 = { add_core_of = PRO }
+					839 = { add_core_of = PRO }			
+				}
+			}
+			hidden_effect = {
+				set_global_flag = form_providence_usa_flag
+		    }
+			set_province_name = { id = 9832 name = "Prowidencja"}	
+		    839 = { set_state_name = "Gubernatorstwo Prowidencji" }
+		}
+	}
+	POL_protektorat_usa = {
+
+		icon = generic_operation
+
+		available = {
+			has_government = neutrality
+			controls_state = 361
+			controls_state = 360
+			controls_state = 358
+			controls_state = 359
+			controls_state = 844
+			controls_state = 841
+			has_completed_focus = POL_Sikorski_Koncept
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				USA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_government = neutrality
+			NOT = { has_global_flag = form_america_usa_flag }
+		}
+
+		complete_effect = {
+			if = {
+				hidden_effect = {
+					USP = {
+						set_state_controller = 361
+						set_state_controller = 360
+						set_state_controller = 358
+						set_state_controller = 359
+						set_state_controller = 844
+						set_state_controller = 841
+					}
+				}
+				USP = {
+					transfer_state = 361
+					transfer_state = 360
+					transfer_state = 358
+					transfer_state = 359
+					transfer_state = 844
+					transfer_state = 841
+				}
+				POL = {
+					puppet = USP
+					set_autonomy = { target = USP autonomy_state = autonomy_integrated_puppet }
+				}		
+			    hidden_effect = {
+					366 = { add_core_of = USP }
+					370 = { add_core_of = USP }
+					367 = { add_core_of = USP }
+					365 = { add_core_of = USP }
+					364 = { add_core_of = USP }
+					368 = { add_core_of = USP }
+					363 = { add_core_of = USP }
+					369 = { add_core_of = USP }
+					362 = { add_core_of = USP }
+					843 = { add_core_of = USP }
+					261 = { add_core_of = USP }
+					361 = { add_core_of = USP }
+					841 = { add_core_of = USP }
+					360 = { add_core_of = USP }
+					359 = { add_core_of = USP }
+					358 = { add_core_of = USP }
+					839 = { add_core_of = USP }
+					840 = { add_core_of = USP }
+					357 = { add_core_of = USP }
+					838 = { add_core_of = USP }
+					837 = { add_core_of = USP }
+					836 = { add_core_of = USP }
+					835 = { add_core_of = USP }
+					118 = { add_core_of = USP }
+					118 = { add_core_of = USP }
+				}
+				USP = {
+					create_country_leader = {
+						name = "George Marshall"
+						desc = "POLITICS_STACHIEWICZ_DESC"
+						picture = "gfx/leaders/POL/Portrait_USA_george_marshall.dds"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+						}
+					}
+                }						
+			}
+			hidden_effect = {
+				set_global_flag = form_america_usa_flag
+		    }
+			set_province_name = { id = 6845 name = "Kościuszków"}	
+		    360 = { set_state_name = "Nowa Pensylwania" }
+		}
+	}
+	POL_protektorat_chicago = {
+
+		icon = generic_form_nation
+
+		available = {
+			has_government = neutrality
+			controls_state = 395
+			controls_state = 396
+			controls_state = 394
+			controls_state = 393
+			controls_state = 856
+			controls_state = 857
+			has_completed_focus = POL_Sikorski_Koncept
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				USA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_government = neutrality
+			NOT = { has_global_flag = form_chicago_usa_flag }
+		}
+
+		complete_effect = {
+			if = {
+				hidden_effect = {
+					ILI = {
+						set_state_controller = 395
+						set_state_controller = 396
+						set_state_controller = 394
+						set_state_controller = 393
+						set_state_controller = 856
+						set_state_controller = 857
+					}
+				}
+				ILI = {
+					transfer_state = 395
+					transfer_state = 396
+					transfer_state = 394
+					transfer_state = 393
+					transfer_state = 856
+					transfer_state = 857
+				}
+				POL = {
+					puppet = ILI
+					set_autonomy = { target = ILI autonomy_state = autonomy_integrated_puppet }
+				}		
+			    hidden_effect = {
+					395 = { add_core_of = USP }
+					396 = { add_core_of = USP }
+					394 = { add_core_of = USP }
+					393 = { add_core_of = USP }
+					856 = { add_core_of = USP }
+					857 = { add_core_of = USP }
+				}
+				ILI = {
+					create_country_leader = {
+						name = "Książe Eustachy Sapieha"
+						desc = "POLITICS_EEER_DESC"
+						picture = "gfx/leaders/POL/Portrait_POL_Eustachy_Sapieha.dds"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+						}
+					}
+                }						
+			}
+			set_province_name = { id = 9450 name = "Nowa Warszawa"}	
+		    395 = { set_state_name = "Nowa Warszawa" }
+			hidden_effect = {
+				set_global_flag = form_chicago_usa_flag
+		    }
+		}
+	}
+	POL_protektorat_texas = {
+
+		icon = generic_independence
+
+		available = {
+			has_government = neutrality
+			controls_state = 375
+			controls_state = 852
+			controls_state = 850
+			controls_state = 851
+			controls_state = 376
+			has_completed_focus = POL_Sikorski_Koncept
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				USA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_government = neutrality
+			NOT = { has_global_flag = form_texas_usa_flag }
+		}
+
+		complete_effect = {
+			if = {
+				hidden_effect = {
+					TEX = {
+						set_state_controller = 375
+						set_state_controller = 852
+						set_state_controller = 850
+						set_state_controller = 851
+						set_state_controller = 376
+					}
+				}
+				TEX = {
+					transfer_state = 375
+					transfer_state = 852
+					transfer_state = 850
+					transfer_state = 851
+					transfer_state = 376
+				}
+				POL = {
+					puppet = TEX
+					set_autonomy = { target = TEX autonomy_state = autonomy_integrated_puppet }
+				}
+                TEX = {
+                    set_cosmetic_tag = TEXP		
+                }					
+			    hidden_effect = {
+					375 = { add_core_of = TEX }
+					852 = { add_core_of = TEX }
+					850 = { add_core_of = TEX }
+					851 = { add_core_of = TEX }
+					376 = { add_core_of = TEX }
+				}
+				TEX = {
+					create_country_leader = {
+	                    name = "Dwight Eisenhower"
+	                    desc = ""
+	                    picture = "gfx/leaders/POL/Portrait_USA_hog_Dwight_Eisenhower.dds"
+	                    expire = "1960.1.1"
+	                    ideology = despotism
+	                    traits = {
+	                    }
+                    }
+                }						
+			}
+			hidden_effect = {
+				set_global_flag = form_texas_usa_flag
+		    }
+		}
+	}
+	POL_protektorat_luizajna = {
+
+		icon = generic_operation
+
+		available = {
+			has_government = neutrality
+			controls_state = 845
+			controls_state = 858
+			controls_state = 371
+			controls_state = 372
+			controls_state = 373
+			has_completed_focus = POL_Sikorski_Koncept
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				USA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_government = neutrality
+			NOT = { has_global_flag = form_luizjana_usa_flag }
+		}
+
+		complete_effect = {
+			if = {
+				hidden_effect = {
+					LOU = {
+						set_state_controller = 845
+						set_state_controller = 858
+						set_state_controller = 371
+						set_state_controller = 372
+						set_state_controller = 373
+					}
+				}
+				LOU = {
+					transfer_state = 845
+					transfer_state = 858
+					transfer_state = 371
+					transfer_state = 372
+					transfer_state = 373
+				}
+				POL = {
+					puppet = LOU
+					set_autonomy = { target = LOU autonomy_state = autonomy_integrated_puppet }
+				}					
+				845 = { add_core_of = LOU }
+				858 = { add_core_of = LOU }
+				371 = { add_core_of = LOU }
+				372 = { add_core_of = LOU }
+				373 = { add_core_of = LOU }
+				374 = { add_core_of = LOU }
+				849 = { add_core_of = LOU }
+				383 = { add_core_of = LOU }
+				848 = { add_core_of = LOU }
+				382 = { add_core_of = LOU }
+				847 = { add_core_of = LOU }
+				846 = { add_core_of = LOU }
+				381 = { add_core_of = LOU }
+				388 = { add_core_of = LOU }
+				384 = { add_core_of = LOU }
+				390 = { add_core_of = LOU }
+				389 = { add_core_of = LOU }
+				391 = { add_core_of = LOU }
+				392 = { add_core_of = LOU }
+				LOU = {
+					create_country_leader = {
+	                    name = "Książe Arthur Blaskowicz"
+	                    desc = "POLITICS_EEERRE_DESC"
+	                    picture = "gfx/leaders/POL/Portrait_USA_Arthur_Blaskowicz.dds"
+	                    expire = "1960.1.1"
+	                    ideology = despotism
+	                    traits = {
+	                    }
+                    }
+                }						
+			}
+			set_province_name = { id = 7552 name = "Pułasków"}	
+		    845 = { set_state_name = "Pułaskow" }
+			hidden_effect = {
+				set_global_flag = form_luizjana_usa_flag
+		    }
+		}
+	}
+	POL_protektorat_california = {
+
+		icon = generic_operation
+
+		available = {
+			has_government = neutrality
+			controls_state = 378
+			controls_state = 855
+			has_completed_focus = POL_Sikorski_Koncept
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				USA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_government = neutrality
+			NOT = { has_global_flag = form_california_usa_flag }
+		}
+
+		complete_effect = {
+			if = {
+				hidden_effect = {
+					CAL = {
+						set_state_controller = 378
+						set_state_controller = 855
+					}
+				}
+				CAL = {
+					transfer_state = 378
+					transfer_state = 855
+				}
+				POL = {
+					puppet = CAL
+					set_autonomy = { target = CAL autonomy_state = autonomy_integrated_puppet }
+				}	
+                CAL = {
+                    set_cosmetic_tag = CALP		
+                }				
+				378 = { add_core_of = CAL }
+				855 = { add_core_of = CAL }
+				854 = { add_core_of = CAL }
+				379 = { add_core_of = CAL }
+				853 = { add_core_of = CAL }
+				380 = { add_core_of = CAL }
+				377 = { add_core_of = CAL }
+				385 = { add_core_of = CAL }
+				387 = { add_core_of = CAL }
+				386 = { add_core_of = CAL }
+				859 = { add_core_of = CAL }
+				CAL = {
+					create_country_leader = {
+	                    name = "Harry Truman"
+	                    desc = ""
+	                    picture = "gfx/leaders/POL/Portrait_USA_Harry_Truman.dds"
+	                    expire = "1965.1.1"
+	                    ideology = despotism
+	                    traits = {
+	                    }
+                    }
+                }						
+			}
+			hidden_effect = {
+				set_global_flag = form_california_usa_flag
+		    }
+		}
+	}
+}
+
+POL_uk_under_windsor = {
+	POL_British_under_British = {
+
+		icon = generic_operation
+
+		available = {
+			has_completed_focus = POL_English_buckg
+			has_government = neutrality
+			controls_state = 126
+			controls_state = 127
+			controls_state = 123
+			controls_state = 338
+			controls_state = 125
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = POL_English_buckg
+			has_government = neutrality
+			NOT = { has_global_flag = form_british_under_british_flag }
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = ENG
+					NOT = { ENG = { has_government = neutrality } }
+				}
+				hidden_effect = {
+					ENG = {
+						set_state_controller = 126
+						set_state_controller = 127
+						set_state_controller = 123
+						set_state_controller = 338
+					}
+				}
+				ENG = {
+					start_civil_war = { ideology = neutrality size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = ENG
+						has_government = neutrality
+					}
+					transfer_state = 126
+					transfer_state = 127
+					transfer_state = 123
+					transfer_state = 338
+					POL = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					set_cosmetic_tag = ENG_polishprotectorate
+					create_country_leader = {
+						name = "George VI"
+						desc = "POLITICS_GEORGE_VI_DESC"
+						picture = "gfx/leaders/POL/Portrait_Britain_George_VI.dds"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				set_global_flag = form_british_under_british_flag
+		    }
+		}
+	}
+	POL_Canada_under_British = {
+
+		icon = generic_operation
+
+		available = {
+			has_completed_focus = POL_English_buckg
+			has_government = neutrality
+			controls_state = 276
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				CAN = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = POL_English_buckg
+			has_government = neutrality
+			NOT = { has_global_flag = form_canada_under_british_flag }
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = CAN
+					NOT = { CAN = { has_government = neutrality } }
+				}
+				hidden_effect = {
+					CAN = {
+						set_state_controller = 276
+					}
+				}
+				CAN = {
+					start_civil_war = { ideology = neutrality size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = CAN
+						has_government = neutrality
+					}
+					transfer_state = 276
+					POL = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					set_cosmetic_tag = CAN_POL
+					create_country_leader = {
+						name = "Edward VIII"
+						desc = "POLITICS_GEORGE_VI_DESC"
+						picture = "gfx/leaders/POL/Portrait_Britain_Edward_VIII.dds"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				set_global_flag = form_canada_under_british_flag
+		    }
+		}
+	}
+
+}
+
+POL_ita_under_pol = {
+	POL_ita_under_pol12 = {
+
+		icon = generic_operation
+
+		available = {
+			has_completed_focus = POL_Wlochy_Kolonie
+			has_government = neutrality
+			country_exists = LBA
+			country_exists = ERI
+			country_exists = SOM
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ITA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = POL_Wlochy_Kolonie
+			has_government = neutrality
+			NOT = { has_global_flag = form_afrika_under_polando_flag }
+		}
+
+		complete_effect = {
+		    POL = {
+			    puppet = LBA
+				set_autonomy = { target = LBA autonomy_state = autonomy_integrated_puppet }
+			}
+			POL = {
+			    puppet = ERI
+				set_autonomy = { target = ERI autonomy_state = autonomy_integrated_puppet }
+			}
+			POL = {
+			    puppet = SOM
+				set_autonomy = { target = SOM autonomy_state = autonomy_integrated_puppet }
+			}
+			LBA = {
+			    set_cosmetic_tag = LBA_polishprotectorate
+				create_country_leader = {
+					name = "Protektor Władysław Anders"
+					desc = "POLITICS_ANDERS_DESC"
+					picture = "gfx/leaders/POL/Wladyslaw_Anders.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+					}
+				}
+			}
+			ERI = {
+			    set_cosmetic_tag = ERI_polishprotectorate
+			}
+			SOM = {
+			    set_cosmetic_tag = SOM_polishprotectorate
+			}
+			hidden_effect = {
+				set_global_flag = form_afrika_under_polando_flag
+		    }
+		}
+	}
+	POL_ita_under_pol1 = {
+
+		icon = generic_operation
+
+		available = {
+			has_completed_focus = POL_Wlochy_Kolonie
+			has_government = neutrality
+			country_exists = LBA
+			country_exists = ERI
+			country_exists = SOM
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ITA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = POL_Wlochy_Kolonie
+			has_government = neutrality
+			NOT = { has_global_flag = form_italye_under_polando_flag }
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = ITA
+					NOT = { ITA = { has_government = neutrality } }
+				}
+				hidden_effect = {
+					ITA = {
+						set_state_controller = 987
+					}
+				}
+				hidden_effect = {
+					HUN = {
+						transfer_state = 160
+						transfer_state = 867
+						transfer_state = 986
+						transfer_state = 866
+						transfer_state = 993
+						transfer_state = 736
+					}
+				}
+				ITA = {
+					start_civil_war = { ideology = neutrality size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = ITA
+						has_government = neutrality
+					}
+					transfer_state = 987
+					POL = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					set_cosmetic_tag = ITA_polishprotectorate
+					create_country_leader = {
+						name = "Victor Emmanuel III"
+						desc = "POLITICS_GFRTT_DESC"
+						picture = "gfx/leaders/POL/Portrait_Italy_Victor_Emmanuel_III.dds"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				set_global_flag = form_italye_under_polando_flag
+		    }
+		}
+	}
+}
+
+POL_romanow_under_pol = {
+	POL_cze_under_pol = {
+
+		icon = generic_operation
+
+		available = {
+			has_completed_focus = POL_Romanowie_wojna_czechy
+			has_government = neutrality
+			POL = {
+				controls_state = 72
+			    controls_state = 889
+			    controls_state = 70
+			    controls_state = 71
+			    controls_state = 75
+		    }
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				CZE = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = POL_Romanowie_wojna_czechy
+			has_government = neutrality
+			NOT = { has_global_flag = form_werer_under_polando_flag }
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = CZE
+					NOT = { CZE = { has_government = neutrality } }
+				}
+				hidden_effect = {
+					CZE = {
+						set_state_controller = 75
+					}
+				}
+				hidden_effect = {
+					HUN = {
+						transfer_state = 664
+						transfer_state = 73
+					}
+					POL = {
+						transfer_state = 70
+						transfer_state = 71
+						transfer_state = 889
+						transfer_state = 72
+					}
+				}
+				CZE = {
+					start_civil_war = { ideology = neutrality size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = CZE
+						has_government = neutrality
+					}
+					transfer_state = 75
+					POL = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					set_cosmetic_tag = CZE_polishprotectorate
+					create_country_leader = {
+						name = "Stanisław Romanow I"
+						desc = "POLITICS_GFRTTEE_DESC"
+						picture = "gfx/leaders/POL/Stanislaw_Romanow.dds"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				set_global_flag = form_werer_under_polando_flag
+		    }
+		}
+	}
+}
+
+POL_protektorat_wojny_zwykle = {
+    POL_protektorat_prus_1 = {
+
+		icon = decision_infiltrate_state
+
+		available = {
+			has_completed_focus = POL_Sikorski_Koncept
+			has_government = neutrality
+			controls_state = 64
+			controls_state = 794
+			controls_state = 65
+			controls_state = 795
+			controls_state = 60
+			controls_state = 793
+			controls_state = 61
+			controls_state = 62
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				GER = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_government = neutrality
+			NOT = { has_global_flag = form_prussijklja_flag }
+		}
+
+		complete_effect = {
+			if = {
+				hidden_effect = {
+					PRA = {
+						set_state_controller = 1105
+						set_state_controller = 64
+						set_state_controller = 794
+						set_state_controller = 65
+						set_state_controller = 795
+						set_state_controller = 60
+						set_state_controller = 793
+						set_state_controller = 61
+						set_state_controller = 62
+					}
+				}
+				PRA = {
+					transfer_state = 1105
+					transfer_state = 64
+					transfer_state = 794
+					transfer_state = 65
+					transfer_state = 795
+					transfer_state = 60
+					transfer_state = 793
+					transfer_state = 61
+					transfer_state = 62
+					set_cosmetic_tag = PRA_polishprotectorate
+				}
+				POL = {
+					puppet = PRA
+					set_autonomy = { target = PRA autonomy_state = autonomy_integrated_puppet }
+				}
+                hidden_effect = {
+					1105 = { add_core_of = PRA }
+					64 = { add_core_of = PRA }
+					794 = { add_core_of = PRA }
+					65 = { add_core_of = PRA }
+					795 = { add_core_of = PRA }
+					60 = { add_core_of = PRA }
+					793 = { add_core_of = PRA }
+					61 = { add_core_of = PRA }
+					62 = { add_core_of = PRA }
+				}				
+			}
+			hidden_effect = {
+				set_global_flag = form_prussijklja_flag
+			}
+		}
+	}
+	POL_protektorat_zwiazek_niemeirt = {
+
+		icon = decision_infiltrate_state
+
+		available = {
+			has_completed_focus = POL_Sikorski_Koncept
+			has_government = neutrality
+			controls_state = 788
+			controls_state = 790
+			controls_state = 55
+			controls_state = 57
+			controls_state = 56
+			controls_state = 59
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				GER = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_government = neutrality
+			NOT = { has_global_flag = form_ren_gera_flag }
+		}
+
+		complete_effect = {
+			if = {
+				hidden_effect = {
+					ZWR = {
+						set_state_controller = 788
+						set_state_controller = 790
+						set_state_controller = 55
+						set_state_controller = 57
+						set_state_controller = 56
+						set_state_controller = 59
+					}
+				}
+				ZWR = {
+					transfer_state = 788
+					transfer_state = 790
+					transfer_state = 55
+					transfer_state = 57
+					transfer_state = 56
+					transfer_state = 59
+					set_cosmetic_tag = ZWR_polishprotectorate
+					
+				}
+				POL = {
+					puppet = ZWR
+					set_autonomy = { target = ZWR autonomy_state = autonomy_integrated_puppet }
+				}
+                hidden_effect = {
+					796 = { add_core_of = ZWR }
+					979 = { add_core_of = ZWR }
+					56 = { add_core_of = ZWR }
+					788 = { add_core_of = ZWR }
+					790 = { add_core_of = ZWR }
+					55 = { add_core_of = ZWR }
+					57 = { add_core_of = ZWR }
+					59 = { add_core_of = ZWR }
+				}					
+			}
+			hidden_effect = {
+				set_global_flag = form_ren_gera_flag
+		    }
+		}
+	}

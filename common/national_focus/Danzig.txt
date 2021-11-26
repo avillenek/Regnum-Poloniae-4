@@ -1,0 +1,1965 @@
+#people to search
+#Hermann Rauschning
+#why code for danzig?
+focus_tree = {
+	id = danzig_focus
+	
+country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = DNZ
+			has_global_flag = DNZ_Experimental_Enabled
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 0 y = 550 }
+	
+	############################
+	# FORMABLE NATION SECTION ##
+	############################
+	
+	focus = { #DANZIG STRONK
+		id = DNZ_Unify_the_Baltic_Germans
+		icon = GFX_focus_ger_revive_kaiserreich
+		available = {
+			is_subject = no
+		}
+		
+		x = 0
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = { #DANZIG STRONK
+		id = DNZ_Cultivate_Our_Own_National_Identity
+		icon = GFX_focus_ger_return_of_the_kaiser
+		available = {
+			is_subject = no
+		}
+		
+		x = 0
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	############################
+	##### ECONOMIC SECTION #####
+	############################
+	
+	focus = {
+		id = DNZ_Danziger_Arbeitsfront
+		icon = GFX_goal_generic_construction2
+		
+		x = 3
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.75
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = DNZ_Seek_Economic_Relief
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = DNZ_Danziger_Arbeitsfront }
+		relative_position_id = DNZ_Danziger_Arbeitsfront
+		available = { is_subject = yes }
+		bypass = { is_subject = no }
+		x = -1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = { idea = DNZ_economic_aid days = 365 }
+		}
+	}
+	
+	focus = {
+		id = DNZ_Attract_Foreign_Investment
+		icon = GFX_focus_focus_generic_industry_1
+		prerequisite = { focus = DNZ_Danziger_Arbeitsfront }
+		relative_position_id = DNZ_Danziger_Arbeitsfront
+		available = {
+			788 = {
+				is_controlled_by = DNZ
+			}
+		}
+		x = 1
+		y = 1
+		cost = 15
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			788 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = DNZ_Invite_Foreign_Engineers
+		icon = GFX_focus_research
+		prerequisite = { focus = DNZ_Seek_Economic_Relief }
+		prerequisite = { focus = DNZ_Attract_Foreign_Investment }
+		relative_position_id = DNZ_Danziger_Arbeitsfront
+		x = 0
+		y = 2
+		cost = 20
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	############################
+	###### NAVAL SECTION #######
+	############################
+	
+	focus = {
+		id = DNZ_International_Shipping_Effort
+		icon = GFX_goal_generic_occupy_states_coastal
+		
+		x = 7
+		y = 0
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = POL_internationalism_focus
+			add_tech_bonus = {
+				name = DNZ_International_Shipping_Effort
+				bonus = 0.5
+				uses = 1
+				technology = transport
+				technology = landing_craft
+				technology = tank_landing_craft
+			}
+		}
+	}
+	
+	focus = {
+		id = DNZ_Expand_Port_Facilities
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = DNZ_International_Shipping_Effort }
+		relative_position_id = DNZ_International_Shipping_Effort
+		available = {
+			788 = {
+				is_controlled_by = DNZ
+			}
+		}
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			788 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = DNZ_Compromise_with_Polish_Authorities
+		icon = GFX_focus_generic_polish_deal
+		prerequisite = { focus = DNZ_Expand_Port_Facilities }
+		mutually_exclusive = { focus = DNZ_Organize_Dockyard_Strikes }
+		relative_position_id = DNZ_International_Shipping_Effort
+		available = {
+			is_subject_of = POL
+		}
+		x = -1
+		y = 3
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 40
+		}
+	}
+	
+	focus = {
+		id = DNZ_Organize_Dockyard_Strikes
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = DNZ_Expand_Port_Facilities }
+		prerequisite = { focus = DNZ_Seek_Lesters_Removal }
+		mutually_exclusive = { focus = DNZ_Compromise_with_Polish_Authorities }
+		relative_position_id = DNZ_International_Shipping_Effort
+		available = {
+			is_subject_of = POL
+		}
+		x = 1
+		y = 3
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = DNZ_State_Sanctioned_Arms_Smuggling
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = DNZ_Expand_Port_Facilities }
+		relative_position_id = DNZ_International_Shipping_Effort
+		x = 0
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 220
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 120
+				producer = GER
+			}
+		}
+	}
+	
+	
+	############################
+	#### POLITICAL SECTION #####
+	############################
+	
+	focus = { #I AM THE SENATE
+		id = DNZ_Consolidate_Control_of_the_Senate
+		icon = GFX_goal_DNZ_coat_of_arms
+		x = 11
+		y = 0
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 60
+		}
+	}
+	
+	focus = {
+		id = DNZ_Seek_Lesters_Removal
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = DNZ_Consolidate_Control_of_the_Senate }
+		relative_position_id = DNZ_Consolidate_Control_of_the_Senate
+		x = -1
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = { 
+			OR = {
+		date > 1937.1.1
+		POL = { is_ai = NO }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 25
+			GER = { country_event = danzig.3 }
+			POL = { country_event = danzig.4 }
+		}
+	}
+	
+	focus = {
+		id = DNZ_Propaganda_Effort
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = DNZ_Seek_Lesters_Removal }
+		relative_position_id = DNZ_Consolidate_Control_of_the_Senate
+		x = -2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 160
+		}
+	}
+	
+	focus = { #happened in 37, linked to an event?
+		id = DNZ_Dissolve_the_Zentrum_Party
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = DNZ_Seek_Lesters_Removal }
+		prerequisite = { focus = DNZ_Establish_the_Civic_Guard }
+		relative_position_id = DNZ_Consolidate_Control_of_the_Senate
+		x = 0
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.02
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.15
+			}			
+			add_named_threat = { 
+				threat = 0.2
+				name = DNZ_Dissolve_the_Zentrum_Party 
+			}
+		}
+	}
+	
+	focus = {
+		id = DNZ_Military_Youth
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = DNZ_Dissolve_the_Zentrum_Party }
+		x = 0
+		y = 1
+		relative_position_id = DNZ_Dissolve_the_Zentrum_Party
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = military_youth_focus
+			if = {
+				limit = { has_government = fascism }
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+			}
+			if = {
+				limit = { has_government = communism }
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+			}
+		}
+	}
+	
+	############################
+	####### ARMY SECTION #######
+	############################
+	
+	focus = {
+		id = DNZ_Establish_the_Civic_Guard
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = DNZ_Consolidate_Control_of_the_Senate }
+		x = 13
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_war_support = 0.15
+		}
+	}
+	
+	focus = {
+		id = DNZ_Schutzpolizei_Paramilitarization
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = DNZ_Establish_the_Civic_Guard }
+		relative_position_id = DNZ_Establish_the_Civic_Guard
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = { set_technology = { Military_Police_Paramilitarization = 1 } }
+			custom_effect_tooltip = DNZ_Schutzpolizei_Paramilitarization_tt
+			add_stability = 0.02
+            add_tech_bonus = {
+                name = mp_focus
+                bonus = 0.5
+                uses = 1
+				category = land_doctrine
+            }
+		}
+	}
+	
+	focus = {
+		id = DNZ_SS_Volunteers
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = DNZ_Schutzpolizei_Paramilitarization }
+		available = {
+			has_government = fascism
+		}
+		x = 0
+		y = 2
+		relative_position_id = DNZ_Schutzpolizei_Paramilitarization
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = DNZ_Secret_Armament
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = { focus = DNZ_Establish_the_Civic_Guard }
+		relative_position_id = DNZ_Establish_the_Civic_Guard
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = HUN_secret_rearmament
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
+	}
+	
+	focus = {
+		id = DNZ_Technical_Assistance_from_the_Fatherland
+		icon = GFX_focus_generic_license_production
+		prerequisite = { focus = DNZ_Secret_Armament }
+		relative_position_id = DNZ_Secret_Armament
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_dlc = "Death or Dishonor"
+		}
+
+		bypass = {
+			NOT = { has_dlc = "Death or Dishonor" }
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 20
+			add_relation_modifier = {
+				target = GER
+				modifier = ROM_license_german_equipment
+			}
+		}
+	}
+	
+	############################
+	##### AIRFORCE SECTION #####
+	############################
+	
+	focus = {
+		id = DNZ_Expand_the_Gdansk_Wrzeszcz_Airport
+		icon = GFX_goal_generic_air_production
+		available = {
+			788 = {
+				is_controlled_by = DNZ
+			}
+		}
+		
+		x = 17
+		y = 0
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = { #Add 2 Airbases in Danzig
+			788 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = transport_plane_equipment
+				amount = 22
+				producer = GER
+			}
+		}
+	}
+	
+	focus = {
+		id = DNZ_Danzig_Aero_Club
+		icon = GFX_focus_generic_paratrooper
+		prerequisite = { focus = DNZ_Expand_the_Gdansk_Wrzeszcz_Airport }
+		relative_position_id = DNZ_Expand_the_Gdansk_Wrzeszcz_Airport
+		x = 0
+		y = 1
+		cost = 10
+
+		bypass = {
+			has_tech = paratroopers3
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 10
+			add_tech_bonus = {
+				name = DNZ_Danzig_Aero_Club
+				bonus = 0.75
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = paratroopers3
+			}
+		}
+	}
+	
+	focus = {
+		id = DNZ_Special_Forces_Focus
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = DNZ_Danzig_Aero_Club }
+		relative_position_id = DNZ_Expand_the_Gdansk_Wrzeszcz_Airport
+		x = 0
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = { set_technology = { DNZ_Special_Forces_Focus = 1 } }
+			custom_effect_tooltip = DNZ_Special_Forces_Focus_tt
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.75
+				uses = 1
+				technology = advanced_special_forces
+				technology = improved_special_forces
+				technology = extreme_environment_training
+				technology = survival_training
+				technology = elite_forces
+			}
+		}
+	}
+	
+	focus = {
+		id = DNZ_Reestablish_the_Military_Air_Squadron
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = DNZ_Secret_Armament }
+		prerequisite = { focus = DNZ_Expand_the_Gdansk_Wrzeszcz_Airport }
+		relative_position_id = DNZ_Expand_the_Gdansk_Wrzeszcz_Airport
+		x = -1
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 15
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 11
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = nav_bomber_equipment_1
+				amount = 3
+				producer = ITA
+			}
+		}
+	}
+	
+####################################
+####################################
+### United Baltic Duchy Section ####
+####################################
+####################################
+	
+	############################
+	##### ECONOMIC SECTION #####
+	############################
+	
+	focus = {
+		id = UBD_infrastructure_effort
+		icon = GFX_goal_generic_construct_infrastructure
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 9
+		y = 5
+		cost = 5
+
+		available_if_capitulated = yes
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_industrial_effort
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = UBD_infrastructure_effort }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = -1
+		y = 1
+		relative_position_id = UBD_infrastructure_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = UBD_construction_effort
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = UBD_industrial_effort }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 1
+		y = 1
+		relative_position_id = UBD_industrial_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}			
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_Develop_the_Electronics_Industry
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = UBD_industrial_effort }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		available = {
+			OR = {
+				190 = { is_controlled_by = DNZ }
+				12 = { is_controlled_by = DNZ }
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = UBD_industrial_effort
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = POL_the_bombe
+				bonus = 0.5
+				uses = 1
+				category = computing_tech
+			}		
+		}
+	}
+	
+	focus = {
+		id = UBD_construction_effort_2
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = UBD_Develop_the_Electronics_Industry focus = UBD_construction_effort }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 0
+		y = 2
+		relative_position_id = UBD_industrial_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_domestic_munitions
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = UBD_infrastructure_effort }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 1
+		y = 1
+		relative_position_id = UBD_infrastructure_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2			
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_extra_tech_slot_2
+		icon = GFX_focus_research
+		prerequisite = { focus = UBD_construction_effort_2  focus = UBD_tactical_air_effort focus = UBD_Flagship_Cruiser_Effort }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+			num_of_factories > 30
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 2
+		y = 1
+		relative_position_id = UBD_construction_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	############################
+	##### AIRFORCE SECTION #####
+	############################
+	
+	focus = {
+		id = UBD_aviation_effort
+		icon = GFX_goal_generic_build_airforce
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 2
+		y = 0
+		relative_position_id = UBD_infrastructure_effort
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		complete_tooltip = {
+			air_experience = 15
+			if = { limit = { has_country_flag = aviation_effort_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}			
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = air_doctrine
+			}			
+		}
+
+		completion_reward = {
+			air_experience = 15
+
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_State_Aviation_Industry
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = UBD_domestic_munitions }
+		prerequisite = { focus = UBD_aviation_effort }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 0
+		y = 2
+		relative_position_id = UBD_aviation_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_tech_bonus = {
+				name = UBD_State_Aviation_Industry
+				bonus = 0.25
+				uses = 1
+				category = light_fighter
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = UBD_State_Aviation_Industry
+				bonus = 0.25
+				uses = 1
+				category = light_fighter
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_tactical_air_effort
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = UBD_State_Aviation_Industry }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 0
+		y = 1
+		relative_position_id = UBD_State_Aviation_Industry
+		cost = 10
+		ai_will_do = {
+			factor = 0.25
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 1
+				category = tactical_bomber
+				category = cas_bomber			
+			}
+		}
+	}
+	
+	############################
+	###### NAVAL SECTION #######
+	############################
+	
+	focus = {
+		id = UBD_naval_effort
+		icon = GFX_goal_generic_construct_naval_dockyard
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 4
+		y = 0
+		relative_position_id = UBD_infrastructure_effort
+		cost = 5
+		
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+			random_state = {
+				limit = { has_state_flag = UBD_naval_effort }
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 188 }
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = UBD_naval_effort
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_submarine_effort
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = UBD_naval_effort }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = -1
+		y = 1
+		relative_position_id = UBD_naval_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 0.5
+				uses = 1
+				technology = early_submarine
+				technology = basic_submarine
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_destroyer_effort
+		icon = GFX_focus_generic_destroyer
+		prerequisite = { focus = UBD_naval_effort }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 1
+		y = 1
+		relative_position_id = UBD_naval_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				uses = 1
+				technology = early_destroyer
+				technology = basic_destroyer
+				technology = improved_destroyer
+				technology = advanced_destroyer
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_Baltic_Navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = UBD_submarine_effort focus = UBD_destroyer_effort }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 0
+		y = 2
+		relative_position_id = UBD_naval_effort
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = UBD_Baltic_Navy
+				bonus = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_Flagship_Cruiser_Effort
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = UBD_Baltic_Navy }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 0
+		y = 1
+		relative_position_id = UBD_Baltic_Navy
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = POL_Strike_Force
+				bonus = 0.5
+				uses = 1
+				category = cl_tech
+			}
+			add_tech_bonus = {
+				name = POL_Strike_Force
+				bonus = 0.5
+				uses = 1
+				category = ca_tech
+			}
+		}
+	}
+	
+	############################
+	####### ARMY SECTION #######
+	############################
+	
+	focus = {
+		id = UBD_Establish_the_Baltische_Landeswehr
+		icon = GFX_focus_generic_military_mission
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 7
+		y = 0
+		relative_position_id = UBD_infrastructure_effort
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+	
+	focus = {
+		id = UBD_equipment_effort
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = UBD_Establish_the_Baltische_Landeswehr }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 0
+		y = 1
+		relative_position_id = UBD_Establish_the_Baltische_Landeswehr
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_artillery_procurement
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = UBD_equipment_effort }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 0
+		y = 3
+		relative_position_id = UBD_equipment_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_motorization_experiments
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = UBD_equipment_effort }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = -1
+		y = 1
+		relative_position_id = UBD_equipment_effort
+		cost = 10
+		
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = UBD_motorization_experiments
+				bonus = 0.75
+				uses = 1
+				category = motorized_equipment
+				category = recon_tech
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 150
+				producer = ITA
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_armor_effort
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = UBD_motorization_experiments }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 0
+		y = 1
+		relative_position_id = UBD_motorization_experiments
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.75
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = UBD_Royal_Guard_Division
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = UBD_equipment_effort }
+		prerequisite = { focus = UBD_Coronate_Duke_Adolf_Friedrich }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 1
+		y = 1
+		relative_position_id = UBD_equipment_effort
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	############################
+	#### POLITICAL SECTION #####
+	############################
+	
+	focus = {
+		id = UBD_Reform_the_Civil_Administration
+		icon = GFX_focus_generic_self_management
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 10
+		y = 0
+		relative_position_id = UBD_infrastructure_effort
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 60
+		}
+	}
+	
+	focus = {
+		id = UBD_Coronate_Duke_Adolf_Friedrich
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = UBD_Reform_the_Civil_Administration }
+		mutually_exclusive = { focus = UBD_Establish_a_Republic }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = -1
+		y = 1
+		relative_position_id = UBD_Reform_the_Civil_Administration
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = UBD_Establish_a_Republic
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = UBD_Reform_the_Civil_Administration }
+		mutually_exclusive = { focus = UBD_Coronate_Duke_Adolf_Friedrich }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+		}
+		x = 1
+		y = 1
+		relative_position_id = UBD_Reform_the_Civil_Administration
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = UBD_Safe_Haven_Policy
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = UBD_Coronate_Duke_Adolf_Friedrich focus = UBD_Establish_a_Republic }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+			}
+			has_war = no
+		}
+		
+		x = 0
+		y = 2
+		relative_position_id = UBD_Reform_the_Civil_Administration
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			#add_ideas = POL_The_Catholic_Student_Movement
+		}
+	}
+	
+	focus = {
+		id = UBD_Agrarian_Reform
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = UBD_Establish_a_Republic }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+			has_government = democratic
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = UBD_Establish_a_Republic
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = UBD_Draw_Closer_to_Germany
+		icon = GFX_focus_generic_seek_accomodation_with_germany
+		prerequisite = { focus = UBD_Coronate_Duke_Adolf_Friedrich focus = UBD_Establish_a_Republic }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+			has_government = neutrality
+		}
+		
+		x = 0
+		y = 4
+		relative_position_id = UBD_Reform_the_Civil_Administration
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = UBD_Align_with_the_Allies
+		icon = GFX_focus_ger_accept_british_naval_dominance
+		prerequisite = { focus = UBD_Establish_a_Republic }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+			has_government = democratic
+		}
+		
+		x = 0
+		y = 2
+		relative_position_id = UBD_Establish_a_Republic
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = UBD_Align_with_Finland
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		prerequisite = { focus = UBD_Coronate_Duke_Adolf_Friedrich }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+			OR = {
+				has_government = neutrality
+				has_government = democratic
+			}
+			has_war = no
+		}
+		
+		x = -1
+		y = 3
+		relative_position_id = UBD_Reform_the_Civil_Administration
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = UBD_Attract_Foreign_Investment_2
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = UBD_Agrarian_Reform }
+		available = {
+			has_cosmetic_tag = DNZ_UBD
+			has_government = democratic
+			has_war = no
+			num_of_factories > 15
+		}
+		x = 0
+		y = 2
+		relative_position_id = UBD_Agrarian_Reform
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			add_political_power = 25
+			random_state = {
+				limit = { has_state_flag = UBD_Attract_Foreign_Investment_2_1 }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { has_state_flag = UBD_Attract_Foreign_Investment_2_2 }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 25
+			random_owned_controlled_state = {
+				prioritize = { 190 }
+				limit = {									
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = UBD_Attract_Foreign_Investment_2_1
+			}
+			random_owned_controlled_state = {
+				prioritize = { 13 }
+				limit = {									
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = UBD_Attract_Foreign_Investment_2_2
+			}
+		}
+	}
+	
+
+#	focus = { #Deutsches Physik is a real thing that must be mocked
+#		id = DNZ_deutsches_physik
+#		icon = GFX_focus_wonderweapons
+#		prerequisite = { focus = DNZ_german_technology }
+#		relative_position_id = DNZ_german_technology
+#		x = 1
+#		y = 1
+#		cost = 10
+
+#		available_if_capitulated = no
+
+#		available = {
+#			amount_research_slots > 4	
+#			num_of_factories > 35			
+#		}
+		
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = nuclear_bonus
+#				ahead_reduction = 0.5
+#				category = nuclear
+#			}
+#		}
+#	}
+
+#	focus = { #Remove??
+#		id = DNZ_home_defense_unit #SS heimwehr be careful
+#		icon = GFX_goal_r56_focus_army_elite
+#		prerequisite = { focus = DNZ_smuggle_weapons }
+#		relative_position_id = DNZ_smuggle_weapons
+#		x = 0
+#		y = 1
+#		cost = 10
+#
+#		available_if_capitulated = no
+#
+#		completion_reward = {
+#		
+#		}
+#	
+	
+}

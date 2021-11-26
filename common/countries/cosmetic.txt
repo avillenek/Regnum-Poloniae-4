@@ -1,0 +1,323 @@
+
+MAL_UK = {
+    color = rgb { 201 56 93 }
+    color_ui = rgb { 255 73 121 }
+}
+
+RAJ_UK = {
+	color = rgb { 170  10  10 }
+	color_ui = rgb { 200  10  10 }
+}
+
+INS_HOL = {
+    color = rgb { 203 138 74 }
+    color_ui = rgb { 255 179 96 }
+}
+
+HUN_EMPIRE = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
+}
+
+AUS_NOT_WHITE = {	
+	color = rgb { 249 126 98 }
+	color_ui = rgb { 255 164 127 }
+}
+
+SCA_UNIFIED = {
+	color = rgb { 0 102 204 }
+	color_ui = rgb { 0 102 204 }
+}
+
+NDC_UNIFIED = {
+	color = rgb { 0 76 153 }
+	color_ui = rgb { 0 76 153 }
+}
+
+GCO_UNIFIED = {
+	color = rgb { 255 255 51 }
+	color_ui = rgb { 255 255 51 }
+}
+
+PLC_UNIFIED = {
+	color = rgb { 224 5 5 }
+	color_ui = rgb { 193 81 81 }
+}
+
+POLIP_neutrality = {
+	color = rgb { 224 5 5 }
+	color_ui = rgb { 193 81 81 }
+}
+POLFPR_neutrality = {
+	color = rgb { 224 5 5 }
+	color_ui = rgb { 193 81 81 }
+}
+POLRO_neutrality = {
+	color = rgb { 143 0 0 }
+	color_ui = rgb { 138 155 116 }
+}
+POLRO = {
+	color = rgb { 143 0 0 }
+	color_ui = rgb { 138 155 116 }
+}
+POLRI_neutrality = {
+	color = rgb { 143 0 0 }
+	color_ui = rgb { 138 155 116 }
+}
+POLRI = {
+	color = rgb { 143 0 0 }
+	color_ui = rgb { 138 155 116 }
+}
+POLIP = {
+	color = rgb { 224 5 5 }
+	color_ui = rgb { 193 81 81 }
+}
+
+POLFP_neutrality = {
+	color = rgb { 45 71 113 }
+	color_ui = rgb { 123 173 170 }
+}
+POLFFP_neutrality = {
+	color = rgb { 45 71 113 }
+	color_ui = rgb { 123 173 170 }
+}
+POLFP = {
+	color = rgb { 45 71 113 }
+	color_ui = rgb { 123 173 170 }
+}
+POLFFP = {
+	color = rgb { 45 71 113 }
+	color_ui = rgb { 123 173 170 }
+}
+
+UNL_UNIFIED = {
+	color = rgb { 255 128 0 }
+	color_ui = rgb { 255 128 0 }
+}
+
+USC_UNIFIED = {
+	color = rgb { 103 204 255 }
+	color_ui = rgb { 103 204 255 }
+}
+
+BAL_UNIFIED = {
+	color = rgb { 0 102 102 }
+	color_ui = rgb { 0 102 102 }
+}
+
+OTT_UNIFIED = {
+	color = rgb { 82  2  15 }
+	color_ui = rgb { 101  30  41 }
+}
+
+EUR_UNIFIED = {
+	color = rgb { 0 51 153 }
+	color_ui = rgb { 0 51 153 }
+}
+
+MUT_UNIFIED = {
+	color = rgb { 153 153 0 }
+	color_ui = rgb { 153 153 0 }
+}
+
+SPQR_UNIFIED = {
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 153 0 0 }
+}
+
+PER_UNIFIED = {
+	color = rgb { 255 215 0 }
+	color_ui = rgb { 255 215 0 }
+}
+
+BYZ_UNIFIED = {
+	color = rgb { 143 12 125 }
+	color_ui = rgb { 143 12 125 }
+}
+
+ARA_UNIFIED = {
+	color = rgb { 85 102 0 }
+	color_ui = rgb { 85 102 0 }
+}
+
+MAJ_UNIFIED = {
+	color = rgb { 255 51 51 }
+	color_ui = rgb { 255 51 51 }
+}
+
+RAT_UNIFIED = {
+	color = rgb { 255 255 51 }
+	color_ui = rgb { 255 255 51 }
+}
+
+HRE_UNIFIED = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 128 128 128 }
+}
+
+NOR_reichskommissariat = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+
+HOL_reichskommissariat = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+
+BEL_reichskommissariat = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+
+BLR_reichskommissariat = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+
+UKR_reichskommissariat = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+
+SPR_civil_war = {
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
+}
+
+GER_civil_war = {
+	color = rgb { 77 93 83 }
+	color_ui = rgb { 138 155 116 }
+}
+
+GER_provisional_gvt = {
+	color = rgb { 77 93 83 }
+	color_ui = rgb { 138 155 116 }
+}
+
+GER_german_empire = {
+	color = rgb { 77 93 83 }
+	color_ui = rgb { 138 155 116 }
+}
+
+GER_german_monarchy = {
+	color = rgb { 77 93 83 }
+	color_ui = rgb { 138 155 116 }
+}
+
+CHI_warlord_leader = {
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+MAN_restored = {
+	color = rgb { 237 152 18 }
+	color_ui = rgb { 224 139 5 }
+}
+JAP_showa_restoration = {
+	color = rgb { 230 230 230 }
+	color_ui = rgb { 230 230 230 }
+}
+
+GER_greater_german_reich = {
+	color = rgb { 54 54 54 }
+	color_ui = rgb { 115 115 115 }
+}
+
+CHI_warlord_PRC = {
+	color = rgb { 245 12 55 }
+	color_ui = rgb { 178 34 60 }
+}
+
+CHI_power_struggle_defeated = {
+	color = rgb { 152 130 191 }
+	color_ui = rgb { 198 169 248 }
+}
+
+MEX_cristero = {
+	color = rgb { 140 200 120 }
+	color_ui = rgb { 200 255 200 }
+}
+
+ENG_imperial_federation_unified = {
+	color = rgb { 180 0 0 }
+	color_ui = rgb { 255 0 0 }
+}
+
+ENG_imperial_federation_india_unified = {
+	color = rgb { 180 0 0 }
+	color_ui = rgb { 255 0 0 }
+}
+
+CAN_north_america_dominion = {
+	color = rgb { 160 0 0 }
+	color_ui = rgb { 235 0 0 }
+}
+
+USA_CSA = {
+	color = rgb { 145 163 176  }
+	color_ui = rgb { 186 205 219 }
+}
+
+SOV_russia = {
+    color = rgb { 72 143 68 }
+    color_ui = rgb { 72 143 68 }
+}
+
+HOL_benelux_unified = {
+	color = rgb { 255 128 0 }
+	color_ui = rgb { 255 128 0 }
+}
+
+###Beatiful States###
+BRM_UK = {
+	color = rgb { 160 10 35  }
+	color_ui = rgb { 190 10 35 }
+}
+
+BOHEMIA = {
+	color = rgb { 54 167 132  }
+	color_ui = rgb { 70 205 163 }
+}
+
+ITA_RSI = {
+	color = rgb { 46 86 43  }
+	color_ui = rgb { 66 106 53 }
+}
+
+POL_USA_PUPPET = {
+	color = rgb { 60 59 110 }
+	color_ui = rgb { 60 59 110 }
+}
+
+CAN_POL = {
+	color = rgb { 119 48 39 }
+	color_ui = rgb { 155 62 51 }
+}
+
+CZE_polishprotectorate = {
+    color = rgb { 72 49 112 }
+	color_ui = rgb { 72 49 112 }
+}
+
+CZE_polishprotectorate_neutrality = {
+    color = rgb { 72 49 112 }
+	color_ui = rgb { 72 49 112 }
+}
+
+
+
+POL_ALB_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}
+POL_ANG_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}
+POL_ARG_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}
+POL_ARM_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}
+POL_AST_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}
+POL_AUS_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}
+POL_AZR_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}
+POL_BEL_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}
+POL_BHU_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}
+POL_BLR_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}
+POL_BOL_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}
+POL_BOT_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}
+POL_BRA_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}
+POL_BUL_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}
+POL_CAM_PUPPET = {color = rgb { 197  112  123 }color_ui = rgb { 197  112  123 }}

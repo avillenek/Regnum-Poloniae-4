@@ -1,0 +1,16 @@
+#################
+#Polish Speeches#
+#################
+
+sound =
+{
+	name = "sp_pol_wargermany"
+	file = "pol_speech/sp_pol_wargermany.wav"
+
+}
+sound =
+{
+	name = "sp_pol_warsoviet"
+	file = "pol_speech/sp_pol_warsoviet.wav"
+
+}

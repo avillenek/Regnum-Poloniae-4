@@ -1,0 +1,356 @@
+﻿
+add_namespace = bs_ger
+
+# Transfer Transnistria from Germany
+country_event = {
+    id = bs_ger.1
+    title = bs_ger.1.t
+    desc = bs_ger.1.d
+    picture = GFX_report_event_generic_sign_treaty1
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+
+    option = {
+        name = bs_ger.1.a
+		
+		add_opinion_modifier = { target = GER modifier = ROM_transfer_transnistria }
+		
+		transfer_state = 198
+		transfer_state = 192
+		transfer_state = 1100
+		transfer_state = 829
+    }
+}
+
+# Transfer East Karelia from Germany
+country_event = {
+    id = bs_ger.2
+    title = bs_ger.2.t
+    desc = bs_ger.2.d
+    picture = GFX_report_event_generic_sign_treaty1
+ 
+    fire_only_once = yes
+ 
+    is_triggered_only = yes
+
+    option = {
+        name = bs_ger.2.a
+		
+		add_opinion_modifier = { target = GER modifier = FIN_transfer_east_karelia }
+		
+		transfer_state = 929
+		transfer_state = 928
+		transfer_state = 213
+		transfer_state = 89
+    }
+}
+
+# Free Election
+country_event = {
+	id = bs_ger.3
+	title = bs_ger.3.t
+	desc = bs_ger.3.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GER
+		GER = {
+			has_government = democratic
+		}
+		has_country_flag = ger_free_election_held 
+	}
+
+	option = {
+		name = bs_ger.3.a
+		ai_chance = {
+			factor = 40
+		}
+		set_party_name = { ideology = democratic long_name = GER_cdu_csu_party_long name = GER_cdu_csu_party }
+		
+		create_country_leader = {
+			name = "Konrad Adenauer"
+			desc = "POLITICS_KONRAD_ADENAUER_DESC"
+			picture = "Portrait_Germany_Konrad_Adenauer.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				anti_communist
+			}
+		}
+	}
+
+	option = {
+		name = bs_ger.3.b
+		ai_chance = {
+			factor = 30
+		}		
+		set_party_name = { ideology = democratic long_name = GER_spd_party_long name = GER_spd_party }
+
+		create_country_leader = {
+			name = "Kurt Schumacher"
+			desc = "POLITICS_KURT_SCHUMACHER_DESC"
+			picture = "Portrait_Kurt_Schumacher.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+				appeaser
+			}
+		}
+	}
+}
+
+# Demand Eupen
+country_event = {
+    id = bs_ger.4
+    title = bs_ger.4.t
+    desc = bs_ger.4.d
+    picture = GFX_report_event_generic_sign_treaty1
+ 
+    is_triggered_only = yes
+
+	immediate = {
+		ROOT = { save_event_target_as = eupen_owner }
+	}
+    option = {	#Accept
+        name = bs_ger.4.a
+		
+		ai_chance = {
+			factor = 30
+		}
+
+		add_opinion_modifier = { target = GER modifier = BS_transfer_eupen }
+		
+		effect_tooltip = {
+			GER = { transfer_state = 812 }
+		}
+		
+		hidden_effect = {
+			GER = { country_event = { id = bs_ger.41 days = 3 } }
+		}
+    }
+	
+	option = {	#Deny
+        name = bs_ger.4.b
+		
+		ai_chance = {
+			factor = 5
+		}
+		
+		GER = { country_event = { id = bs_ger.42 days = 3 } }
+    }
+}
+
+# Demand Eupen - Accept
+country_event = {
+    id = bs_ger.41
+    title = bs_ger.41.t
+    desc = bs_ger.41.d
+    picture = GFX_report_event_generic_sign_treaty1
+ 
+    is_triggered_only = yes
+
+    option = {
+        name = bs_ger.41.a
+		
+		transfer_state = 812
+    }
+}
+
+# Demand Eupen - Deny
+country_event = {
+    id = bs_ger.42
+    title = bs_ger.42.t
+    desc = bs_ger.42.d
+    picture = GFX_report_event_generic_sign_treaty1
+ 
+    is_triggered_only = yes
+
+    option = {	#do nothing
+        name = bs_ger.42.a
+		
+		add_political_power = -25
+    }
+	
+	option = {	#attack them
+        name = bs_ger.42.b
+		
+		create_wargoal = {
+			type = take_state_focus
+			target = event_target:eupen_owner
+			generator = { 812 }
+		}
+		set_global_flag = forced_eupen
+    }
+}
+
+# Demand Schleswig
+country_event = {
+    id = bs_ger.5
+    title = bs_ger.5.t
+    desc = bs_ger.5.d
+    picture = GFX_report_event_generic_sign_treaty1
+ 
+    is_triggered_only = yes
+
+	immediate = {
+		ROOT = { save_event_target_as = schleswig_owner }
+	}
+    option = {	#Accept
+        name = bs_ger.5.a
+		
+		ai_chance = {
+			factor = 30
+		}
+		
+		add_opinion_modifier = { target = GER modifier = BS_transfer_schleswig }
+		
+		effect_tooltip = {
+			GER = { transfer_state = 804 }
+		}
+		
+		hidden_effect = {
+			GER = { country_event = { id = bs_ger.51 days = 3 } }
+		}
+    }
+	
+	option = {	#Deny
+        name = bs_ger.5.b
+		
+		ai_chance = {
+			factor = 5
+		}
+
+		GER = { country_event = { id = bs_ger.52 days = 3 } }
+    }
+}
+
+# Demand Schleswig - Accept
+country_event = {
+    id = bs_ger.51
+    title = bs_ger.51.t
+    desc = bs_ger.51.d
+    picture = GFX_report_event_generic_sign_treaty1
+ 
+    is_triggered_only = yes
+
+    option = {
+        name = bs_ger.51.a
+		
+		transfer_state = 804
+    }
+}
+
+# Demand Schleswig - Refuse
+country_event = {
+    id = bs_ger.52
+    title = bs_ger.52.t
+    desc = bs_ger.52.d
+    picture = GFX_report_event_generic_sign_treaty1
+ 
+    is_triggered_only = yes
+
+    option = {	#do nothing
+        name = bs_ger.52.a
+		
+		add_political_power = -25
+    }
+	
+	option = {	#attack them
+        name = bs_ger.52.b
+		
+		create_wargoal = {
+			type = take_state_focus
+			target = event_target:schleswig_owner
+			generator = { 804 }
+		}
+		set_global_flag = forced_schleswig
+    }
+}
+
+# Demand Hlucin
+country_event = {
+    id = bs_ger.6
+    title = bs_ger.6.t
+    desc = bs_ger.6.d
+    picture = GFX_report_event_generic_sign_treaty1
+ 
+    is_triggered_only = yes
+
+	immediate = {
+		ROOT = { save_event_target_as = hlucin_owner }
+	}
+    option = {	#Accept
+        name = bs_ger.6.a
+		
+		ai_chance = {
+			factor = 30
+		}
+
+		add_opinion_modifier = { target = GER modifier = BS_transfer_hlucin }
+		
+		effect_tooltip = {
+			GER = { transfer_state = 884 }
+		}
+		
+		hidden_effect = {
+			GER = { country_event = { id = bs_ger.61 days = 3 } }
+		}
+    }
+	
+	option = {	#Refuse
+        name = bs_ger.6.b
+		
+		ai_chance = {
+			factor = 5
+		}
+
+		GER = { country_event = { id = bs_ger.62 days = 3 } }
+    }
+}
+
+# Demand Hlucin - Accept
+country_event = {
+    id = bs_ger.61
+    title = bs_ger.61.t
+    desc = bs_ger.61.d
+    picture = GFX_report_event_generic_sign_treaty1
+ 
+    is_triggered_only = yes
+
+    option = {
+        name = bs_ger.61.a
+		
+		transfer_state = 884
+    }
+}
+
+# Demand Hlucin - Refuse
+country_event = {
+    id = bs_ger.62
+    title = bs_ger.62.t
+    desc = bs_ger.62.d
+    picture = GFX_report_event_generic_sign_treaty1
+ 
+    is_triggered_only = yes
+
+    option = {	#do nothing
+        name = bs_ger.62.a
+		
+		add_political_power = -25
+    }
+	
+	option = {	#attack them
+        name = bs_ger.62.b
+		
+		create_wargoal = {
+			type = take_state_focus
+			target = event_target:hlucin_owner
+			generator = { 884 }
+		}
+		set_global_flag = forced_hlucin
+    }
+}

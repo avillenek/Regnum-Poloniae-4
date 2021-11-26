@@ -1,0 +1,24 @@
+ideas = {
+
+country = {
+	
+	LIT_Riflemans_Union = {
+			
+		allowed = {
+			original_tag = LIT
+			always = no
+		}
+		
+		allowed_civil_war = {
+			always = yes
+		}
+				
+		removal_cost = -1
+		
+		picture = LIT_Riflemans_Union
+		
+		modifier = {
+			conscription = 0.02
+		}
+	}
+}

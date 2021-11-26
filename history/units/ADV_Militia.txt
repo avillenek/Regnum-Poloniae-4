@@ -1,0 +1,40 @@
+﻿
+
+division_template = {
+	name = "German American Bund Militia"		
+	division_names_group = USA_INF_01		# Uses generic English templates
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st New York Bund Militia"
+		location = 3878
+		division_template = "German American Bund Militia"
+	}
+	division = {
+		name = "2nd New York Bund Militia"
+		location = 3878
+		division_template = "German American Bund Militia"
+	}
+	division = {
+		name = "1st Pennsylvania Bund Militia"
+		location = 6845
+		division_template = "German American Bund Militia"
+	}
+	division = {
+		name = "1st New Jersey Bund Militia"
+		location = 6882
+		division_template = "German American Bund Militia"
+	}
+	division = {
+		name = "2nd New Jersey Bund Militia"
+		location = 6882
+		division_template = "German American Bund Militia"
+	}
+}

@@ -1,0 +1,67 @@
+﻿capital = 566
+
+oob = "SYB_1936"
+
+set_research_slots = 6
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_battleship = 1
+	transport = 1
+}
+
+set_politics = {	
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 5
+    fascism = 0
+    communism = 0
+    neutrality = 95
+}
+
+create_country_leader = {
+	name = "Konstanty Rokossowski"
+	desc = ""
+	picture = "gfx/leaders/SYB/Konstanty_Rokossowski_syb.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	    POL_chief_staffer
+		POL_Polonization_Advocate
+	}
+}
+
+create_corps_commander = {
+	name = "Konstanty Rokossowski"
+	picture = "Konstanty_Rokossowski_syb.dds"
+	traits = { armor_officer trait_cautious brilliant_strategist }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}

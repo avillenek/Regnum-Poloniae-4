@@ -1,0 +1,425 @@
+
+bs_balance = {
+	enable = {
+		always = yes
+	}
+
+	annex_randomness = 0
+	liberate_randomness = 0
+	puppet_randomness = 0
+	take_states_randomness = 0
+	force_government_randomness = 0
+
+	# ROOT = Taker, FROM = Liberated
+	liberate = {
+		modifier = { #Don't liberate unthinkable countries
+			factor = 0
+			FROM = {
+				OR = {
+					tag = PRE
+					tag = BAY
+					tag = FLA
+					tag = DAN
+					tag = KOS
+					tag = WLL
+					tag = SAX
+					tag = SAR
+					tag = CAL
+					tag = TEX
+					tag = KTS
+					tag = MRV
+					tag = KAR
+					tag = RKU
+					tag = RKO
+					tag = RKK
+					tag = RKM
+					tag = NWG
+					tag = NID
+					tag = GGO
+					tag = PBM
+					tag = BNF
+					tag = CAT
+					tag = SLO
+					tag = BGN
+					tag = BRI
+					tag = WUR
+					tag = MEK
+					tag = BDN
+					tag = GAL
+					tag = VEC
+					tag = BUK
+					tag = TRA
+					tag = CHE
+					tag = ABH
+					tag = SOT
+					tag = NFL
+					tag = QUE
+					tag = KUR
+					tag = RYU
+					tag = HAW
+					tag = YAK
+					tag = CRE
+					tag = SML
+					tag = SYE
+					tag = ADV
+					tag = COR
+					tag = ADU
+					tag = GLC
+					tag = OCC
+					tag = SHL
+					tag = HAN
+					tag = NAV
+					tag = MAC
+					tag = BOS
+					tag = SLV
+					tag = SIK
+					tag = GXC
+					tag = YUN
+					tag = SHX
+					tag = XSM
+				}
+			}
+		}
+	}
+
+	# ROOT = Taker, FROM = Giver
+	puppet = {
+		modifier = { #Don't puppet unthinkable countries
+			factor = 0
+			FROM = {
+				OR = {
+					tag = PRE
+					tag = BAY
+					tag = FLA
+					tag = DAN
+					tag = KOS
+					tag = WLL
+					tag = SAX
+					tag = SAR
+					tag = CAL
+					tag = TEX
+					tag = KTS
+					tag = MRV
+					tag = KAR
+					tag = RKU
+					tag = RKO
+					tag = RKK
+					tag = RKM
+					tag = NWG
+					tag = NID
+					tag = GGO
+					tag = PBM
+					tag = BNF
+					tag = CAT
+					tag = SLO
+					tag = BGN
+					tag = BRI
+					tag = WUR
+					tag = MEK
+					tag = BDN
+					tag = GAL
+					tag = VEC
+					tag = BUK
+					tag = TRA
+					tag = CHE
+					tag = ABH
+					tag = SOT
+					tag = NFL
+					tag = QUE
+					tag = KUR
+					tag = RYU
+					tag = HAW
+					tag = YAK
+					tag = CRE
+					tag = SML
+					tag = SYE
+					tag = ADV
+					tag = COR
+					tag = ADU
+					tag = GLC
+					tag = OCC
+					tag = SHL
+					tag = HAN
+					tag = NAV
+					tag = MAC
+					tag = BOS
+					tag = SLV
+					tag = SIK
+					tag = GXC
+					tag = YUN
+					tag = SHX
+					tag = XSM
+				}
+			}
+		}
+	}
+	
+	puppet_all = {
+		modifier = { #Don't puppet unthinkable countries
+			factor = 0
+			FROM = {
+				OR = {
+					tag = PRE
+					tag = BAY
+					tag = FLA
+					tag = DAN
+					tag = KOS
+					tag = WLL
+					tag = SAX
+					tag = SAR
+					tag = CAL
+					tag = TEX
+					tag = KTS
+					tag = MRV
+					tag = KAR
+					tag = RKU
+					tag = RKO
+					tag = RKK
+					tag = RKM
+					tag = NWG
+					tag = NID
+					tag = GGO
+					tag = PBM
+					tag = BNF
+					tag = CAT
+					tag = SLO
+					tag = BGN
+					tag = BRI
+					tag = WUR
+					tag = MEK
+					tag = BDN
+					tag = GAL
+					tag = VEC
+					tag = BUK
+					tag = TRA
+					tag = CHE
+					tag = ABH
+					tag = SOT
+					tag = NFL
+					tag = QUE
+					tag = KUR
+					tag = RYU
+					tag = HAW
+					tag = YAK
+					tag = CRE
+					tag = SML
+					tag = SYE
+					tag = ADV
+					tag = COR
+					tag = ADU
+					tag = GLC
+					tag = OCC
+					tag = SHL
+					tag = HAN
+					tag = NAV
+					tag = MAC
+					tag = BOS
+					tag = SLV
+					tag = SIK
+					tag = GXC
+					tag = YUN
+					tag = SHX
+					tag = XSM
+				}
+			}
+		}
+	}
+	
+	puppet_state = {
+		modifier = { #Don't puppet unthinkable countries
+			factor = 0
+			FROM = {
+				OR = {
+					tag = PRE
+					tag = BAY
+					tag = FLA
+					tag = DAN
+					tag = KOS
+					tag = WLL
+					tag = SAX
+					tag = SAR
+					tag = CAL
+					tag = TEX
+					tag = KTS
+					tag = MRV
+					tag = KAR
+					tag = RKU
+					tag = RKO
+					tag = RKK
+					tag = RKM
+					tag = NWG
+					tag = NID
+					tag = GGO
+					tag = PBM
+					tag = BNF
+					tag = CAT
+					tag = SLO
+					tag = BGN
+					tag = BRI
+					tag = WUR
+					tag = MEK
+					tag = BDN
+					tag = GAL
+					tag = VEC
+					tag = BUK
+					tag = TRA
+					tag = CHE
+					tag = ABH
+					tag = SOT
+					tag = NFL
+					tag = QUE
+					tag = KUR
+					tag = RYU
+					tag = HAW
+					tag = YAK
+					tag = CRE
+					tag = SML
+					tag = SYE
+					tag = ADV
+					tag = COR
+					tag = ADU
+					tag = GLC
+					tag = OCC
+					tag = SHL
+					tag = HAN
+					tag = NAV
+					tag = MAC
+					tag = BOS
+					tag = SLV
+					tag = SIK
+					tag = GXC
+					tag = YUN
+					tag = SHX
+					tag = XSM
+				}
+			}
+		}
+	}
+	
+	force_government = {
+		modifier = { #Don't even try it.
+			factor = 0
+			FROM = {
+				OR = {
+					tag = PRE
+					tag = BAY
+					tag = FLA
+					tag = DAN
+					tag = KOS
+					tag = WLL
+					tag = SAX
+					tag = SAR
+					tag = CAL
+					tag = TEX
+					tag = KTS
+					tag = MRV
+					tag = KAR
+					tag = RKU
+					tag = RKO
+					tag = RKK
+					tag = RKM
+					tag = NWG
+					tag = NID
+					tag = GGO
+					tag = PBM
+					tag = BNF
+					tag = CAT
+					tag = SLO
+					tag = BGN
+					tag = BRI
+					tag = WUR
+					tag = MEK
+					tag = BDN
+					tag = GAL
+					tag = VEC
+					tag = BUK
+					tag = TRA
+					tag = CHE
+					tag = ABH
+					tag = SOT
+					tag = NFL
+					tag = QUE
+					tag = KUR
+					tag = RYU
+					tag = HAW
+					tag = YAK
+					tag = CRE
+					tag = SML
+					tag = SYE
+					tag = ADV
+					tag = COR
+					tag = ADU
+					tag = GLC
+					tag = OCC
+					tag = SHL
+					tag = HAN
+					tag = NAV
+					tag = MAC
+					tag = BOS
+					tag = SLV
+					tag = SIK
+					tag = GXC
+					tag = YUN
+					tag = SHX
+					tag = XSM
+				}
+			}
+		}
+	}
+}
+
+BS_Germany = {	#For clean border
+	enable = {
+		original_tag = GER
+		has_government = fascism
+	}
+	
+	annex = {
+		modifier = {
+			factor = 100
+			OR = {
+				tag = POL
+				tag = NOR
+				tag = SOV
+				tag = CZE
+				tag = HOL
+				tag = BEL
+				tag = LUX
+				tag = SWI
+				tag = LIT
+				tag = EST
+				tag = LAT
+				tag = BLR
+				tag = UKR
+				tag = KAZ
+				tag = GEO
+				tag = ARM
+				tag = AZR
+				tag = UZB
+				tag = TMS
+				tag = TAJ
+				tag = KYR
+				tag = DEN
+				tag = DAN
+				tag = ICE
+			}
+		}
+	}
+}
+
+BS_Soviet = {	#For clean border
+	enable = {
+		tag = SOV
+	}
+	
+	annex = {
+		modifier = {
+			factor = 100
+			OR = {
+				tag = LIT
+				tag = LAT
+				tag = EST
+			}
+		}
+	}
+}

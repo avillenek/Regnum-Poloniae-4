@@ -1,0 +1,7 @@
+category = {
+ name = "Polish Speeches"
+ soundeffects = {
+	sp_pol_wargermany
+	sp_pol_warsoviet
+ }
+}

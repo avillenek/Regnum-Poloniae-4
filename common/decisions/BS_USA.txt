@@ -1,0 +1,38 @@
+BS_golden_gate_bridge_category = {
+	BS_golden_gate_bridge = {
+
+		icon = generic_construction
+
+		is_good = yes
+		fire_only_once = yes
+
+		available = {
+			#hidden_trigger = { always = no }
+		}
+		
+		days_remove = 513 #1937.05.27
+		
+		modifier = {
+			consumer_goods_factor = 0.01
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = golden_gate_bridge_tt
+			378 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			854 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			set_global_flag = GOLDEN_GATE_BRIDGE_DONE
+		}
+	}
+}

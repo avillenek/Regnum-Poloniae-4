@@ -1,0 +1,270 @@
+
+music = {
+	name = "POL_main"
+	file = "FuneralMarch.ogg"
+	volume = 1.1
+}
+
+music = {
+	name = "POL_march"
+	file = "The_Song_of_Warsaw_1831.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_peace1"
+	file = "Prince_Jozef_Poniatowski.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_anthem"
+	file = "Polish_Anthem.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_underground_anthem"
+	file = "Polish_Underground_Anthem.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_war1"
+	file = "Polonez_Husarii.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_war2"
+	file = "Rota.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_victory"
+	file = "Marsz_Polonia.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_solidarity"
+	file = "Let_Poland_Be_Poland.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_legion"
+	file = "We_Are_the_First_Brigade.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_rifleman_march"
+	file = "Rifleman_March.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_guarding_the_baltic"
+	file = "To_guard_the_Baltic.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_valor_thousand"
+	file = "Valor_of_a_thousand_men.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Maczek_March"
+	file = "Maczek_March.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_umbrella"
+	file = "Boys_strong_as_steel.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_camp"
+	file = "Camp_March.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "POL_Uhlan"
+	file = "Hey_Hey_Uhlan.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Airman"
+	file = "Lotnikow.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Airman2"
+	file = "dywizjon_303.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Guard_March"
+	file = "odwach.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Natalia"
+	file = "Natalia.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Farewell"
+	file = "Farewell_Gal.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Carpathian_Brigade"
+	file = "Carpathian.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Backpack"
+	file = "Heart_in_a_Backpack.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Willows"
+	file = "Weeping_Willows.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Cassino"
+	file = "Monte_Cassino.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Rosemary"
+	file = "Rosemary.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_March_Land_Forces"
+	file = "March_Land_Forces.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "POL_eastern_communism"
+	file = "March_of_the_First_Corps.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_God_Thou_Hast_Poland"
+	file = "God_Thou_Hast_Poland.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Fight"
+	file = "When_The_Nation_Fights.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Sea_Our_Sea"
+	file = "Sea_Our_Sea.ogg"
+	volume = 1.3
+}
+
+music = {
+	name = "POL_march_communism"
+	file = "The_Song_of_Warsaw_1905.ogg"
+	volume = 1.2
+}
+
+music = {
+	name = "POL_eye"
+	file = "The_Eye.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_The_Internationale"
+	file = "Internationale.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_March_Faith"
+	file = "March_Of_Faith.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_March_Communist_Victory"
+	file = "March_Communist_Victory.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Beloved_Country"
+	file = "Beloved_Country.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_March_Peoples_Guard"
+	file = "March_Peoples_Guard.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_The_Barricades"
+	file = "The_Barricades.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Socialist_Youth_Vow"
+	file = "Slubowanie_Mlodych.ogg"
+	volume = 1.4
+}
+
+music = {
+	name = "POL_Part_of_the_PZPR_party"
+	file = "Part_of_the_PZPR_party.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Do_broni_ludy"
+	file = "Do_broni_ludy.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "POL_Grey_Infantry"
+	file = "Grey_Infantry.ogg"
+	volume = 1.0
+}
+
+music = {
+	name = "UKR_anthem"
+	file = "Anthem_of_Ukraine_Chorus_Veryovka.ogg"
+	volume = 1.0
+}

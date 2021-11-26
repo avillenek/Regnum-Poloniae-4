@@ -1,0 +1,25 @@
+state={
+	id=936
+	name="STATE_936"
+
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 8
+
+		}
+                victory_points = {
+			6672 5
+		}
+		add_core_of = YUG
+		add_core_of = SLV
+
+	}
+
+	provinces={
+		6672 
+	}
+	manpower=31000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

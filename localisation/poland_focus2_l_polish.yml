@@ -1,0 +1,11 @@
+﻿l_polish:
+ POL_Land_Mine_Detectors:0 "Wykrywacz Min Lądowych"
+ POL_Land_Mine_Detectors_desc:0 "Postępy w elektronice mogą pozwolić na rozwój przenośnego urządzenia do wykrywania metalowych obiektów pod ziemią, niezależnie od tego, czy są to pociski artyleryjskie, czy nawet miny lądowe wroga."
+ POL_High_Frequency_Radio_Detection:0 "Wykrywanie Radiowe Wysokiej Częstotliwości"
+ POL_High_Frequency_Radio_Detection_desc:0 "Nasi naukowcy uważają, że można opracować specjalistyczną formę radaru w celu wykrycia okrętów podwodnych wroga pod powierzchnią oceanu."
+ POL_Effective_Civil_Service:0 "Skuteczna Służba Cywilna"
+ poland.109.t:0 "Wynalezienie Wykrywacza Min"
+ poland.109.d:0 "W latach międzywojennych Wydział Artylerii Polskiej w Ministerstwie Obrony Narodowej nakazał opracowanie urządzenia, które mogłoby wykryć łuski i pociski artyleryjskie na terenie wojskowym. Firma AVA Radio Company ukończyła projekt takiego urządzenia, ale nigdy nie wprowadzono do produkcji w wyniku inwazji wrześniowej. Wojsko Polskie na wygnaniu we Francji później przywróciło urządzenie jako wykrywacz min. Ostatnią wersję utworzył polski ppłk Józef Kosacki, który przekazał projekt brytyjskiej armii. Nowo opracowany przenośny wykrywacz min przeciwpiechotnych po raz pierwszy został użyty w bitwie pod El Alamein, gdzie 500 wykrywaczy pomogło oczyścić drogę brytyjskiej armii ósmej. W czasie wojny powstało ponad 100 000 wykrywaczy, a ten sam model pozostał w służbie do wojny w Zatoce Perskiej w 1991 roku."
+ poland.109.a:0 "Polska Wiedza Specjalistyczna"
+ POL_artillery_equipment_1:0 " 75mm wz. 1902/26"
+ POL_artillery_equipment_1_short:0 "75 mm wz. 1902/26"

@@ -1,0 +1,71 @@
+﻿l_polish:
+
+ #Fighter
+ POL_fighter_equipment_0:0 "PZL.11"
+ POL_fighter_equipment_0_short:0 "PZL.11"
+ POL_fighter_equipment_1:0 "PZL.50 Jastrząb"
+ POL_fighter_equipment_1_short:0 "Jastrząb"
+ POL_fighter_equipment_2:0 "PZL.56 Kania"
+ POL_fighter_equipment_2_short:0 "Kania"
+ POL_fighter_equipment_3:0 "PZL.62 Pustułka"
+ POL_fighter_equipment_3_short:0 "Pustułka"
+
+ #CAS
+ POL_CAS_equipment_1:0 "PZL.23 Karaś"
+ POL_CAS_equipment_1_short:0 "Karaś"
+ POL_CAS_equipment_2:0 "PZL.46 Sum"
+ POL_CAS_equipment_2_short:0 "Sum"
+ POL_CAS_equipment_3:0 "PZL.59 Okoń"
+ POL_CAS_equipment_3_short:0 "Okoń"
+
+ #Naval Bomber
+ POL_nav_bomber_equipment_1:0 "PZL.57 Foka"
+ POL_nav_bomber_equipment_1_short:0 "Foka"
+ POL_nav_bomber_equipment_2:0 "PZL.60 Lew Morski"
+ POL_nav_bomber_equipment_2_short:0 "Lew Morski"
+ POL_nav_bomber_equipment_3:0 "PZL.75 Mors"
+ POL_nav_bomber_equipment_3_short:0 "Mors"
+
+ #Heavy Fighter
+ POL_heavy_fighter_equipment_1:0 "PZL.38 Wilki"
+ POL_heavy_fighter_equipment_1_short:0 "Wilki"
+ POL_heavy_fighter_equipment_2:0 "PZL.54 Ryś"
+ POL_heavy_fighter_equipment_2_short:0 "Ryś"
+ POL_heavy_fighter_equipment_3:0 "PZL.65 Lis"
+ POL_heavy_fighter_equipment_3_short:0 "Lis"
+
+ #Tactical Bomber
+ POL_tac_bomber_equipment_0:0 "LWS-6 Żubr"
+ POL_tac_bomber_equipment_0_short:0 "Żubr"
+ POL_tac_bomber_equipment_1:0 "PZL.37 Łoś"
+ POL_tac_bomber_equipment_1_short:0 "Łoś"
+ POL_tac_bomber_equipment_2:0 "PZL.49 Miś"
+ POL_tac_bomber_equipment_2_short:0 "Miś"
+ POL_tac_bomber_equipment_3:0 "PZL.63 Dzik"
+ POL_tac_bomber_equipment_3_short:0 "Dzik"
+
+ #Strategic Bomber
+ POL_strat_bomber_equipment_1:0 "PZL.58 Pszcoła"
+ POL_strat_bomber_equipment_1_short:0 "Pszcoła"
+ POL_strat_bomber_equipment_2:0 "PZL.61 Osa"
+ POL_strat_bomber_equipment_2_short:0 "Osa"
+ POL_strat_bomber_equipment_3:0 "PZL.72 Szerszeń"
+ POL_strat_bomber_equipment_3_short:0 "Szerszeń"
+
+ #Polish Fighter jet
+ POL_jet_fighter_equipment_1:0 "PZL TS-11 Iskra"
+ POL_jet_fighter_equipment_1_short:0 "Iskra"
+ POL_jet_fighter_equipment_2:0 "PZL TS-16 Grot"
+ POL_jet_fighter_equipment_2_short:0 "Grot"
+ 
+ #Polish Bomber jet
+ POL_jet_tac_bomber_equipment_1:0 "Iljuszyn Ił-28"
+ POL_jet_tac_bomber_equipment_1_short:0 "Ił-28"
+ POL_jet_tac_bomber_equipment_2:0 "Suchoj Su-20"
+ POL_jet_tac_bomber_equipment_2_short:0 "Su-20"
+
+ POL_jet_strat_bomber_equipment_1:0 "Suchoj Su-7BM"
+ POL_jet_strat_bomber_equipment_1_short:0 "Su-7BM"
+ 
+ #Polish transport
+ POL_transport_plane_equipment_1:0 "PZL.44 Wicher"
