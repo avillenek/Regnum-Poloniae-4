@@ -29,6 +29,7 @@ set_technology = {
 	synth_oil_experiments = 1
 	oil_processing = 1
 	fuel_refining = 1
+	basic_train = 1
 	
 }
 if = {

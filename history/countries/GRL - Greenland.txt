@@ -17,6 +17,7 @@ set_technology = {
 	early_submarine = 1
 	early_heavy_cruiser = 1
 	tech_recon = 1
+	basic_train = 1
 }
 
 1939.1.1 = {

@@ -17,6 +17,7 @@ set_technology = {
 	defence_in_depth = 1
 	Flexible_AT = 1
 	peoples_army = 1
+	basic_train = 1
 }
 
 add_ideas = {

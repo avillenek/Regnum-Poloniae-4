@@ -51,6 +51,7 @@ set_convoys = 20
 		construction2 = 1
 		dispersed_industry = 1
 		dispersed_industry2 = 1
+		basic_train = 1
 	}
 }
 set_politics = {

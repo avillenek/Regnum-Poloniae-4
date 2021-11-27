@@ -47,6 +47,7 @@ set_stability = 0.8
 		fuel_silos = 1
 		construction1 = 1
 		dispersed_industry = 1
+		basic_train = 1
 	}
 }
 

@@ -22,6 +22,7 @@ set_technology = {
 	superior_firepower = 1
 	force_rotation = 1
 	Militia_Enabled = 1
+	basic_train = 1
 }
 
 set_convoys = 10

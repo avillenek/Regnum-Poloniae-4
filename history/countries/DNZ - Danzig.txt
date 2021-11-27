@@ -13,6 +13,7 @@ set_technology = {
 	tech_special_forces = 1
 	marines = 1
 	mass_assault = 1
+	basic_train = 1
 }
 
 set_stability = 0.45

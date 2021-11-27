@@ -45,6 +45,7 @@ if = {
 		basic_battlecruiser = 1
 		early_carrier = 1
 		transport = 1
+		basic_train = 1
 	}
 }
 if = {

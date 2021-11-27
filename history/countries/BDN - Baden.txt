@@ -16,6 +16,7 @@ set_technology = {
 	early_heavy_cruiser = 1
 	early_battleship = 1
 	transport = 1
+	basic_train = 1
 }
 
 set_politics = {
