@@ -8,7 +8,7 @@ state={	#Saarland
 			11531 5 
 		}
 		buildings = {
-			infrastructure = 7
+			infrastructure = 3
 			industrial_complex = 1
 
 		}

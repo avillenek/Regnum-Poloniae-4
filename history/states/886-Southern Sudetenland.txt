@@ -8,7 +8,7 @@ state={
 		}
 		owner = CZE
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			5283 = {
 				bunker = 1
 

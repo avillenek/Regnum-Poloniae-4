@@ -11,7 +11,7 @@ state={	#Baden
 			6542 1 
 		}
 		buildings = {
-			infrastructure = 8
+			infrastructure = 4
 
 		}
 		add_core_of = GER

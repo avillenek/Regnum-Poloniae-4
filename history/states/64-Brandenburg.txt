@@ -6,7 +6,7 @@ state={
 	history={
 		owner = GER
 		buildings = {
-			infrastructure = 8
+			infrastructure = 5
 			industrial_complex = 1
 			anti_air_building = 2
 
