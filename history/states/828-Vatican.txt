@@ -5,7 +5,7 @@ state={
 	history={
 		owner = VCT
 		buildings = {
-			infrastructure = 7
+			infrastructure = 3
 		}
 		add_core_of = VCT
 	}
