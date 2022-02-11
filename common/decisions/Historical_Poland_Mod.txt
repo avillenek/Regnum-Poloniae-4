@@ -180,7 +180,7 @@ POL_Autonomy_category = {
 		allowed = { original_tag = POL }
 		
 		available = {
-			12 = { infrastructure > 9 }
+			12 = { infrastructure > 4 }
 		}
 
 		fire_only_once = yes
