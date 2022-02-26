@@ -586,9 +586,9 @@ focus_tree = {
 				}
 				set_state_flag = POL_czeski_przemysl
 			}
-			add_tech_bonus = {
-				name = POL_czeskia_Doctrine
-				bonus = 3.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.8
 				uses = 2
 				category = land_doctrine
 			}
@@ -634,10 +634,10 @@ focus_tree = {
 				uses = 1
 				category = cas_bomber
 			}
-			add_tech_bonus = {
-				name = POL_Advanced_Pilot_Training_Program557574
-				bonus = 1.5
-				uses = 2
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.75
+				uses = 1
 				category = air_doctrine
 			}
 			add_tech_bonus = {
@@ -652,10 +652,10 @@ focus_tree = {
 				uses = 2
 				category = bb_tech
 			}
-			add_tech_bonus = {
-				name = POL_British_Doctrine_Naval453
-				bonus = 1.0
-				uses = 4
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.65
+				uses = 2
 				category = naval_doctrine
 			}
 			add_ideas = POL_Modern_Aircraft_Production12
@@ -673,12 +673,12 @@ focus_tree = {
 				    uses = 1
 				    category = ss_tech
 			    }
-		        add_tech_bonus = {
-				    name = POL_British_Doctrine_Naval5734567
-				    bonus = 5.0
-				    uses = 2
-				    category = naval_doctrine
-			    }
+		        add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.85
+				uses = 2
+				category = naval_doctrine
+			}
 			    add_offsite_building = { type = dockyard level = 2 }
 			}
 		}
@@ -966,9 +966,9 @@ focus_tree = {
 				uses = 1
 				category = cas_bomber
 			}
-			add_tech_bonus = {
-				name = POL_Advanced_Pilot_Training_Program557574678
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.45
 				uses = 2
 				category = air_doctrine
 			}
@@ -978,9 +978,9 @@ focus_tree = {
 				uses = 1
 				category = bb_tech
 			}
-			add_tech_bonus = {
-				name = POL_British_Doctrine_Naval453343
-				bonus = 1.5
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.75
 				uses = 2
 				category = naval_doctrine
 			}
@@ -1665,9 +1665,9 @@ focus_tree = {
 				uses = 1
 				category = bb_tech
 			}
-		    add_tech_bonus = {
-				name = POL_British_Doctrine_Naval57yuiyui
-				bonus = 1.0
+		    add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.5
 				uses = 3
 				category = naval_doctrine
 			}
@@ -2249,10 +2249,10 @@ focus_tree = {
 				uses = 1
 				category = bb_tech
 			}
-		    add_tech_bonus = {
-				name = POL_British_Doctrine_Naval5777
-				bonus = 0.5
-				uses = 4
+		    add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.5
+				uses = 3
 				category = naval_doctrine
 			}
 		    add_tech_bonus = {
@@ -2449,9 +2449,9 @@ focus_tree = {
 				category = cas_bomber
 			}
 			add_ideas = POL_Modern_Aircraft_Production1
-			add_tech_bonus = {
-				name = POL_Advanced_Pilot_Training_Programwerwe
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
 				uses = 4
 				category = air_doctrine
 			}
@@ -2490,22 +2490,22 @@ focus_tree = {
 				uses = 1
 				category = artillery
 			}
-			add_tech_bonus = {
-				name = POL_francetty_Doctrineff
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
 				uses = 1
 				category = land_doctrine
 			}
-			add_tech_bonus = {
-				name = POL_francetty_Doctrine33
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
 				uses = 1
 				category = land_doctrine
 			}
-			add_tech_bonus = {
-				name = POL_francetty_Doctrin44e
-				bonus = 1.0
-				uses = 1
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 2
 				category = land_doctrine
 			}
 			hidden_effect = {
@@ -2570,9 +2570,9 @@ focus_tree = {
 				uses = 1
 				category = infantry_weapons
 			}
-			add_tech_bonus = {
-				name = POL_et
-				bonus = 0.5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -2704,9 +2704,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_tech_bonus = {
-				name = POL_et
-				bonus = 0.5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -2780,10 +2780,10 @@ focus_tree = {
 				uses = 1
 				category = tp_tech
 			}
-			add_tech_bonus = {
-				name = POL_Naval_Officers_School232
-				bonus = 1.0
-				uses = 2
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.25
+				uses = 3
 				category = naval_doctrine
 			}
 			add_equipment_to_stockpile = {
@@ -3572,10 +3572,10 @@ focus_tree = {
 		
 		completion_reward = {
 		    navy_experience = 25
-			add_tech_bonus = {
-				name = POL_Naval_Officers_School
-				bonus = 1.0
-				uses = 2
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
 				category = naval_doctrine
 			}
 			add_equipment_to_stockpile = {
@@ -3955,9 +3955,9 @@ focus_tree = {
 				uses = 1
 				category = artillery
 			}
-			add_tech_bonus = {
-				name = POL_German_Doctrine
-				bonus = 1.25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.65
 				uses = 2
 				category = land_doctrine
 			}
@@ -4008,10 +4008,10 @@ focus_tree = {
 				uses = 1
 				category = ss_tech
 			}
-			add_tech_bonus = {
-				name = POL_gerr_Doctrine_Naval
-				bonus = 0.45
-				uses = 5
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.45
+				uses = 3
 				category = naval_doctrine
 			}
 		}
@@ -4041,10 +4041,10 @@ focus_tree = {
 				uses = 1
 				category = cas_bomber
 			}
-			add_tech_bonus = {
-				name = POL_Advanced_Pilot_Training_Program
-				bonus = 0.5
-				uses = 3
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
 				category = air_doctrine
 			}
 			add_ideas = POL_Modern_Aircraft_Production1
@@ -5104,9 +5104,9 @@ focus_tree = {
 				uses = 2
 				category = artillery
 			}
-			add_tech_bonus = {
-				name = POL_Hungarian_Doctrine
-				bonus = 1.25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
 				uses = 2
 				category = land_doctrine
 			}
@@ -5141,12 +5141,12 @@ focus_tree = {
 				    uses = 2
 				    category = artillery
 		        }
-			    add_tech_bonus = {
-				    name = POL_Hungarian_Doctrine
-				    bonus = 3.0
-				    uses = 2
-				    category = land_doctrine
-			    }
+			    add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.95
+				uses = 1
+				category = land_doctrine
+			}
 			    add_tech_bonus = {
 				    name = POL_support_bonus #@#
 				    bonus = 8.0
@@ -5609,9 +5609,9 @@ focus_tree = {
 				uses = 1
 				category = bb_tech
 			}
-		    add_tech_bonus = {
-				name = POL_British_Doctrine_Naval57
-				bonus = 0.25
+		    add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.3
 				uses = 4
 				category = naval_doctrine
 			}
@@ -5865,16 +5865,16 @@ focus_tree = {
 				uses = 1
 				category = cas_bomber
 			}
-			add_tech_bonus = {
-				name = POL_Advanced_Pilot_Training_Programhjhj
-				bonus = 1.25
-				uses = 3
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.65
+				uses = 2
 				category = air_doctrine
 			}
-			add_tech_bonus = {
-				name = POL_francetty_Doctrine34
-				bonus = 1.0
-				uses = 2
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
 				category = land_doctrine
 			}
 			add_ideas = POL_Modern_Aircraft_Production1
@@ -6128,9 +6128,9 @@ focus_tree = {
 				uses = 2
 				category = artillery
 			}
-			add_tech_bonus = {
-				name = POL_German_Doctrine
-				bonus = 1.25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
 				uses = 2
 				category = land_doctrine
 			}
@@ -6237,10 +6237,10 @@ focus_tree = {
 				uses = 1
 				category = cas_bomber
 			}
-			add_tech_bonus = {
-				name = POL_Advanced_Pilot_Training_Program
-				bonus = 0.35
-				uses = 3
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
 				category = air_doctrine
 			}
 			add_ideas = POL_Modern_Aircraft_Production1
@@ -6616,10 +6616,10 @@ focus_tree = {
 				uses = 1
 				category = bb_tech
 			}
-		    add_tech_bonus = {
-				name = POL_British_Doctrine_Naval57
-				bonus = 0.25
-				uses = 4
+		    add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.35
+				uses = 2
 				category = naval_doctrine
 			}
 			POL = {
@@ -6951,10 +6951,10 @@ focus_tree = {
 				uses = 1
 				category = artillery
 			}
-			add_tech_bonus = {
-				name = POL_German_Doctrine343
-				bonus = 1.5
-				uses = 2
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.6
+				uses = 1
 				category = land_doctrine
 			}
 			add_tech_bonus = {
@@ -7099,9 +7099,9 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = POL_One_german_hundred_poles
-			add_tech_bonus = {
-				name = POL_German_Doctrineer
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -7343,9 +7343,9 @@ focus_tree = {
 				uses = 1
 				category = artillery
 			}
-			add_tech_bonus = {
-				name = POL_British_Doctrine
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -7378,10 +7378,10 @@ focus_tree = {
 				uses = 1
 				category = light_fighter
 			}
-			add_tech_bonus = {
-				name = POL_Advanced_English_Training_Program
-				bonus = 1.5
-				uses = 2
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 3
 				category = air_doctrine
 			}
 			add_tech_bonus = {
@@ -7625,10 +7625,10 @@ focus_tree = {
 				uses = 1
 				category = ss_tech
 			}
-			add_tech_bonus = {
-				name = POL_British_Doctrine_Naval
-				bonus = 1.25
-				uses = 2
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.80
+				uses = 1
 				category = naval_doctrine
 			}
 		}
@@ -7739,9 +7739,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_tech_bonus = {
-				name = POL_British_Doctrine_Naval
-				bonus = 1.25
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.75
 				uses = 1
 				category = naval_doctrine
 			}
@@ -7885,9 +7885,9 @@ focus_tree = {
 				uses = 1
 				category = bb_tech
 			}
-		    add_tech_bonus = {
-				name = POL_British_Doctrine_Naval57
-				bonus = 2.0
+		    add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.75
 				uses = 2
 				category = naval_doctrine
 			}
@@ -8044,9 +8044,9 @@ focus_tree = {
 		
 		completion_reward = {
 		    navy_experience = 65
-			add_tech_bonus = {
-				name = POL_Naval_Officers_School
-				bonus = 0.9
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.75
 				uses = 3
 				category = naval_doctrine
 			}
@@ -8412,10 +8412,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		    add_tech_bonus = {
-				name = POL_Advanced_Pilot_Training_Programee3
-				bonus = 0.8
-				uses = 3
+		   add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.7
+				uses = 2
 				category = air_doctrine
 			}
 			add_tech_bonus = {
@@ -9373,10 +9373,10 @@ focus_tree = {
 				uses = 1
 				category = infantry_weapons
 			}
-			add_tech_bonus = {
-				name = POL_Armia_Krolewska
-				bonus = 0.75
-				uses = 1
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
 				category = land_doctrine
 			}
 			create_field_marshal = {
@@ -9436,9 +9436,9 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 15
-			add_tech_bonus = {
-				name = POL_Plan_Z
-				bonus = 1.25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.3
 				uses = 1
 				category = land_doctrine
 			}
@@ -10154,9 +10154,9 @@ focus_tree = {
 				uses = 1
 				technology = Improved_Heavy_Tank
 			}
-			add_tech_bonus = {
-				name = POL_Armia_Ciezka
-				bonus = 1.25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -10355,10 +10355,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas =	POL_Romanian_Bridgehead_Strategy
-			add_tech_bonus = {
-				name = POL_Romanian_Bridgehead_Strategy
-				bonus = 2.5
-				uses = 2
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.75
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -10624,9 +10624,9 @@ focus_tree = {
 		}
 		completion_reward = {
 		    army_experience = 10
-			add_tech_bonus = {
-				name = POL_Plan_WW
-				bonus = 1.9
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
 				uses = 1
 				category = land_doctrine
 			}
@@ -14841,9 +14841,9 @@ focus_tree = {
 				}
 			}
 			navy_experience = 20
-			add_tech_bonus = {
-				name = POL_Naval_Officers_School
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -14929,10 +14929,10 @@ focus_tree = {
 				uses = 1
 				category = bb_tech
 			}
-			add_tech_bonus = {
-				name = POL_British_Doctrine_Nava4
-				bonus = 0.25
-				uses = 4
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.25
+				uses = 3
 				category = naval_doctrine
 			}
 		}
@@ -15544,9 +15544,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = POL_Advanced_Pilot_Training_Program
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.35
 				uses = 3
 				category = air_doctrine
 			}
@@ -16859,9 +16859,9 @@ focus_tree = {
 				uses = 1
 				category = infantry_weapons
 			}
-			add_tech_bonus = {
-				name = POL_ghjhj_Doctrine
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.35
 				uses = 1
 				category = land_doctrine
 			}
@@ -16946,10 +16946,10 @@ focus_tree = {
 				}
 				set_state_flag = POL_francia_wschod_4
 			}
-			add_tech_bonus = {
-				name = POL_france_Doctrine
-				bonus = 1.0
-				uses = 2
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -16976,9 +16976,9 @@ focus_tree = {
 				uses = 1
 				category = artillery
 			}
-			add_tech_bonus = {
-				name = POL_francetty_Doctrine
-				bonus = 5.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.9
 				uses = 1
 				category = land_doctrine
 			}
@@ -17009,9 +17009,9 @@ focus_tree = {
 				uses = 1
 				category = cas_bomber
 			}
-			add_tech_bonus = {
-				name = POL_Advanced_Pilot_Training_Programfg
-				bonus = 0.5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.35
 				uses = 3
 				category = air_doctrine
 			}
@@ -17049,10 +17049,10 @@ focus_tree = {
 				uses = 1
 				category = ss_tech
 			}
-			add_tech_bonus = {
-				name = POL_British_Doctrine_Navalhjhj
-				bonus = 0.5
-				uses = 4
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.5
+				uses = 3
 				category = naval_doctrine
 			}
 		}
@@ -17520,10 +17520,10 @@ focus_tree = {
 				uses = 1
 				category = cas_bomber
 			}
-			add_tech_bonus = {
-				name = POL_Advanced_Pilot_Training_Program
-				bonus = 1.25
-				uses = 3
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.75
+				uses = 1
 				category = air_doctrine
 			}
 			add_ideas = POL_Modern_Aircraft_Production1
@@ -17618,9 +17618,9 @@ focus_tree = {
 				uses = 1
 				category = infantry_weapons
 			}
-			add_tech_bonus = {
-				name = POL_ghjhj_Doctrine
-				bonus = 0.75
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -17705,9 +17705,9 @@ focus_tree = {
 				}
 				set_state_flag = POL_francia_wschod_zzz
 			}
-			add_tech_bonus = {
-				name = POL_ghjhj_Doctrine
-				bonus = 1.0
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -17757,9 +17757,9 @@ focus_tree = {
 				uses = 1
 				category = ss_tech
 			}
-			add_tech_bonus = {
-				name = POL_British_Doctrine_Navaldfd
-				bonus = 0.5
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.45
 				uses = 3
 				category = naval_doctrine
 			}
@@ -17908,10 +17908,10 @@ focus_tree = {
 				uses = 2
 				category = artillery
 			}
-			add_tech_bonus = {
-				name = POL_francetty_Doctrine
-				bonus = 2.8
-				uses = 2
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.8
+				uses = 1
 				category = land_doctrine
 			}
 		}

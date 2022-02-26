@@ -9,7 +9,7 @@ state={
 	history={
 		owner = ROM
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4
 			industrial_complex = 2
 			air_base = 5
 

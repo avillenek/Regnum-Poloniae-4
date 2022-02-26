@@ -75,5 +75,4 @@ create_country_leader = {
 	}
 }
 
-
-
+recruit_character = ABK_kirilli_bechvaya

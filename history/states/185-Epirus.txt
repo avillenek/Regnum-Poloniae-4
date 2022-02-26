@@ -13,7 +13,7 @@ state={
 		}
 		owner = GRE
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			air_base = 3
 
 		}

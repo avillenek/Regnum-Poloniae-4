@@ -1,4 +1,4 @@
-version="Ni Huja Nazad"
+version="4.0"
 tags={
 	"Alternative History"
 	"Gameplay"
@@ -12,4 +12,4 @@ replace_path="map/strategicregions"
 replace_path="history/states"
 replace_path="history/countries"
 replace_path="history/units"
-supported_version="1.11.2"
+supported_version="1.11.8"

@@ -24,7 +24,7 @@ state={
 			863 20 
 		}
 		buildings = {
-			infrastructure = 9
+			infrastructure = 4
 			arms_factory = 2
 			industrial_complex = 4
 			air_base = 8
