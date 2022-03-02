@@ -582,15 +582,15 @@ characters = {
 			}
 		}
 		
-		corps_commander = {
-			traits = { old_guard POL_sanation_left_leader }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
+		#corps_commander = { -- wylaczony bo jest dodany przez besmrp nizej
+		#	traits = { old_guard POL_sanation_left_leader }
+		#	skill=3
+		#	attack_skill=2
+		#	defense_skill=3
+		#	planning_skill=3
+		#	logistics_skill=2
+		#	legacy_id=-1
+		#}
 	}
 
 	POL_stanislaw_sosabowski = {
