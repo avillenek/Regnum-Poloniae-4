@@ -506,44 +506,6 @@ characters = {
 		}
 	}
 
-	POL_wladyslaw_bortnowski = {
-		name=POL_wladyslaw_bortnowski
-		portraits = {
-			army = {
-				large="GFX_POL_wladyslaw_bortnowski"
-				small = GFX_portrait_POL_wladyslaw_bortnowski_small
-			}
-		}
-		corps_commander = {
-			traits = { POL_sanation_right_leader thorough_planner }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-
-	POL_stanislaw_kopanski = {
-		name=POL_stanislaw_kopanski
-		portraits = {
-			army = {
-				large="GFX_POL_stanislav_kopanski"
-				small = GFX_portrait_POL_stanislaw_kopanski_small
-			}
-		}
-		corps_commander = {
-			traits = { POL_sanation_right_leader offensive_doctrine }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-
 	POL_marian_kukiel = {
 		name=POL_marian_kukiel
 		portraits = {
@@ -674,53 +636,15 @@ characters = {
 			}
 		}
 		
-		corps_commander = {
-			traits = { armor_officer }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-
-	POL_roman_abraham = {
-		name="Roman Abraham"
-		portraits = {
-			army = {
-				large="GFX_POL_roman_abraham"
-				small = GFX_portrait_Roman_Abraham_small
-			}
-		}
-		corps_commander = {
-			traits = { POL_sanation_right_leader }
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-
-	POL_wincenty_kowalski = {
-		name=POL_wincenty_kowalski
-		portraits = {
-			army = {
-				large="GFX_POL_wincenty_kowalski"
-				small = "GFX_idea_POL_wincenty_kowalski"
-			}
-		}
-		corps_commander = {
-			traits = { POL_sanation_right_leader trickster }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=-1
-		}
+		#corps_commander = {
+		#	traits = { armor_officer }
+		#	skill=4
+		#	attack_skill=4
+		#	defense_skill=3
+		#	planning_skill=3
+		#	logistics_skill=3
+		#	legacy_id=-1
+		#}
 	}
 
 	POL_kazimierz_sosnkowski = {
@@ -1649,13 +1573,15 @@ characters = {
 		}
 	}
 	
-	# REGNUM POLONIAE
+
+	# REGNUM POLONIAE CHARACTERS
 	
 	POL_cardinal_Adam_Sapieha = {
 		name=POL_cardinal_Adam_Sapieha
 		portraits={
 			civilian = {
-				large="cardinal_Adam_Sapieha"
+				large="gfx/interface/ideas/idea_cardinal_Adam_Sapieha.dds"
+				small="gfx/interface/ideas/idea_cardinal_Adam_Sapieha.dds"
 			}
 		}
 		advisor={
@@ -1688,7 +1614,8 @@ characters = {
 		name=POL_Tommy_Lascelles
 		portraits={
 			civilian = {
-				large="Tommy_Lascelles"
+				large="gfx/interface/ideas/idea_Tommy_Lascelles.dds"
+				small="gfx/interface/ideas/idea_Tommy_Lascelles.dds"
 			}
 		}
 		
@@ -1724,7 +1651,8 @@ characters = {
 		name=POL_Janusz_Radziwill
 		portraits={
 			civilian = {
-				large="POL_Janusz_Radziwill"
+				large="gfx/interface/ideas/idea_Janusz_Radziwill.dds"
+				small="gfx/interface/ideas/idea_Janusz_Radziwill.dds"
 			}
 		}
 		advisor={
@@ -1768,7 +1696,8 @@ characters = {
 		name=POL_Adam_Heydel
 		portraits={
 			civilian = {
-				large="GFX_idea_Adam_Heydel"
+				large="gfx/interface/ideas/idea_Adam_Heydel.dds"
+				small="gfx/interface/ideas/idea_Adam_Heydel.dds"
 			}
 		}
 		advisor={
@@ -1799,7 +1728,8 @@ characters = {
 		name=POL_Ludwig_von_Mises
 		portraits={
 			civilian = {
-				large="Ludwig_Mises"
+				large="gfx/interface/ideas/idea_Ludwig_Mises.dds"
+				small="gfx/interface/ideas/idea_Ludwig_Mises.dds"
 			}
 		}
 		advisor={
@@ -1830,7 +1760,8 @@ characters = {
 		name=POL_August_Hlond
 		portraits={
 			civilian = {
-				large="August_Hlond"
+				large="gfx/interface/ideas/idea_August_Hlond.dds"
+				small="gfx/interface/ideas/idea_August_Hlond.dds"
 			}
 		}
 		advisor={
@@ -1870,7 +1801,8 @@ characters = {
 		name=POL_Adam_Koc
 		portraits={
 			civilian = {
-				large="Adam_Koc"
+				large="gfx/interface/ideas/idea_Adam_Koc.dds"
+				small="gfx/interface/ideas/idea_Adam_Koc.dds"
 			}
 		}
 		advisor={

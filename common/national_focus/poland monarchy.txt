@@ -8996,7 +8996,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-		    set_capital = 88
+		    set_capital = { state = 88 }
 		    random_owned_controlled_state = {
 				prioritize = { 88 }
 				limit = {

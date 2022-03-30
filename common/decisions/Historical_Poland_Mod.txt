@@ -215,7 +215,7 @@ POL_Autonomy_category = {
 		allowed = { original_tag = POL }
 		
 		available = {
-			13 = { infrastructure > 9 }
+			13 = { infrastructure > 4 }
 		}
 
 		fire_only_once = yes
@@ -250,7 +250,7 @@ POL_Autonomy_category = {
 		allowed = { original_tag = POL }
 		
 		available = {
-			206 = { infrastructure > 9 }
+			206 = { infrastructure > 4 }
 		}
 
 		fire_only_once = yes

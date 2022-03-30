@@ -1,4 +1,4 @@
-﻿synthetic_refinery = 2###########################
+﻿###########################
 # Polish Events
 ###########################
 
@@ -19579,7 +19579,7 @@ country_event = {
 	option = {
 		name = poland.1002.a
 		hidden_effect = {
-			set_capital = 86
+			set_capital = { state = 86 }
 			start_civil_war = {
 				ruling_party = neutrality
 				ideology = fascism
@@ -19743,7 +19743,7 @@ country_event = {
 		name = poland.5221.a
 		hidden_effect = {
 			POL = { sound_effect = sp_pol_warsoviet }
-			set_capital = 86
+			set_capital = { state = 86 }
 			start_civil_war = {
 				ruling_party = neutrality
 				ideology = fascism
@@ -19895,7 +19895,7 @@ country_event = {
 	option = {
 		name = poland.5222.a
 		hidden_effect = {
-			set_capital = 86
+			set_capital = { state = 86 }
 			start_civil_war = {
 				ruling_party = neutrality
 				ideology = fascism
@@ -20047,7 +20047,7 @@ country_event = {
 	option = {
 		name = poland.5223.a
 		hidden_effect = {
-			set_capital = 86
+			set_capital = { state = 86 }
 			start_civil_war = {
 				ruling_party = neutrality
 				ideology = fascism

@@ -2744,6 +2744,12 @@ focus_tree = {
 		bypass = {
 			42 = { is_demilitarized_zone = no }
 			51 = { is_demilitarized_zone = no }
+			791 = { is_demilitarized_zone = no }
+			790 = { is_demilitarized_zone = no }
+			789 = { is_demilitarized_zone = no }
+			51 = { is_demilitarized_zone = no }
+			792 = { is_demilitarized_zone = no }
+			788 = { is_demilitarized_zone = no }
 		}
 		ai_will_do = {
 			factor = 10
@@ -2752,6 +2758,12 @@ focus_tree = {
 		completion_reward = {
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
+			791 = { set_demilitarized_zone = no }
+			790 = { set_demilitarized_zone = no }
+			789 = { set_demilitarized_zone = no }
+			51 = { set_demilitarized_zone = no }
+			792 = { set_demilitarized_zone = no }
+			788 = { set_demilitarized_zone = no }
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
 			army_experience = 5

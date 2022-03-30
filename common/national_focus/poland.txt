@@ -7,17 +7,14 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = POL
-			has_dlc = "Poland: United and Ready"
 		}
 	}
 	
 	default = yes
 	
 	continuous_focus_position = { x = 50 y = 2100 }
-
-	############################
-	#### INDUSTRIAL SECTION ####
-	############################
+	
+	##################### Sciezka wojny domowej #####################
 	
 	focus = {
 		id = POL_The_Kingdom_Of_Poland_Revolt
@@ -25,7 +22,7 @@ focus_tree = {
 		prerequisite = { focus = POL_Monarchisci }
 		available = { has_government = neutrality }
 
-		x = 7
+		x = 3
 		y = 6
 		cost = 4.4
 
@@ -139,7 +136,7 @@ focus_tree = {
 			is_puppet = no
 			has_civil_war = yes
 		}
-		x = 7
+		x = 3
 		y = 7
 		cost = 0.8
 		ai_will_do = {
@@ -160,8 +157,9 @@ focus_tree = {
 	focus = {
 		id = POL_The_April_Constitution1
 		icon = GFX_goal_april_constitution
+		mutually_exclusive = { focus = POL_alternative_way }
 		
-		x = 7
+		x = 3
 		y = 0
 		cost = 1.5
 
@@ -173,6 +171,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 60
+			custom_effect_tooltip =  POL_The_April_Constitution1_tt
 			hidden_effect = {
 			    POL = { country_event = poland.5201 }	
 			}
@@ -183,7 +182,7 @@ focus_tree = {
 		id = POL_The_Begining
 		icon = GFX_focus_niech_zyje_sikorski
 		prerequisite = { focus = POL_The_April_Constitution1 }
-		x = 7
+		x = 3
 		y = 1
 		cost = 0.8
 
@@ -205,7 +204,7 @@ focus_tree = {
 		id = POL_The_Ustawy
 		icon = GFX_focus_bogactwo_polski
 		prerequisite = { focus = POL_The_Begining }
-		x = 5
+		x = 1
 		y = 2
 		cost = 1.5
 
@@ -230,7 +229,7 @@ focus_tree = {
 		id = POL_The_legalizacja
 		icon = GFX_focus_rzeczpospolita_gubernia
 		prerequisite = { focus = POL_The_Begining }
-		x = 9
+		x = 5
 		y = 2
 		cost = 0.8
 
@@ -253,7 +252,7 @@ focus_tree = {
 		id = POL_Monarchisci
 		icon = GFX_focus_POL_monarchy_party
 		prerequisite = { focus = POL_The_Begining }
-		x = 7
+		x = 3
 		y = 3
 		cost = 1.5
 
@@ -272,7 +271,7 @@ focus_tree = {
 		id = POL_Monarchisci_wsparcie_od_wojska
 		icon = GFX_pol_focus_polish_army_support
 		prerequisite = { focus = POL_Monarchisci }
-		x = 5
+		x = 1
 		y = 4
 		cost = 1.5
 
@@ -295,7 +294,7 @@ focus_tree = {
 		id = POL_Monarchisci_wsparcie_od_partii
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = POL_Monarchisci }
-		x = 9
+		x = 5
 		y = 4
 		cost = 1.5
 
@@ -307,6 +306,326 @@ focus_tree = {
 
 		completion_reward = {
 			POL = { country_event = poland.5205 }	
+		}
+	}
+	
+	##################### Sciezka alternatywna #####################
+	
+	focus = {
+		id = POL_alternative_way
+		icon = GFX_focus_generic_polish_deal
+		mutually_exclusive = { focus = POL_The_April_Constitution1 }
+		x = 13
+		y = 0
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+		
+		available = {
+			has_country_flag = Work_in_Progress
+		}
+		
+		completion_reward = {
+			add_political_power = 5
+		}
+	}
+	
+	focus = {
+		id = POL_creation_of_a_royal_party
+		icon = GFX_focus_eng_god_save_the_king
+		prerequisite = { focus = POL_alternative_way }
+		relative_position_id = POL_alternative_way
+		x = 0
+		y = 1
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+	}
+	
+	focus = {
+		id = POL_creation_of_a_royal_party
+		icon = GFX_focus_eng_god_save_the_king
+		prerequisite = { focus = POL_alternative_way }
+		relative_position_id = POL_alternative_way
+		x = 0
+		y = 1
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+	}
+	
+	focus = {
+		id = POL_establishment_of_free_elections
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = POL_creation_of_a_royal_party }
+		relative_position_id = POL_alternative_way
+		x = 0
+		y = 2
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+	}
+	
+	focus = {
+		id = POL_establishment_of_free_elections
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = POL_creation_of_a_royal_party }
+		relative_position_id = POL_alternative_way
+		x = 0
+		y = 2
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+	}
+	
+	focus = {
+		id = POL_elections_sanation_win
+		icon = GFX_focus_POL_the_castle
+		prerequisite = { focus = POL_establishment_of_free_elections }
+		mutually_exclusive = { focus = POL_elections_royal_win focus = POL_elections_coalition }
+		relative_position_id = POL_alternative_way
+		x = -3
+		y = 3
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+	}
+	
+	focus = {
+		id = POL_reinstatement_of_the_former_course
+		icon = GFX_goal_april_constitution
+		prerequisite = { focus = POL_elections_sanation_win }
+		relative_position_id = POL_alternative_way
+		x = -3
+		y = 4
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = POL_reinstatement_of_the_former_course_tt
+		}
+	}
+	
+	focus = {
+		id = POL_elections_royal_win
+		icon = GFX_focus_POL_monarchy_party
+		prerequisite = { focus = POL_establishment_of_free_elections }
+		mutually_exclusive = { focus = POL_elections_sanation_win focus = POL_elections_coalition }
+		relative_position_id = POL_alternative_way
+		x = 3
+		y = 3
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+	}
+	
+	focus = {
+		id = POL_create_new_royal_govt
+		icon = GFX_focus_polish_crown_king
+		prerequisite = { focus = POL_elections_royal_win }
+		relative_position_id = POL_alternative_way
+		x = 3
+		y = 4
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+	}
+	
+	focus = {
+		id = POL_sikorski_reform
+		icon = GFX_focus_niech_zyje_sikorski
+		prerequisite = { focus = POL_create_new_royal_govt }
+		relative_position_id = POL_alternative_way
+		x = 3
+		y = 5
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+	}
+	
+	focus = {
+		id = POL_revive_the_Kingdom_dem
+		icon = GFX_focus_generic_polish_united
+		prerequisite = { focus = POL_sikorski_reform }
+		relative_position_id = POL_alternative_way
+		available = {
+			is_puppet = no
+		}
+		x = 3
+		y = 6
+		cost = 0.8
+		ai_will_do = {
+			factor = 3
+		}
+		
+		completion_reward = {
+			POL = { set_cosmetic_tag = POLPM }
+			set_party_name = { ideology = neutrality long_name = POL_MON_party_long name = POL_MON_party }
+			hidden_effect = { load_focus_tree = poland_monarchy_focus }
+			hidden_effect = {
+			    set_rule = { can_send_volunteers = yes }
+			}
+			add_ideas = POL_Perfect_Kingdom1
+		}
+	}
+	
+	focus = {
+		id = POL_elections_coalition
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = POL_establishment_of_free_elections }
+		mutually_exclusive = { focus = POL_elections_sanation_win focus = POL_elections_royal_win }
+		relative_position_id = POL_alternative_way
+		x = 0
+		y = 3
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+	}
+	
+	focus = {
+		id = POL_elections_coalition_talks
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = POL_elections_coalition }
+		relative_position_id = POL_alternative_way
+		x = 0
+		y = 4
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+	}
+	
+	focus = {
+		id = POL_change_constitution
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = POL_elections_coalition_talks }
+		relative_position_id = POL_alternative_way
+		x = 0
+		y = 5
+		cost = 1.5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+		}
+	}
+	
+	focus = {
+		id = POL_revive_the_Kingdom_coalition
+		icon = GFX_focus_generic_polish_united
+		prerequisite = { focus = POL_change_constitution }
+		relative_position_id = POL_alternative_way
+		available = {
+			is_puppet = no
+		}
+		x = 0
+		y = 6
+		cost = 0.8
+		ai_will_do = {
+			factor = 3
+		}
+		
+		completion_reward = {
+			POL = { set_cosmetic_tag = POLPM }
+			set_party_name = { ideology = neutrality long_name = POL_MON_party_long name = POL_MON_party }
+			hidden_effect = { load_focus_tree = poland_monarchy_focus }
+			hidden_effect = {
+			    set_rule = { can_send_volunteers = yes }
+			}
+			add_ideas = POL_Perfect_Kingdom1
 		}
 	}
 }

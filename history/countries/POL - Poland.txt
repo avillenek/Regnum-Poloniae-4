@@ -38,9 +38,7 @@ set_technology = {
 	tech_recon = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	gwtank = 1
 	motorised_infantry = 1
-	basic_light_tank = 1
 	early_fighter = 1
 	fighter1 = 1
 	early_bomber = 1
@@ -68,7 +66,6 @@ recruit_character = POL_wladyslaw_raczkiewicz
 recruit_character = POL_boleslaw_piasecki
 recruit_character = POL_edward_rydzsmigly
 recruit_character = POL_wladyslaw_bortnowski
-recruit_character = POL_stanislaw_kopanski
 recruit_character = POL_marian_kukiel
 recruit_character = POL_jozef_haller
 recruit_character = POL_stanislaw_sosabowski
@@ -117,6 +114,7 @@ if = {
 	}
 	set_technology = {
 		gwtank = 1
+		basic_light_tank = 1
 	}
 }
 if = {
@@ -125,6 +123,7 @@ if = {
 	}
 	set_technology = {
 		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
 	}
 }
 
@@ -734,7 +733,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Władysław Anders"
+	name = "Władysław Anders "
 	picture = "Wladyslaw_Anders.dds"
 	traits = { career_officer cavalry_officer media_personality }
 	id = 3141
@@ -859,6 +858,54 @@ create_corps_commander = {
 	logistics_skill = 1
 }
 
+create_corps_commander = {
+	name = "Roman Abraham "
+	picture = "Roman_Abraham.dds"
+	traits = { POL_sanation_right_leader }
+	id = 3151
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Wincenty Kowalski "
+	picture = "Wincenty_Kowalski.dds"
+	traits = { POL_sanation_right_leader trickster }
+	id = 3152
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Władysław Bortnowski "
+	picture = "Wladyslaw_Bortnowski.dds"
+	traits = { POL_sanation_right_leader thorough_planner }
+	id = 3153
+	skill=2
+	attack_skill=1
+	defense_skill=2
+	planning_skill=3
+	logistics_skill=1
+}
+
+create_corps_commander = {
+	name = "Stanisław Kopański "
+	picture = "Portrait_POL_Stanislaw_Kopamski.dds"
+	traits = { POL_sanation_right_leader offensive_doctrine }
+	id = 3154
+	skill=2
+	attack_skill=2
+	defense_skill=2
+	planning_skill=2
+	logistics_skill=1
+}
+
 create_navy_leader = {
 	name = "Józef Unrug"
 	picture = "Jozef_Unrug.dds"
@@ -892,23 +939,29 @@ create_navy_leader = {
 	coordination_skill = 3
 }
 
-create_equipment_variant = {
-	name = "TKS"
-	type = gw_tank_equipment
-	upgrades = {
-		tank_gun_upgrade = 1
-		tank_armor_upgrade = 2  
-		tank_engine_upgrade = 5
-		tank_reliability_upgrade = 1
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
 	}
-}
-create_equipment_variant = {
-	name = "7TP (wz. 38 KR-1)"
-	type = improved_light_tank
-	upgrades = {
-		tank_gun_upgrade = 2
-		tank_armor_upgrade = 1  
-		tank_engine_upgrade = 4
-		tank_reliability_upgrade = 2
+	create_equipment_variant = {
+		name = "TKS"
+		type = gw_tank_equipment
+		upgrades = {
+			tank_gun_upgrade = 1
+			tank_armor_upgrade = 2  
+			tank_engine_upgrade = 5
+			tank_reliability_upgrade = 1
+		}
 	}
+	create_equipment_variant = {
+		name = "7TP (wz. 38 KR-1)"
+		type = improved_light_tank
+		upgrades = {
+			tank_gun_upgrade = 2
+			tank_armor_upgrade = 1  
+			tank_engine_upgrade = 4
+			tank_reliability_upgrade = 2
+		}
+	}	
 }
